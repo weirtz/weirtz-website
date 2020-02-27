@@ -1,0 +1,11 @@
+.bg{
+    height:800px;
+    background-image: url("/assets/background/test.jpg");
+    background-size:cover;
+    width:auto;
+    margin-bottom:900px;
+}
+
+.hover{
+    
+}
