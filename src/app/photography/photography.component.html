@@ -1,5 +1,24 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 
-<div class="bg"></div>
-<div class="hover"></div>
-<p>photography works!</p>
-<app-photo-bundle></app-photo-bundle>
+
+<div class="container gallery-container">
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="photo col-sm-12 col-md-4" *ngFor="let image of assetsImages">
+                <a class="lightbox" href="{{name}}">
+                    <img [src]="image">
+                </a>
+            </div>            
+            
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
