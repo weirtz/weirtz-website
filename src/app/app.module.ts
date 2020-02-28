@@ -20,7 +20,6 @@ import { GameBundleComponent } from './games/game-bundle/game-bundle.component';
 import { DesignComponent } from './design/design.component';
 import { NgTerminalModule } from 'ng-terminal';
 import { TerminalComponent } from './terminal/terminal.component';
-import { Angular2ImageGalleryModule } from 'angular2-image-gallery'
 
 const appRoutes: Routes =[
 { path: '', component: AboutComponent },
@@ -58,8 +57,7 @@ const appRoutes: Routes =[
     BrowserModule,
     FormsModule,
     NgTerminalModule,
-    RouterModule.forRoot(appRoutes),
-    Angular2ImageGalleryModule
+    RouterModule.forRoot(appRoutes)
     ],
   providers: [],
   bootstrap: [AppComponent]
