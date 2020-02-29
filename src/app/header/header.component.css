@@ -11,13 +11,15 @@ li{
     padding:20px;
     padding-bottom:0px;
     margin-bottom:20px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 color:white;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    /*-webkit-backdrop-filter: blur(15px);*/
+    /*backdrop-filter: blur(15px);*/
     position: fixed;
+    z-index:1000;
     width:100%;
     left:0;
     right:0;
     top:0;
-    background-color: rgba(255, 255, 255, 0.699);
+    background-color: white;
 }

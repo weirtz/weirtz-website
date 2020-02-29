@@ -1,8 +1,13 @@
 h1 {
     font-family: montserrat;
-    padding-top:50px;
-    margin-bottom:100px;
+    padding-top:75px;
     text-align: center;
+}
+
+p{
+    text-align:center;
+    margin-bottom:100px;
+    font-family:montserrat;
 }
 
 #photos {
@@ -27,7 +32,6 @@ h1 {
 
 #photos img:hover{
     opacity:  0.7!important;
-
 }
 
 @media only screen and (max-width: 1220px) {
