@@ -1,18 +1,20 @@
 ul{
     padding:0px;
     color:white;
+    margin-bottom:0px;
 }
 li{ 
     display: inline-block;
     margin-right:20px;
     color:white!important;
+    font-family:montserrat;
+    font-weight:400;
+    vertical-align: middle;
 }
 .nav{
     padding:20px;
-    padding-bottom:0px;
-    margin-bottom:20px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-color:white;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    color:white;
     /*-webkit-backdrop-filter: blur(15px);*/
     /*backdrop-filter: blur(15px);*/
     position: fixed;
