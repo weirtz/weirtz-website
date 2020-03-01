@@ -1,5 +1,9 @@
 <h1>A little taste of my photography</h1>
 <p>View more on my <a href="https://www.instagram.com/bweirtz/" target="_blank">instagram</a></p>
 <section id="photos">
-    <img *ngFor="let image of assetsImages" [src]="image">
+    <!-- Thumbnail image - click to open lightbox of image -->
+    <a *ngFor="let image of assetsImages" href="/photography#{{image}}"><img class="thumbnail"  [src]="image"></a>
+   
+   
+    <div class="background-lightbox" *ngFor="let image of assetsImages"><a href="/photography#"><img class="lightbox" [id]="image"[src]="image"></a></div>
 </section>
