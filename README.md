@@ -1,3 +1,5 @@
+My personal website/portfolio.
+
 ## Installation and initialization
 Use the package manager npm to install required packages.
 
