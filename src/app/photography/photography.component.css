@@ -38,10 +38,6 @@ p{
     opacity:1;
 }
 
-#photos img.thumbnail:hover{
-    opacity:  0.7!important;
-}
-
 #photos img.lightbox{
     display:none;
 }
@@ -49,19 +45,46 @@ p{
 :target{
     display:block!important;
     position: fixed!important;
-    z-index: 200000000!important;
+    z-index: 100!important;
     top:0!important;
     left:0!important;
     right:0!important;
     bottom:0!important;
-    height:100%!important;
+    height:100vh!important;
     width:auto!important;
     margin:0 auto;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0, 0, 0, 0.85);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
-.background-lightbox:target{
-    background-color:red;
+
+:target .lightbox{
+    display:block!important;
+    max-width: 100%;
+    max-height:100%;
+    margin:0 auto;
+    /* vertical align lightbox image */
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
 }
+
+/* lightbox close button */
+:target .close-lightbox{
+    position: absolute;
+    top:10px;
+    right:10px;
+    height:30px;
+    width:30px;
+    z-index:103;
+}
+
+
+/* Responsive design */
+
 @media only screen and (max-width: 1220px) {
     #photos {
         /* Prevent vertical gaps */
