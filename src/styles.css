@@ -1,11 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-
 body {
     background-color: white;
-    padding-top:40px;
-    
+    padding-top:150px;
+    overflow-y: scroll;
 }
 
-html {
-    overflow-y: scroll;
-  }
+::-webkit-scrollbar-track{   
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgb(207, 207, 207);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(207, 207, 207);
+}
