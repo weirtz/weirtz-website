@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class PhotographyComponent implements OnInit {
 
   assetsImages = [
+    {link:'../../assets/photos/file (27).jpg', name:'p27'},
+    {link:'../../assets/photos/file (26).jpg', name:'p26'},
+    {link:'../../assets/photos/file (25).jpg', name:'p25'},
     {link:'../../assets/photos/file (24).jpg', name:'p24'},
     {link:'../../assets/photos/file (23).jpg', name:'p23'},
+    {link:'../../assets/photos/file (22).jpg', name:'p22'},
     {link:'../../assets/photos/file (21).jpg', name:'p21'},
     {link:'../../assets/photos/file (20).jpg', name:'p20'},
     {link:'../../assets/photos/file (19).jpg', name:'p19'},
