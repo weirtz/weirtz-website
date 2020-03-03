@@ -1,5 +1,7 @@
 
   <app-header></app-header>
+  <app-progress-bar *ngIf="loading"></app-progress-bar>
+  
   <router-outlet>
     <!-- <span class="loading"><img style="max-width:40px;margin:20px;" src="./assets/loading/loading.gif" alt=""></span> -->
   </router-outlet>

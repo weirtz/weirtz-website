@@ -1,7 +1,8 @@
 body {
     background-color: white;
-    padding-top:150px;
+    padding-top:67px;
     overflow-y: scroll;
+    background-color: #F1F2F6;
 }
 
 ::-webkit-scrollbar-track{   

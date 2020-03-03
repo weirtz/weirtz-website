@@ -18,9 +18,8 @@ import { PhotoBundleComponent } from './photography/photo-bundle/photo-bundle.co
 import { LogoBundleComponent } from './logos/logo-bundle/logo-bundle.component';
 import { GameBundleComponent } from './games/game-bundle/game-bundle.component';
 import { DesignComponent } from './design/design.component';
-import { NgTerminalModule } from 'ng-terminal';
-import { TerminalComponent } from './terminal/terminal.component';
 import { BannerComponent } from './banner/banner.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 const appRoutes: Routes =[
 { path: '', component: AboutComponent },
@@ -30,8 +29,7 @@ const appRoutes: Routes =[
 { path: 'photography', component: PhotographyComponent },
 { path: 'games', component: GamesComponent },
 { path: 'contact', component: ContactComponent },
-{ path: 'design', component: DesignComponent },
-{ path: 'terminal', component: TerminalComponent }
+{ path: 'design', component: DesignComponent }
 ];
 
 @NgModule({
@@ -52,13 +50,12 @@ const appRoutes: Routes =[
     LogoBundleComponent,
     GameBundleComponent,
     DesignComponent,
-    TerminalComponent,
-    BannerComponent
+    BannerComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    NgTerminalModule,
     RouterModule.forRoot(appRoutes)
     ],
   providers: [],

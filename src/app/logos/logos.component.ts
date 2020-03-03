@@ -7,6 +7,9 @@ import { Logo } from './logo.model';
 })
 export class LogosComponent implements OnInit {
 
+
+
+
   @Input() name: string;
 
   logos: Logo[] = [

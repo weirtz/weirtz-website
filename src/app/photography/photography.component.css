@@ -1,5 +1,6 @@
 
 #photos {
+    background-color: white;
     /* Prevent vertical gaps */
     line-height: 0;
      
@@ -19,7 +20,7 @@
     opacity:1;
 }
 
-#photos img.lightbox{
+#photos img.lightbox, img.close-lightbox{
     display:none;
 }
 
