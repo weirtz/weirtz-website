@@ -9,7 +9,7 @@
     <a *ngFor="let image of assetsImages" href="/photography#{{image}}"><img class="thumbnail" [src]="image"></a>
    
     <!-- Lightbox image - click to close image -->
-    <a href="/photography#" *ngFor="let image of assetsImages">
+    <a href="/photography#browse" *ngFor="let image of assetsImages">
         <div class="background-lightbox" [id]="image">
             <img class="close-lightbox" src="/assets/ui/md-x-white.svg">
             <img class="lightbox" [src]="image">

@@ -1,9 +1,14 @@
 .loading{
+    position:absolute;
+    top:1px;
+    left:0;
+    right:0;
+    z-index:101;
     height:5px;
     width:100%;
-
-    background: linear-gradient(270deg, #00caff, #06404f, #00caff, #06404f, #00caff, #06404f, #00caff);
-    background-size: 300% 300%;
+    
+    background: linear-gradient(270deg, #00caff, #283fc4, #00caff, #283fc4, #00caff);
+    background-size: 150% 150%;
 
     -webkit-animation: AnimationName 2s infinite;
     -moz-animation: AnimationName 2s infinite;
