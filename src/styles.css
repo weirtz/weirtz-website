@@ -3,4 +3,9 @@
 body {
     background-color: white;
     padding-top:40px;
+    
 }
+
+html {
+    overflow-y: scroll;
+  }

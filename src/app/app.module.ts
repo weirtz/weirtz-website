@@ -20,6 +20,7 @@ import { GameBundleComponent } from './games/game-bundle/game-bundle.component';
 import { DesignComponent } from './design/design.component';
 import { NgTerminalModule } from 'ng-terminal';
 import { TerminalComponent } from './terminal/terminal.component';
+import { BannerComponent } from './banner/banner.component';
 
 const appRoutes: Routes =[
 { path: '', component: AboutComponent },
@@ -51,7 +52,8 @@ const appRoutes: Routes =[
     LogoBundleComponent,
     GameBundleComponent,
     DesignComponent,
-    TerminalComponent
+    TerminalComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

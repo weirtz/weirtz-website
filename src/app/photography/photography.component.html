@@ -1,5 +1,9 @@
-<h1>A little taste of my photography</h1>
-<p>View more on my <a href="https://www.instagram.com/bweirtz/" target="_blank">instagram</a></p>
+<app-banner bTitle="A little taste of my photography" 
+            bSubTitle="View more on my "
+            bLinkUrl="https://www.instagram.com/bweirtz/"
+            bLinkCopy="instagram">
+</app-banner>
+
 <section id="photos">
     <!-- Thumbnail image - click to open lightbox of image -->
     <a *ngFor="let image of assetsImages" href="/photography#{{image}}"><img class="thumbnail" [src]="image"></a>

@@ -1,32 +1,13 @@
 
-
-
-/*  TURN THE HEADER INTO A COMPONENT */
-
-
-
-h1 {
-    font-family: montserrat;
-    padding-top:75px;
-    text-align: center;
-    font-weight:300;
-}
-
-p{
-    text-align:center;
-    margin-bottom:100px;
-    font-family:montserrat;
-}
-
 #photos {
     /* Prevent vertical gaps */
     line-height: 0;
      
-    -webkit-column-count: 5;
+    -webkit-column-count: 4;
     -webkit-column-gap:   5px;
-    -moz-column-count:    5;
+    -moz-column-count:    4;
     -moz-column-gap:      5px;
-    column-count:         5;
+    column-count:         4;
     column-gap:           5px;  
 }
   
@@ -56,6 +37,7 @@ p{
     background-color:rgba(0, 0, 0, 0.85);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+
 }
 
 :target .lightbox{
