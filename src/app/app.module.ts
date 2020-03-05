@@ -1,63 +1,51 @@
+//Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from "@angular/router"
+
+//Routing
+import { AppRoutingModule } from './app-routing.module';
+
+//Global
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component'
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BannerComponent } from './banner/banner.component';
+
+//Pages
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component'
-import { WarningAlertComponent } from './warning-alert/warning-alert.component';
-import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { LogosComponent } from './logos/logos.component';
 import { WebComponent } from './web/web.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { GamesComponent } from './games/games.component';
-import { ContactComponent } from './contact/contact.component';
-import { ContentModuleComponent } from './content-module/content-module.component';
-import { FooterComponent } from './footer/footer.component'
-import { PhotoBundleComponent } from './photography/photo-bundle/photo-bundle.component';
-import { LogoBundleComponent } from './logos/logo-bundle/logo-bundle.component';
-import { GameBundleComponent } from './games/game-bundle/game-bundle.component';
+import { GameComponent } from './games/game/game.component';
 import { DesignComponent } from './design/design.component';
-import { BannerComponent } from './banner/banner.component';
-import { ProgressBarComponent } from './progress-bar/progress-bar.component';
-
-const appRoutes: Routes =[
-{ path: '', component: AboutComponent },
-{ path: 'about', component: AboutComponent},
-{ path: 'logos', component: LogosComponent },
-{ path: 'web', component: WebComponent },
-{ path: 'photography', component: PhotographyComponent },
-{ path: 'games', component: GamesComponent },
-{ path: 'contact', component: ContactComponent },
-{ path: 'design', component: DesignComponent }
-];
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    WarningAlertComponent,
-    HeaderComponent,
+    NavComponent,
     AboutComponent,
     LogosComponent,
     WebComponent,
     PhotographyComponent,
     GamesComponent,
     ContactComponent,
-    ContentModuleComponent,
     FooterComponent,
-    PhotoBundleComponent,
-    LogoBundleComponent,
-    GameBundleComponent,
     DesignComponent,
     BannerComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    PageNotFoundComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
-    ],
+    AppRoutingModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
