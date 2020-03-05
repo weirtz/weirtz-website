@@ -1,3 +1,12 @@
-p{
+.footer-text{
     margin-left:20px;
+    position: relative;
+    bottom: 0;
+    left:0;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   }

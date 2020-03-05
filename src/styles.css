@@ -3,6 +3,11 @@ body {
     padding-top:67px;
     overflow-y: scroll;
     background-color: #F1F2F6;
+    /* always keep footer at botom - even if not full page*/
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    padding-bottom: 55px; /* height of your footer */
 }
 
 ::-webkit-scrollbar-track{   
