@@ -3,3 +3,7 @@
             bLinkCopy="visit steam publications."
             bLinkUrl="https://store.steampowered.com/search/?developer=Nullnut">
 </app-banner>
+
+<a [routerLink]="['/games', game.id]" href="#" *ngFor="let game of games">{{ game.name }}</a>
+
+<router-outlet></router-outlet>

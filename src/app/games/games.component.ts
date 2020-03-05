@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GamesComponent implements OnInit {
 
+  games = [
+    {id: 'haunted-showers', name: 'Haunted Showers'},
+    {id:'concord', name: 'Concord'}
+  ]
   constructor() { }
 
   ngOnInit() {
