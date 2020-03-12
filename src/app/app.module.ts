@@ -23,6 +23,7 @@ import { GamesComponent } from './games/games.component';
 import { GameComponent } from './games/game/game.component';
 import { DesignComponent } from './design/design.component';
 import { ContactComponent } from './contact/contact.component';
+import { GamesService } from './games/games.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { ContactComponent } from './contact/contact.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GamesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
