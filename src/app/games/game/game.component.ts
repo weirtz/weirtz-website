@@ -10,19 +10,19 @@ import { GamesService } from '../games.service';
 export class GameComponent implements OnInit {
   game: {id: string, name: string};
 
-  constructor(private serversService: GamesService,
+  constructor(private gamesService: GamesService,
     private route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit() {
     //Grab the server id from the link parameters and convert it from a string to a int with the plus symbol.
   const id = this.route.snapshot.params['game'];
-  this.game = this.serversService.getGame(id);
+  this.game = this.gamesService.getGame(id);
   //Subscribe to params changes.
   this.route.params.subscribe(
     (params: Params) => {
       //Remember to use + to convert the variable from string to int.
-      this.game = this.serversService.getGame(params['game']);
+      this.game = this.gamesService.getGame(params['game']);
     }
   )
 
