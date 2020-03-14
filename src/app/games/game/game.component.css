@@ -1,0 +1,42 @@
+.game-main-container{
+    margin-left:200px;
+    margin-right:200px;
+}
+.arrow-button{
+    margin-top:-3px;
+    margin-right: 8px;
+}
+.banner-container{
+margin:0px 0px;
+margin-bottom:50px;
+}
+.game-title{
+    font-family: montserrat;
+    font-weight:300;
+    margin-bottom:0px;
+    color:#333;
+}
+.title-devider{
+    border:0.5px solid #333;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.game-banner{
+    max-width:1200px;
+    margin:0px auto;
+    
+    width: 100% !important;
+    max-height: 300px !important;
+    height:35vw;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    background: url(/assets/games/haunted-showers/banner.jpg)no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}

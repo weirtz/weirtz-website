@@ -7,6 +7,8 @@ import { GamesService } from '../games.service';
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css']
 })
+
+
 export class GameComponent implements OnInit {
   game: {id: string, name: string};
 
