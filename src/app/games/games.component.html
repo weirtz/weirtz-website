@@ -1,4 +1,5 @@
-<app-banner bTitle="Game Development" 
+<app-banner *ngIf="router.url === '/games'"
+            bTitle="Game Development" 
             bSubTitle="Projects and experiments. "
             bLinkCopy="visit steam publications."
             bLinkUrl="https://store.steampowered.com/search/?developer=Nullnut">
