@@ -1,8 +1,13 @@
 <div class="game-main-container">
-    <a routerLink="/games"> <p class="btn btn-primary mt-4 mb-4"><span><img class="arrow-button" src="/assets/ui/sm-arrow-left-white.svg" alt=""> </span> Back to games list</p></a>
-
-    <h1 class="game-title">{{game.name}}</h1>
+    <div class="game-bar">
+        <a routerLink="/games"> <p class="btn btn-primary mt-4 mb-4"><span><img class="arrow-button" src="/assets/ui/sm-arrow-left-white.svg" alt=""> </span> Back to games list</p></a>
+        <p class="games-other-title">Other games:</p>
+        <a class="btn btn-secondary mr-4 mt-4 mb-4" [routerLink]="['/games', game.id]" href="#" *ngFor="let game of games">{{ game.name }}</a>
+    </div>
     
+    
+    <h1 class="game-title">{{game.name}}</h1>
+
     <div class="banner-container">
         <div class="game-banner"></div>
     </div>

@@ -11,6 +11,8 @@ import { GamesService } from '../games.service';
 
 export class GameComponent implements OnInit {
   game: {id: string, name: string};
+  //for games listing at top of page
+  private games: {id: string, name: string}[] = [];
 
   constructor(private gamesService: GamesService,
     private route: ActivatedRoute,
@@ -20,6 +22,10 @@ export class GameComponent implements OnInit {
     //Grab the server id from the link parameters and convert it from a string to a int with the plus symbol.
   const id = this.route.snapshot.params['game'];
   this.game = this.gamesService.getGame(id);
+  
+  //for games list at top of page.
+  this.games = this.gamesService.getGames();
+
   //Subscribe to params changes.
   this.route.params.subscribe(
     (params: Params) => {
