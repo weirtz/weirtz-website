@@ -7,19 +7,16 @@ import { Logo } from './logo.model';
 })
 export class LogosComponent implements OnInit {
 
-
-
-
-  @Input() name: string;
-
-  logos: Logo[] = [
-    new Logo('Prevail Gaming', '/logos/prevail', 'prevail'),
-    new Logo('Test2','asddddd','prevail.png'),
-    new Logo('Test2','asddddd','asd'),
-    new Logo('Test2','asddddd','asd'),
-    new Logo('Test2','asddddd','asd'),
-    new Logo('Test2','asddddd','asd'),
-    new Logo('Test2','asddddd','asd')
+  assetsLogos = [
+    {link:'../../assets/logos/morris.png', name:'morris-brothers'},
+    {link:'../../assets/logos/mca.png', name:'mca-tow-targets'},
+    {link:'../../assets/logos/finite.png', name:'finite-skies'},
+    {link:'../../assets/logos/chosen.png', name:'chosen-acres'},
+    {link:'../../assets/logos/prevail-2.png', name:'prevail-gaming-2'},
+    {link:'../../assets/logos/prevail.png', name:'prevail-gaming'},
+    {link:'../../assets/logos/paramount.png', name:'paramount-elite'},
+    {link:'../../assets/logos/oxygen.png', name:'oxygen'},
+    {link:'../../assets/logos/orbitl.png', name:'orbitl'}
   ];
 
   constructor() { }

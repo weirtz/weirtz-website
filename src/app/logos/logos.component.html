@@ -1,3 +1,7 @@
-<app-banner bTitle="Client logos" 
+<app-banner bTitle="Logo Design" 
             bSubTitle="Hand crafted logos, fresh off the artboard.">
 </app-banner>
+
+<div class="container">
+    <a *ngFor="let logo of assetsLogos" href="/logos#{{logo.name}}"><img class="thumbnail" [src]="logo.link"></a>
+</div>
