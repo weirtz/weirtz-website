@@ -1,15 +1,21 @@
-
-<div class="nav">
-    <div class="logo" *ngIf="router.url === '/about'">
-        <h1>BRENDAN WEIRTZ</h1>
+<div class="colorbar"></div>
+<div class="global-nav">
+    <div class="nav-container">
+        <!--<div class="logo" *ngIf="router.url === '/about'">
+            <img src="/assets/global/logo.png" alt="Logo Brendan Weirtz">
+        </div>-->
+        <div class="logo-container">
+            <img id="site-logo" src="/assets/global/logo.png" alt="Logo Brendan Weirtz">
+        </div>
+        
+        <div class="links">
+            <a routerLink="about">About</a>
+            <a routerLink="logos">Logos</a>
+            <a routerLink="design">Design</a>
+            <a routerLink="web">Web Development</a>
+            <a routerLink="photography">Photography</a>
+            <a routerLink="games">Games</a>
+            <a routerLink="contact">Contact</a>
+        </div>
     </div>
-    <ul>
-        <li><a routerLink="about">About</a></li>
-        <li><a routerLink="logos">Logos</a></li>
-        <li><a routerLink="design">Design</a></li>
-        <li><a routerLink="web">Web Development</a></li>
-        <li><a routerLink="photography">Photography</a></li>
-        <li><a routerLink="games">Games</a></li>
-        <li><a routerLink="contact">Contact</a></li>
-    </ul>
 </div>

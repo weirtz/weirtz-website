@@ -24,6 +24,8 @@ import { GameComponent } from './games/game/game.component';
 import { DesignComponent } from './design/design.component';
 import { ContactComponent } from './contact/contact.component';
 import { GamesService } from './games/games.service';
+import { LogoComponent } from './logos/logo/logo.component';
+import { FolderObjectComponent } from './objects/folder-object/folder-object.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { GamesService } from './games/games.service';
     BannerComponent,
     ProgressBarComponent,
     PageNotFoundComponent,
-    GameComponent
+    GameComponent,
+    LogoComponent,
+    FolderObjectComponent
   ],
   imports: [
     BrowserModule,

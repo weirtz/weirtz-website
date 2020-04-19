@@ -3,5 +3,19 @@
 </app-banner>
 
 <div class="container">
-    <a *ngFor="let logo of assetsLogos" href="/logos#{{logo.name}}"><img class="thumbnail" [src]="logo.link"></a>
+    <a class="logo" *ngFor="let logo of assetsLogos" href="/logos#{{logo.name}}">
+        <div class="blur">
+            <img class="thumbnail" [src]="logo.link">
+            <img class="thumbnail2" [src]="logo.link">
+        </div>
+
+        <div *ngIf="logo.moreInfo" class="folder-container">
+            <div class="folders">
+                <span><img class="folder1" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
+                <span><img class="folder2" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
+            </div>
+        </div>
+    </a>
+    
+
 </div>

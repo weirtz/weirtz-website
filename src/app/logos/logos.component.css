@@ -1,10 +1,92 @@
 
 .container{
     text-align: center;
+    position: relative;
+    max-width:1700px;
+    margin-top:50px;
 }
 
 .thumbnail{
     display:inline-block;
-    max-width:500px;
+    max-height:250px;
     padding:50px;
+    z-index:4;
+    position: relative;
+    
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    height:auto;
+    width:auto;
+
+    background-color:White;
+    border-radius:5px;
+
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.022),
+  0 31.8px 33.4px rgba(0, 0, 0, 0.006),
+  0 50px 80px rgba(0, 0, 0, 0.12);
+
+  margin:30px;
+}
+
+.thumbnail2{
+    position: absolute;
+    max-width:150%;
+    left:-60px;
+    top:-30px;
+    filter: blur(30px);
+    z-index: 1;
+    opacity:0.25;
+}
+
+.blur{
+    overflow: hidden;
+    width:100%;
+    height:auto;
+    position: relative;
+}
+
+
+
+/* Folders */
+.folder-container{
+    position: absolute;
+    bottom:-50px;
+    right:-20px;
+    height: 100px;
+    width: 100px;
+    z-index:4;
+}
+
+.logo:hover .folder1{
+    opacity:0;
+}
+
+.logo:hover .folder2{
+    opacity:1;
+}
+
+.folders{
+    position: relative;
+    max-width:100px;
+}
+
+.folder2, .folder1{
+    position: absolute;
+    width:100%;
+}
+
+.folder1{
+    left:0px;
+}
+
+.folder2{
+    opacity:0;
+    left:0px;
 }

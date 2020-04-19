@@ -1,47 +1,52 @@
-.nav ul{
-    padding:0px;
-    margin-bottom:0px;
-    width:100%;
+#site-logo{
+    width:170px!important;
+    height:auto;
+    padding:15px;
 }
-.nav ul li{ 
+.logo-container{
+    float:left;
+}
+.links{
+    padding:0px;
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.links a{ 
     display: inline-block;
-    margin-right:20px;
+    padding:10px;
     font-family:montserrat;
     font-weight:400;
-    vertical-align: middle;
-    text-align: center;
-}
-.nav ul li:last-child{
-    margin-right:0px;
-    border-radius: 5px;
-    border:1px solid #333;
-    padding:0px 6px;
-}
-.nav ul li a{
+    vertical-align: bottom;
+    padding-bottom:8px;
     color:#333;
+    /* background: rgb(177,177,177);
+    background: linear-gradient(0deg, rgb(248, 248, 248) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);   */
 }
-.nav{
-    text-align: right;
-    padding:20px;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+/* .links a:hover{
+    background: rgb(177,177,177);
+    background: linear-gradient(0deg, rgb(0, 162, 255) 10%, rgba(255,255,255,1) 80%);
     color:white;
+} */
+.global-nav{
+    border-bottom: 1px solid rgba(0,0,0,0.08);
     /*-webkit-backdrop-filter: blur(15px);*/
     /*backdrop-filter: blur(15px);*/
-    position: fixed;
     z-index:10;
     width:100%;
-    left:0;
-    right:0;
-    top:0;
+    height:auto;
+    position: relative;
+    margin:0 auto;
+    overflow:hidden;
+    display:block;
     background-color: white;
 }
-
-.logo h1{
-    text-align: center;
-    color:black;
-    font-weight:100px;
-    margin-bottom:20px;
-}
-.logo{
+.nav-container{
+    width:100%;
+    max-width:1200px;
+    display: block;
     margin:0 auto;
+    position: relative;
+    height:auto;
+    overflow:hidden;
 }

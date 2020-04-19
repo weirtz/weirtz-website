@@ -1,6 +1,5 @@
 body {
     background-color: white;
-    padding-top:67px;
     overflow-y: scroll;
     background-color: #F1F2F6;
     /* always keep footer at botom - even if not full page*/
