@@ -3,6 +3,7 @@
     right:20px;
     top:20px;
     text-decoration: none;
+    z-index:20;
 }
 
 .background{
@@ -16,10 +17,9 @@
 }
 
 .panel{
-    background-color: white;
-    height:90%;
+    background-color: whitesmoke;
+    height:100%;
     width:100%;
-    top:5%;
     max-width:1400px;
     margin:0 auto;
     overflow-y:scroll;
@@ -28,8 +28,9 @@
 
 .hero{
     width:100%;
-    background-color:whitesmoke;
+    background-color:white;
     overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .close-text{
@@ -64,4 +65,15 @@
     z-index:4;
     position: relative;
     margin: 0 auto;
+}
+
+.scroll-container{
+    height:90%;
+    width:100%;
+    top:5%;
+    max-width:1400px;
+    margin:0 auto;
+    overflow-y:hidden;
+    position: relative;
+    border-radius: 8px;
 }

@@ -9,7 +9,7 @@ import { LogosService } from '../logos.service';
   styleUrls: ['./logo.component.css']
 })
 export class LogoComponent implements OnInit {
-  logo: {name: string, link: string, moreInfo: boolean};
+  logo: {name: string, link: string, moreInfo: boolean, title: string, subtitle: string, copy: string};
 
   paramsSubscription: Subscription;
 
