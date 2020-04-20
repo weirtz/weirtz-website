@@ -125,4 +125,48 @@
 
 
 
+.container{
+    position: absolute;
+    top:30px;
+    left:20px;
+    z-index:110;
+}
 
+.inner {
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 500px;
+    clip-path: circle(5% at 5% 15%);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+  .inner:hover {
+    clip-path: circle(75%);
+    background: white;
+  }
+  .inner h1 {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size:20px;
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+  .inner p {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .inner span {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color .5s;
+    position: absolute;
+    top:20px;
+    left:37px;
+  }
+  .inner:hover span {
+    color: rgba(255, 255, 255, 0);
+  }
+  

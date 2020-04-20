@@ -1,26 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { LogosService } from './logos.service';
+import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-logos',
   templateUrl: './logos.component.html',
-  styleUrls: ['./logos.component.css']
+  styleUrls: ['./logos.component.css'],
+  providers: [LogosService]
 })
 export class LogosComponent implements OnInit {
+  private logos: {link: string, name: string, moreInfo: boolean}[] = [];
 
-  assetsLogos = [
-    {link:'../../assets/logos/morris.png', name:'morris-brothers', moreInfo:true},
-    {link:'../../assets/logos/mca.png', name:'mca-tow-targets', moreInfo:false},
-    {link:'../../assets/logos/finite.png', name:'finite-skies', moreInfo:true},
-    {link:'../../assets/logos/chosen.png', name:'chosen-acres', moreInfo:true},
-    {link:'../../assets/logos/prevail-2.png', name:'prevail-gaming-2', moreInfo:true},
-    {link:'../../assets/logos/prevail.png', name:'prevail-gaming', moreInfo:true},
-    {link:'../../assets/logos/paramount.png', name:'paramount-elite', moreInfo:true},
-    {link:'../../assets/logos/oxygen.png', name:'oxygen', moreInfo:false},
-    {link:'../../assets/logos/orbitl.png', name:'orbitl', moreInfo:false}
-  ];
-  
-  constructor() { }
+  constructor(private logosService: LogosService,
+              private router: Router,
+              private route: ActivatedRoute) {
+}
 
   ngOnInit() {
+    this.logos = this.logosService.getLogos();
   }
 
-}
+}  

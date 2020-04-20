@@ -23,9 +23,12 @@ import { GamesComponent } from './games/games.component';
 import { GameComponent } from './games/game/game.component';
 import { DesignComponent } from './design/design.component';
 import { ContactComponent } from './contact/contact.component';
-import { GamesService } from './games/games.service';
 import { LogoComponent } from './logos/logo/logo.component';
 import { FolderObjectComponent } from './objects/folder-object/folder-object.component';
+
+//Services
+import { GamesService } from './games/games.service';
+import { LogosService } from './logos/logos.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,7 @@ import { FolderObjectComponent } from './objects/folder-object/folder-object.com
     FormsModule,
     AppRoutingModule
   ],
-  providers: [GamesService],
+  providers: [GamesService, LogosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

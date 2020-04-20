@@ -2,13 +2,26 @@
             bSubTitle="Hand crafted logos, fresh off the artboard.">
 </app-banner>
 
+<router-outlet></router-outlet>
+
+<!-- Individual Logo Pages - Lightbox -->
+<!-- <div class="lightbox">
+    <div class="lb-inner">
+        <a href="/logos#browse"><img class="close-lightbox" src="/assets/ui/md-x-black.svg"></a>
+
+    </div>
+</div> -->
+
+
+<!-- Logos -->
 <div class="container">
-    <a class="logo" *ngFor="let logo of assetsLogos" href="/logos#{{logo.name}}">
+    <a class="logo" *ngFor="let logo of logos" [routerLink]="['/logos', logo.name]" href="#">
         <div class="blur">
             <img class="thumbnail" [src]="logo.link">
             <img class="thumbnail2" [src]="logo.link">
         </div>
 
+        <!-- Folder Icons -->
         <div *ngIf="logo.moreInfo" class="folder-container">
             <div class="folders">
                 <span><img class="folder1" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
@@ -16,6 +29,4 @@
             </div>
         </div>
     </a>
-    
-
 </div>

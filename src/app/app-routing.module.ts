@@ -14,11 +14,14 @@ import { GamesComponent } from './games/games.component';
 import { GameComponent } from './games/game/game.component';
 import { DesignComponent } from './design/design.component';
 import { ContactComponent } from './contact/contact.component';
+import { LogoComponent } from './logos/logo/logo.component';
 
 const appRoutes: Routes = [
     { path: '', component: AboutComponent },
     { path: 'about', component: AboutComponent},
-    { path: 'logos', component: LogosComponent },
+    { path: 'logos', component: LogosComponent, children: [
+      {path: ':name', component: LogoComponent}
+    ]},
     { path: 'web', component: WebComponent },
     { path: 'photography', component: PhotographyComponent },
     { path: 'contact', component: ContactComponent },
