@@ -76,4 +76,29 @@
     overflow-y:hidden;
     position: relative;
     border-radius: 8px;
+    pointer-events: all;
+}
+
+.lightbox-container{
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-color: rgba(0,0,0,0);
+        z-index:21;
+        pointer-events: none;
+}
+
+@media only screen and (max-width: 1410px) {
+    .scroll-container{
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .scroll-container{
+        height:100%;
+        top:0%;
+    }
 }

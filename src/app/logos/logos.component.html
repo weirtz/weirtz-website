@@ -20,19 +20,21 @@
 
         <!-- If more Info -->
         
-        <div *ngIf="logo.moreInfo; else elseBlock"> <a [routerLink]="['/logos', logo.name]" href="#">
-            <div class="blur">
-                <img class="thumbnail" [src]="logo.link">
-                <img class="thumbnail2" [src]="logo.link">
-            </div>
-    
-            <!-- Folder Icons -->
-            <div *ngIf="logo.moreInfo" class="folder-container">
-                <div class="folders">
-                    <span><img class="folder1" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
-                    <span><img class="folder2" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
+        <div *ngIf="logo.moreInfo; else elseBlock"> 
+            <a [routerLink]="['/logos', logo.name]" href="#">
+                <div class="blur">
+                    <img class="thumbnail" [src]="logo.link">
+                    <img class="thumbnail2" [src]="logo.link">
                 </div>
-            </div>  </a>
+        
+                <!-- Folder Icons -->
+                <div *ngIf="logo.moreInfo" class="folder-container">
+                    <div class="folders">
+                        <span><img class="folder1" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
+                        <span><img class="folder2" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
+                    </div>
+                </div>  
+            </a>
         </div>
        
         <!-- Else no Info-->
