@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Subscribable, Subscription } from 'rxjs';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LogosService } from '../logos.service';
+import { LogosComponent } from '../logos.component';
+import { ScrollingService } from 'src/app/Services/scrolling.service';
 
 @Component({
   selector: 'app-logo',
@@ -14,8 +16,14 @@ export class LogoComponent implements OnInit {
   paramsSubscription: Subscription;
 
   constructor(private logosService: LogosService,
+              private scrollingService: ScrollingService,
               private route: ActivatedRoute,
               private router: Router) { }
+
+  //Call toggleModal function from scrolling.sercice
+  toggleModal(){
+    this.scrollingService.toggleModal();
+  }
 
   ngOnInit() {
     //Grab the logo name from the link parameters
@@ -28,6 +36,4 @@ export class LogoComponent implements OnInit {
       }
     )
   }
-  
-  
 }

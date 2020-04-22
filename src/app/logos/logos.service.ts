@@ -147,6 +147,23 @@ export class LogosService {
           copy2:''
         }
       ];
+
+      public toggleModal() : void {
+
+        // When we open the modal window, we want to prevent scrolling on the main
+        // document. This way, if the user can scroll within the modal window, the
+        // scroll will never bleed into the body context.
+        if ( this.isShowingModal = ! this.isShowingModal ) {
+    
+          this.windowScrolling.disable();
+    
+        } else {
+    
+          this.windowScrolling.enable();
+    
+        }
+    
+      }
   
     getLogos() {
       return this.assetsLogos;

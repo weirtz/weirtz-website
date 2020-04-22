@@ -2,6 +2,7 @@
             bSubTitle="Hand crafted logos, fresh off the artboard.">
 </app-banner>
 
+<!-- Logo Modal -->
 <router-outlet></router-outlet>
 
 <!-- Individual Logo Pages - Lightbox -->
@@ -21,7 +22,7 @@
         <!-- If more Info -->
         
         <div *ngIf="logo.moreInfo; else elseBlock"> 
-            <a [routerLink]="['/logos', logo.name]" href="#">
+            <a [routerLink]="['/logos', logo.name]" (click)="toggleModal()" href="#">
                 <div class="blur">
                     <img class="thumbnail no-drag" [src]="logo.link">
                     <img class="thumbnail2 no-drag" [src]="logo.link">
@@ -44,10 +45,5 @@
                 <img class="thumbnail2 no-drag" [src]="logo.link">
             </div>
         </ng-template>
-
-        
-
-
-
     </div>
 </div>
