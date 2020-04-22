@@ -23,15 +23,15 @@
         <div *ngIf="logo.moreInfo; else elseBlock"> 
             <a [routerLink]="['/logos', logo.name]" href="#">
                 <div class="blur">
-                    <img class="thumbnail" [src]="logo.link">
-                    <img class="thumbnail2" [src]="logo.link">
+                    <img class="thumbnail no-drag" [src]="logo.link">
+                    <img class="thumbnail2 no-drag" [src]="logo.link">
                 </div>
         
                 <!-- Folder Icons -->
                 <div *ngIf="logo.moreInfo" class="folder-container">
                     <div class="folders">
-                        <span><img class="folder1" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
-                        <span><img class="folder2" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
+                        <span><img class="folder1 no-drag" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
+                        <span><img class="folder2 no-drag" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
                     </div>
                 </div>  
             </a>
@@ -40,8 +40,8 @@
         <!-- Else no Info-->
         <ng-template #elseBlock>
             <div class="blur">
-                <img class="thumbnail" [src]="logo.link">
-                <img class="thumbnail2" [src]="logo.link">
+                <img class="thumbnail no-drag" [src]="logo.link">
+                <img class="thumbnail2 no-drag" [src]="logo.link">
             </div>
         </ng-template>
 
