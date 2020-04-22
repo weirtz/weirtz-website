@@ -13,8 +13,12 @@
 <body style="margin:0px">
   <app-root>
   </app-root>
+
+  <!-- Navigation Script for mobile -->
+
   <script>
     
+    //Make code modular
 
     function nav() {
       var navOpen = document.getElementById("menu-open");
@@ -35,10 +39,23 @@
             background.style.display = "block";
             links.style.display = "block";
             globalNav.style.borderBottom = "0px";
-
         }
     }
 
+    function clearNav(){
+
+      var navOpen = document.getElementById("menu-open");
+    var navClose = document.getElementById("menu-close");
+    var background = document.getElementById("mobile-background");
+    var links = document.getElementById("links");
+    var globalNav = document.getElementById("global-nav");
+
+            navOpen.style.display = "block";
+            navClose.style.display = "none";
+            background.style.display = "none";
+            links.style.display = "none";
+            globalNav.style.borderBottom = "1px solid rgba(0,0,0,0.08)";
+    }
       
 
 

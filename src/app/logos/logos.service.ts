@@ -93,6 +93,15 @@ export class LogosService {
           copy2:''
         },
         {
+          link:'../../assets/logos/concord.png', 
+          name:'concord', 
+          moreInfo:true,
+          title:'Concord',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
           link:'../../assets/logos/kaitlyns-kreations.png', 
           name:'kaitlyns-kreations', 
           moreInfo:false,
@@ -104,6 +113,15 @@ export class LogosService {
         {
           link:'../../assets/logos/petes-restaurant.png', 
           name:'petes-restaurant', 
+          moreInfo:false,
+          title:'',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/aphelion.png', 
+          name:'aphelion', 
           moreInfo:false,
           title:'',
           subtitle:'',

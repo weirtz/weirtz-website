@@ -77,6 +77,8 @@
 
 /* This code make sure that desktop nav is visible once resizing back 
     to desktop from mobile nav sizing. (Reverts the JS mobile nav) */
+
+/* Going up in size */
 @media only screen and (min-width: 800px) {
     #global-nav{
         border-bottom: 1px solid rgba(0,0,0,0.08)!important;
@@ -89,6 +91,7 @@
     }
 }
 
+/* Going down in size */
 @media only screen and (max-width: 800px) {
     #mobile-nav, #menu-open{
         display: block;
