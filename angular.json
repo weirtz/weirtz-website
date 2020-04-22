@@ -92,7 +92,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["https://code.jquery.com/jquery-3.5.0.min.js"]
           }
         },
         "lint": {

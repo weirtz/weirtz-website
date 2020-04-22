@@ -1,5 +1,5 @@
 <div class="colorbar"></div>
-<div class="global-nav">
+<div id="global-nav">
     <div class="nav-container">
         <!--<div class="logo" *ngIf="router.url === '/about'">
             <img src="/assets/global/logo.png" alt="Logo Brendan Weirtz">
@@ -8,7 +8,15 @@
             <a routerLink="/" href="/"><img id="site-logo" src="/assets/global/logo.png" alt="Logo Brendan Weirtz"></a>
         </div>
         
-        <div class="links">
+        <div id="mobile-nav">
+            <a onclick="nav()">
+                <span id="menu-open"><img src="/assets/ui/menu-close.svg" alt="Menu Open"></span>
+                <span id="menu-close"><img src="/assets/ui/menu-open.svg" alt="Menu Close"></span>
+            </a>
+        </div>
+
+
+        <div class="links" id="links">
             <a routerLink="about">About</a>
             <a routerLink="logos">Logos</a>
             <a routerLink="design">Design</a>
@@ -19,3 +27,5 @@
         </div>
     </div>
 </div>
+
+<div id="mobile-background"></div>
