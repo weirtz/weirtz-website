@@ -8,9 +8,9 @@ import { GamesService } from '../games.service';
   styleUrls: ['./game.component.css']
 })
 
-
 export class GameComponent implements OnInit {
   game: {id: string, name: string};
+
   //for games listing at top of page
   private games: {id: string, name: string}[] = [];
 
@@ -18,8 +18,13 @@ export class GameComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router) { }
 
+  //Getters
+  getGames(){
+    return this.games;
+  }
+
   ngOnInit() {
-    //Grab the server id from the link parameters and convert it from a string to a int with the plus symbol.
+  //Grab the server id from the link parameters and convert it from a string to a int with the plus symbol.
   const id = this.route.snapshot.params['game'];
   this.game = this.gamesService.getGame(id);
   

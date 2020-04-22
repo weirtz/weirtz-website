@@ -8,13 +8,18 @@ import { Router, ActivatedRoute } from '@angular/router';
   providers: [LogosService]
 })
 export class LogosComponent implements OnInit {
-  private logos: {link: string, name: string, moreInfo: boolean}[] = [];
+  logos: {link: string, name: string, moreInfo: boolean}[] = [];
 
   constructor(private logosService: LogosService,
               private router: Router,
               private route: ActivatedRoute) {
 }
 
+  //Getters
+  getLogosService(){
+    return this.logos;
+  }
+  
   ngOnInit() {
     this.logos = this.logosService.getLogos();
   }

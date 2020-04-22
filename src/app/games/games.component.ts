@@ -17,11 +17,18 @@ export class GamesComponent implements OnInit {
     private route: ActivatedRoute) {
 }
 
+  //Getters
+  getRouter(){
+    return this.router;
+  }
+
+  getGames(){
+    return this.games;
+  }
 
   ngOnInit() {
     this.games = this.gamesService.getGames();
   }
-
 
 }
 
