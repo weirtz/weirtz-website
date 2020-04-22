@@ -6,9 +6,10 @@ export class LogosService {
           link:'../../assets/logos/morris.png', 
           name:'morris-brothers', 
           moreInfo:true,
-          title:'Morris Brothers',
-          subtitle:'Scrap metal recycling',
-          copy:'Placeholder'
+          title:'Morris Brothers Inc.',
+          subtitle:'Serving the recycling needs of Stark County since 1980.',
+          copy:'A staple to the community, Morris Brothers has recycled scrap metal keeping Stark County cleaner and greener since 1980. They value their customers who are essentially neighbors plus being family owned and operated sets them apart from competitors because they treat everyone like family.',
+          copy2:'"One man\'s trash is another man\'s treasure!"'
         },
         {
           link:'../../assets/logos/mca.png', 
@@ -16,7 +17,8 @@ export class LogosService {
           moreInfo:false,
           title:'',
           subtitle:'',
-          copy:''
+          copy:'',
+          copy2:''
         },
         {
           link:'../../assets/logos/finite.png', 
@@ -24,7 +26,8 @@ export class LogosService {
           moreInfo:true,
           title:'Finite Skies',
           subtitle:'',
-          copy:'Placeholder'
+          copy:'Placeholder',
+          copy2:''
         },
         {
           link:'../../assets/logos/chosen.png', 
@@ -32,7 +35,8 @@ export class LogosService {
           moreInfo:true,
           title:'Chosen Acres',
           subtitle:'In pursuit of parlor perfection',
-          copy:'Placeholder'
+          copy:'Placeholder',
+          copy2:''
         },
         {
           link:'../../assets/logos/prevail-2.png', 
@@ -40,7 +44,8 @@ export class LogosService {
           moreInfo:true,
           title:'Prevail Gaming',
           subtitle:'Up and coming esports teams',
-          copy:'Placeholder'
+          copy:'Placeholder',
+          copy2:''
         },
         {
           link:'../../assets/logos/paramount.png', 
@@ -48,7 +53,62 @@ export class LogosService {
           moreInfo:true,
           title:'Paramount Elite',
           subtitle:'Emergency restoration services',
-          copy:'Placeholder'
+          copy:'Placeholder',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/nullnut.png', 
+          name:'nullnut', 
+          moreInfo:true,
+          title:'Nullnut',
+          subtitle:'Software development',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/williams-and-case.png', 
+          name:'williams-and-case', 
+          moreInfo:false,
+          title:'',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/apricity.png', 
+          name:'apricity-media-group', 
+          moreInfo:true,
+          title:'Apricity Media Group',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/dragonfly-2.png', 
+          name:'dragonfly', 
+          moreInfo:true,
+          title:'Dragonfly Labs',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/kaitlyns-kreations.png', 
+          name:'kaitlyns-kreations', 
+          moreInfo:false,
+          title:'',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/petes-restaurant.png', 
+          name:'petes-restaurant', 
+          moreInfo:false,
+          title:'',
+          subtitle:'',
+          copy:'',
+          copy2:''
         },
         {
           link:'../../assets/logos/oxygen.png', 
@@ -56,7 +116,8 @@ export class LogosService {
           moreInfo:false,
           title:'',
           subtitle:'',
-          copy:''
+          copy:'',
+          copy2:''
         },
         {
           link:'../../assets/logos/orbitl.png', 
@@ -64,7 +125,8 @@ export class LogosService {
           moreInfo:false,
           title:'',
           subtitle:'',
-          copy:''
+          copy:'',
+          copy2:''
         }
       ];
   

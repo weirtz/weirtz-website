@@ -37,7 +37,7 @@
     top:-30px;
     filter: blur(30px);
     z-index: 1;
-    opacity:0.25;
+    opacity:0.28;
 }
 
 .blur{
@@ -51,7 +51,7 @@
 .folder-container{
     position: absolute;
     bottom:-50px;
-    right:-20px;
+    right:-28px;
     height: 100px;
     width: 100px;
     z-index:4;
@@ -67,7 +67,7 @@
 
 .folders{
     position: relative;
-    max-width:100px;
+    max-width:90px;
 }
 
 .folder2, .folder1{
@@ -112,4 +112,46 @@
     overflow-y: scroll;
     overflow-x:hidden;
 }
-
+@media only screen and (max-width: 846px) {
+    .logo{
+        margin-left:15px;
+        margin-right:15px;
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.022),
+        0 31.8px 23.4px rgba(0, 0, 0, 0.006),
+        0 20px 20px rgba(0, 0, 0, 0.12);
+    }
+    .folder-container{
+        right:-20px;
+        bottom:-45px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .logo{
+        margin-left:0px;
+        margin-right:0px;
+        display: block;
+        /* box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 7.5px 10px rgba(0, 0, 0, 0.06),
+        0 12.3px 17.9px rgba(0, 0, 0, 0.022),
+        0 11.8px 23.4px rgba(0, 0, 0, 0.006),
+        0 10px 20px rgba(0, 0, 0, 0.12); */
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.004),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.008),
+        0 7.5px 10px rgba(0, 0, 0, 0.06),
+        0 12.3px 7.9px rgba(0, 0, 0, 0.002),
+        0 11.8px 10.4px rgba(0, 0, 0, 0.006),
+        0 10px 10px rgba(0, 0, 0, 0.05);
+    }
+    .folder-container{
+        right:10px;
+        bottom:-45px;
+        max-width:60px;
+    }
+}

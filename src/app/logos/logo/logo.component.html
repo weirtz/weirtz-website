@@ -6,21 +6,17 @@
     <div class="scroll-container">
         <div class="panel">
             <a class="close-lightbox" routerLink="/logos" href="/logos"><!-- <span class="close-text">CLOSE WINDOW </span> --><img src="/assets/ui/md-x-black.svg"></a>
-            
-            
-    
             <div class="hero">
-    
-    
                 <div class="blur"><img class="thumbnail no-drag" [src]="logo.link">
                 <img class="thumbnail2 no-drag" [src]="logo.link"></div>
-    
             </div>
-    
-            <h1>{{logo.title}}</h1>
-            <h3>{{logo.subtitle}}</h3>
-    
-            <p>{{logo.copy}}</p>
+            
+            <div class="panel-center">
+                <h1>{{logo.title}}</h1>
+                <h3 class="subtitle">{{logo.subtitle}}</h3>
+                <p>{{logo.copy}}</p>
+                <p>{{logo.copy2}}</p>
+            </div>
         </div>
     </div>
 </div>

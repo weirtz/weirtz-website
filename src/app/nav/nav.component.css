@@ -15,7 +15,7 @@
 .links a{ 
     display: inline-block;
     padding:10px;
-    font-family:montserrat;
+    /* font-family:montserrat; */
     font-weight:400;
     vertical-align: bottom;
     padding-bottom:8px;
