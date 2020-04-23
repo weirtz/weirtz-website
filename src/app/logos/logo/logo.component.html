@@ -2,21 +2,47 @@
 
 <a routerLink="/logos" (click)="toggleModal()" href="#"><div class="background"></div></a>
 
-<div class="lightbox-container">
+<div class="lightbox-container" *ngIf="logo.moreInfo">
     <div class="scroll-container">
         <div class="panel">
             <a class="close-lightbox" (click)="toggleModal()" routerLink="/logos" href="/logos"><!-- <span class="close-text">CLOSE WINDOW </span> --><img src="/assets/ui/md-x-black.svg"></a>
+            <!-- Hero Logo Image -->
             <div class="hero">
-                <div class="blur"><img class="thumbnail no-drag" [src]="logo.link">
-                <img class="thumbnail2 no-drag" [src]="logo.link"></div>
+                <div class="blur">
+                    <img class="thumbnail no-drag" [src]="logo.link">
+                    <img class="thumbnail2 no-drag" [src]="logo.link">
+                </div>
+                
             </div>
-            
+            <!-- Main Content -->
+            <!-- User .panel-center to group like text together and center it -->
             <div class="panel-center">
                 <h1>{{logo.title}}</h1>
                 <h3 class="subtitle">{{logo.subtitle}}</h3>
-                <p>{{logo.copy}}</p>
-                <p>{{logo.copy2}}</p>
+                <p class="copy copy1">{{logo.copy}}</p>
+                <p class="copy copy2">{{logo.copy2}}</p>
+                <div class="library">
+                    <!-- USE [] on ngfor instead and then {{}} inside for array name??? -->
+                    <!-- <img *ngFor="let image of Images" src="" alt=""> -->
+                </div> 
+                
             </div>
+            <img *ngIf="logo.bannerImage" class="banner-image" [src]="logo.bannerImage" alt="Banner image">
+            <!-- End Main Content -->
+            
         </div>
     </div>
 </div>
+
+<div *ngIf="!logo.moreInfo">
+    <div class="panel-noinfo">
+        <div class="image-container-noinfo">
+            <a class="close-lightbox" (click)="toggleModal()" routerLink="/logos" href="/logos"><!-- <span class="close-text">CLOSE WINDOW </span> --><img src="/assets/ui/md-x-black.svg"></a>
+
+            <img class="no-info-image no-drag" [src]="logo.link">
+        </div>
+    </div>
+
+
+</div>
+

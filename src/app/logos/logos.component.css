@@ -26,7 +26,7 @@
         0 12.5px 10px rgba(0, 0, 0, 0.06),
         0 22.3px 17.9px rgba(0, 0, 0, 0.022),
         0 31.8px 33.4px rgba(0, 0, 0, 0.006),
-        0 50px 80px rgba(0, 0, 0, 0.12);
+        0 50px 50px rgba(0, 0, 0, 0.12);
     margin:30px;
 }
 
@@ -112,6 +112,7 @@
     overflow-y: scroll;
     overflow-x:hidden;
 }
+
 @media only screen and (max-width: 846px) {
     .logo{
         margin-left:15px;
@@ -134,13 +135,6 @@
         margin-left:0px;
         margin-right:0px;
         display: block;
-        /* box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 7.5px 10px rgba(0, 0, 0, 0.06),
-        0 12.3px 17.9px rgba(0, 0, 0, 0.022),
-        0 11.8px 23.4px rgba(0, 0, 0, 0.006),
-        0 10px 20px rgba(0, 0, 0, 0.12); */
         box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.004),
         0 6.7px 5.3px rgba(0, 0, 0, 0.008),

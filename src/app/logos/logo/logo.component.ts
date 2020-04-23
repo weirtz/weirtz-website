@@ -11,7 +11,7 @@ import { ScrollingService } from 'src/app/Services/scrolling.service';
   styleUrls: ['./logo.component.css']
 })
 export class LogoComponent implements OnInit {
-  logo: {name: string, link: string, moreInfo: boolean, title: string, subtitle: string, copy: string, copy2: string};
+  logo: {name: string, link: string, moreInfo: boolean, bannerImage: string, title: string, subtitle: string, copy: string, copy2: string};
 
   paramsSubscription: Subscription;
 
@@ -26,6 +26,10 @@ export class LogoComponent implements OnInit {
   }
 
   ngOnInit() {
+    //This will disable scrolling on body if you go directly to a logo url rather than logos page first.
+    this.scrollingService.isShowingModal = true;
+    this.scrollingService.disable();
+
     //Grab the logo name from the link parameters
     const name = this.route.snapshot.params['name'];
     this.logo = this.logosService.getLogo(name);

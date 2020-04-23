@@ -21,7 +21,7 @@
 
         <!-- If more Info -->
         
-        <div *ngIf="logo.moreInfo; else elseBlock"> 
+        <div> 
             <a [routerLink]="['/logos', logo.name]" (click)="toggleModal()" href="#">
                 <div class="blur">
                     <img class="thumbnail no-drag" [src]="logo.link">
@@ -39,11 +39,11 @@
         </div>
        
         <!-- Else no Info-->
-        <ng-template #elseBlock>
+        <!-- <ng-template #elseBlock>
             <div class="blur">
                 <img class="thumbnail no-drag" [src]="logo.link">
                 <img class="thumbnail2 no-drag" [src]="logo.link">
             </div>
-        </ng-template>
+        </ng-template> -->
     </div>
 </div>

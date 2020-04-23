@@ -27,7 +27,6 @@ export class ScrollingService {
 
 	// Create a HTML style element to place into DOM.
 	private buildStyleElement() : HTMLStyleElement {
-
 		var style = document.createElement( "style" );
 
 		style.type = "text/css";
