@@ -3,22 +3,70 @@
   margin:0 auto;
 }
 .content-module{
-  background: #000000;
-  background: -moz-linear-gradient(-45deg,  #000000 0%, #303030 100%);
-  background: -webkit-linear-gradient(-45deg,  #000000 0%,#303030 100%);
-  background: linear-gradient(135deg,  #000000 0%,#303030 100%);
+  background: rgba(0,0,0,0.9);
+  background: -moz-linear-gradient(-45deg,  #000000e3 0%, #303030e8 100%);
+  background: -webkit-linear-gradient(-45deg,  #000000f3 0%,#303030f6 100%);
+  background: linear-gradient(135deg,  #000000d3 0%,#303030e5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#303030',GradientType=1 );
-  
+  backdrop-filter:blur(10px);
+
     display: inline-block;
     max-width:800px;
+    min-width: 270px;
     margin:0 auto;
     margin-right:10px;
-    padding:20px;
     border-radius: 0px;
     margin-bottom:10px;
     color:white;
     vertical-align: top;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+  border-radius: 5px;
+  overflow: hidden;
+
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
+
+.header-circle{
+display: inline-block;
+max-width:15px;
+margin-right:10px;
+}
+.header span{
+  position: absolute;
+  right:5px;
+  top:7px;
+  width:100px;
+  text-align: right;
+}
+
+.header h3{
+}
+
+.header{
+  background-color:rgb(59, 59, 59);
+  border-bottom:1px solid #4b4b4b;
+  
+}
+
+.inner{
+  padding:30px;
+  pointer-events: all;
+}
+
+h3{
+  font-size:20px;
+  margin:0px;
+  padding:10px 15px;
+}
+
 ::selection {
     background: rgba(255, 255, 255, 0.99); /* WebKit/Blink Browsers */
     color:black;
@@ -59,7 +107,7 @@ a{
     animation: 1s blink step-end infinite;
   }
   
-  @keyframes "blink" {
+  @keyframes blink {
     from, to {
       color: transparent;
     }
@@ -77,7 +125,7 @@ a{
     }
   }
   
-  @-webkit-keyframes "blink" {
+  @-webkit-keyframes blink {
     from, to {
       color: transparent;
     }
@@ -86,7 +134,7 @@ a{
     }
   }
   
-  @-ms-keyframes "blink" {
+  @-ms-keyframes blink {
     from, to {
       color: transparent;
     }
@@ -95,7 +143,7 @@ a{
     }
   }
   
-  @-o-keyframes "blink" {
+  @-o-keyframes blink {
     from, to {
       color: transparent;
     }

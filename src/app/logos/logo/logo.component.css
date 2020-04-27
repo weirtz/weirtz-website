@@ -135,10 +135,10 @@ h3{
 
 .image-container-noinfo{
     background-color: white;
-    max-width:600px;
+    max-width:700px;
     display: block;
     margin:0 auto;
-    padding:20px 50px;
+    padding:50px 90px;
     border-radius:10px;
     position: relative;
     top:10%;

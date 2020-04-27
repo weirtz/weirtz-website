@@ -5,7 +5,7 @@ export class LogosService {
         {
           link:'../../assets/logos/morris.png', 
           name:'morris-brothers', 
-          moreInfo:true,
+          moreInfo:false,
           bannerImage:'',
           title:'Morris Brothers Inc.',
           subtitle:'Serving the recycling needs of Stark County since 1980.',
@@ -35,7 +35,7 @@ export class LogosService {
         {
           link:'../../assets/logos/chosen.png', 
           name:'chosen-acres', 
-          moreInfo:true,
+          moreInfo:false,
           bannerImage:'',
           title:'Chosen Acres',
           subtitle:'In pursuit of parlor perfection',
@@ -95,7 +95,7 @@ export class LogosService {
         {
           link:'../../assets/logos/dragonfly-2.png', 
           name:'dragonfly', 
-          moreInfo:true,
+          moreInfo:false,
           bannerImage:'',
           title:'Dragonfly Labs',
           subtitle:'',

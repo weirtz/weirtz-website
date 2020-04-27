@@ -16,77 +16,7 @@
 
   <!-- Navigation Script for mobile -->
 
-  <script>
-    
-    //Make code modular
 
-    function nav() {
-      var navOpen = document.getElementById("menu-open");
-    var navClose = document.getElementById("menu-close");
-    var background = document.getElementById("mobile-background");
-    var links = document.getElementById("links");
-    var globalNav = document.getElementById("global-nav");
-
-        if (navOpen.style.display === "none") {
-            navOpen.style.display = "block";
-            navClose.style.display = "none";
-            background.style.display = "none";
-            links.style.display = "none";
-            globalNav.style.borderBottom = "1px solid rgba(0,0,0,0.08)";
-        } else {
-            navOpen.style.display = "none";
-            navClose.style.display = "block";
-            background.style.display = "block";
-            links.style.display = "block";
-            globalNav.style.borderBottom = "0px";
-        }
-    }
-
-    function clearNav(){
-
-      var navOpen = document.getElementById("menu-open");
-    var navClose = document.getElementById("menu-close");
-    var background = document.getElementById("mobile-background");
-    var links = document.getElementById("links");
-    var globalNav = document.getElementById("global-nav");
-
-            navOpen.style.display = "block";
-            navClose.style.display = "none";
-            background.style.display = "none";
-            links.style.display = "none";
-            globalNav.style.borderBottom = "1px solid rgba(0,0,0,0.08)";
-    }
-      
-
-
-      function screen_resize() {
-      var h = parseInt(window.innerHeight);
-    
-      var navOpen = document.getElementById("menu-open");
-      var navClose = document.getElementById("menu-close");
-      var background = document.getElementById("mobile-background");
-      var links = document.getElementById("links");
-      var globalNav = document.getElementById("global-nav");
-
-      if(w > 800) {
-        globalNav.style.borderBottom = "1px solid rgba(0,0,0,0.08)";
-        navOpen.style.display = "block";
-        navClose.style.display = "none";
-        background.style.display = "none";
-        links.style.display = "none";
-      }
-
-
-      // if window resize call responsive function
-      $(window).resize(function(e) {
-      screen_resize();
-      });
-      // call responsive function on default :)
-      $(document).ready(function(e) {
-        screen_resize();
-      });
-}
-    </script>
     
 </body>
 </html>
