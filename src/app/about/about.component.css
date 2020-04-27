@@ -2,6 +2,7 @@
 .container{
   margin:0 auto;
 }
+
 .content-module{
   background: rgba(0,0,0,0.9);
   background: -moz-linear-gradient(-45deg,  #000000e3 0%, #303030e8 100%);
@@ -9,23 +10,19 @@
   background: linear-gradient(135deg,  #000000d3 0%,#303030e5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#303030',GradientType=1 );
   backdrop-filter:blur(10px);
-
-    display: inline-block;
-    max-width:800px;
-    min-width: 270px;
-    margin:0 auto;
-    margin-right:10px;
-    border-radius: 0px;
-    margin-bottom:10px;
-    color:white;
-    vertical-align: top;
-
-    border:1px solid rgba(255,255,255,0.2);
-
+  display: inline-block;
+  max-width:800px;
+  min-width: 270px;
+  margin:0 auto;
+  margin-right:10px;
+  border-radius: 0px;
+  margin-bottom:10px;
+  color:white;
+  vertical-align: top;
+  border:1px solid rgba(255,255,255,0.2);
   border-radius: 5px;
   overflow: hidden;
-
-    box-shadow:
+  box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -35,10 +32,11 @@
 }
 
 .header-circle{
-display: inline-block;
-max-width:15px;
-margin-right:10px;
+  display: inline-block;
+  max-width:15px;
+  margin-right:10px;
 }
+
 .header span{
   position: absolute;
   right:5px;
@@ -47,13 +45,10 @@ margin-right:10px;
   text-align: right;
 }
 
-.header h3{
-}
-
 .header{
   background-color:rgb(59, 59, 59);
   border-bottom:1px solid #4b4b4b;
-  
+  cursor: grab;
 }
 
 .inner{
@@ -93,12 +88,8 @@ a{
     color:rgb(65, 221, 18);
 }
 
-
-
-
 .blinking-cursor {
     font-weight: 500;
-
     color: white;
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;

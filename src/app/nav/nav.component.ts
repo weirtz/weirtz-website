@@ -31,6 +31,7 @@ export class NavComponent implements OnInit {
     this.globalNav = document.getElementById("global-nav");
   }
 
+  //toggle mobile nav in and out when clicking hamburger.
   public nav() {
     if (this.navOpen.style.display === "none") {
       this.navOpen.style.display = "block";
@@ -47,6 +48,7 @@ export class NavComponent implements OnInit {
     }
   }
 
+  //check if window goes back to desktop size.
   public screenResize() {
     if(window.innerWidth > 800) {
       this.globalNav.style.borderBottom = "1px solid rgba(0,0,0,0.08)";
@@ -57,6 +59,7 @@ export class NavComponent implements OnInit {
     }
   }
 
+  //Remove mobile navigation. Used when clicking link in mobile nav to hide it again.
   public clearNav(){
     this.navOpen.style.display = "block";
     this.navClose.style.display = "none";
