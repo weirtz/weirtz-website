@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LogosService } from './logos.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ScrollingService } from '../Services/scrolling.service';
+import { ScrollingService } from '../services/scrolling.service';
 import { fakeAsync } from '@angular/core/testing';
 
 @Component({

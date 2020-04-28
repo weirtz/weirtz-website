@@ -3,7 +3,7 @@ import { Subscribable, Subscription } from 'rxjs';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LogosService } from '../logos.service';
 import { LogosComponent } from '../logos.component';
-import { ScrollingService } from 'src/app/Services/scrolling.service';
+import { ScrollingService } from '../../services/scrolling.service';
 
 @Component({
   selector: 'app-logo',

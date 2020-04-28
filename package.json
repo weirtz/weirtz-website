@@ -21,6 +21,7 @@
     "@angular/router": "~9.1.2",
     "angular-resizable-element": "^3.3.0",
     "bootstrap": "4.4.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.5.0",
     "ng-terminal": "^2.3.2",
     "rxjs": "~6.5.5",

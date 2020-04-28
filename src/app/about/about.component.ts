@@ -10,12 +10,27 @@ import 'jqueryui'
 export class AboutComponent implements OnInit, AfterViewInit {
 
   constructor() { }
-  
+
   ngAfterViewInit(): void {
 
     //Draggable elements
     $(function() {
-      $('.draggable').draggable();
+      //init draggable elements
+      $('.draggable').draggable({
+        //draggable scripts
+
+        //return to origianl spot
+        revert : function(event, ui) {
+          
+          $(this).data("uiDraggable").originalPosition = {
+              top : 0,
+              left : 0
+          };
+          return !event;
+        }
+      });
+
+      //draggable properties.
       $('.draggable').draggable('option', 'cancel', '.inner');
       $('.draggable').draggable('option', 'containment', 'document');
     });

@@ -3,6 +3,23 @@
   margin:0 auto;
 }
 
+.hero{
+  background-color: white;
+  margin-bottom: 50px;
+  background: url(/assets/background/minecraft.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero-container{
+  position: relative;
+  height:300px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
 .content-module{
   background: rgba(0,0,0,0.9);
   background: -moz-linear-gradient(-45deg,  #000000e3 0%, #303030e8 100%);
@@ -14,9 +31,9 @@
   max-width:800px;
   min-width: 270px;
   margin:0 auto;
-  margin-right:10px;
+  margin-right:20px;
   border-radius: 0px;
-  margin-bottom:10px;
+  margin-bottom:20px;
   color:white;
   vertical-align: top;
   border:1px solid rgba(255,255,255,0.2);
@@ -60,7 +77,25 @@ h3{
   font-size:20px;
   margin:0px;
   padding:10px 15px;
+  
 }
+.hero-text{
+  position: absolute;
+  bottom:0;
+  left:0;
+  font-family: "Raleway";
+  font-size:40px;
+  font-weight:500;
+  background-color: #F1F2F6;
+  padding-bottom:5px;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top:10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin:0px;
+}
+
 
 ::selection {
     background: rgba(255, 255, 255, 0.99); /* WebKit/Blink Browsers */
@@ -98,6 +133,10 @@ a{
     animation: 1s blink step-end infinite;
   }
   
+  .inner ul{
+    margin:0px;
+  }
+
   @keyframes blink {
     from, to {
       color: transparent;

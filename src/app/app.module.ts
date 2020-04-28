@@ -29,7 +29,7 @@ import { FolderObjectComponent } from './objects/folder-object/folder-object.com
 //Services
 import { GamesService } from './games/games.service';
 import { LogosService } from './logos/logos.service';
-import { ScrollingService } from './Services/scrolling.service';
+import { ScrollingService } from './services/scrolling.service';
 
 @NgModule({
   declarations: [

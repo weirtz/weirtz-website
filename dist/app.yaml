@@ -1,0 +1,9 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: weirtz-website/index.html
+  upload: weirtz-website/index.html
+- url: /
+  static_dir: weirtz-website
