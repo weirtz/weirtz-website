@@ -119,8 +119,18 @@ h3{
 .no-info-image{
     margin:0 auto;
     width:100%;
-    
     display: block;
+}
+
+.no-info-title{
+    text-align:center;
+    font-family:Montserrat;
+    font-weight:500;
+    text-transform: unset;
+    display: inline-block;
+    padding:7px 15px;
+    border-radius: 20px;
+    border:1px solid rgba(0, 0, 0, 0.1);
 }
 
 .panel-noinfo{
@@ -131,6 +141,7 @@ h3{
     left:0;
     z-index:21;
     pointer-events: none;
+    padding:10px;
 }
 
 .image-container-noinfo{
@@ -142,6 +153,7 @@ h3{
     border-radius:10px;
     position: relative;
     top:10%;
+    text-align: center;
 }
 
 .banner-image{

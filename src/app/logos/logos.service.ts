@@ -17,7 +17,7 @@ export class LogosService {
           name:'mca-tow-targets', 
           moreInfo:false,
           bannerImage:'',
-          title:'',
+          title:'MCA Tow Targets',
           subtitle:'',
           copy:'',
           copy2:''
@@ -77,7 +77,17 @@ export class LogosService {
           name:'williams-and-case', 
           moreInfo:false,
           bannerImage:'',
-          title:'',
+          title:'Williams and Case',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/ieg.png', 
+          name:'international-esports-gaming', 
+          moreInfo:false,
+          bannerImage:'',
+          title:'International Esports Gaming',
           subtitle:'',
           copy:'',
           copy2:''
@@ -117,7 +127,17 @@ export class LogosService {
           name:'kaitlyns-kreations', 
           moreInfo:false,
           bannerImage:'',
-          title:'',
+          title:'Kaitlyns Kreations',
+          subtitle:'',
+          copy:'',
+          copy2:''
+        },
+        {
+          link:'../../assets/logos/toledo.png', 
+          name:'uot-college-republicans', 
+          moreInfo:false,
+          bannerImage:'',
+          title:'University of Toledo College Republicans',
           subtitle:'',
           copy:'',
           copy2:''
@@ -127,7 +147,7 @@ export class LogosService {
           name:'petes-restaurant', 
           moreInfo:false,
           bannerImage:'',
-          title:'',
+          title:'Petes Restaurant',
           subtitle:'',
           copy:'',
           copy2:''
@@ -137,7 +157,7 @@ export class LogosService {
           name:'aphelion', 
           moreInfo:false,
           bannerImage:'',
-          title:'',
+          title:'Aphelion',
           subtitle:'',
           copy:'',
           copy2:''
@@ -147,7 +167,7 @@ export class LogosService {
           name:'oxygen', 
           moreInfo:false,
           bannerImage:'',
-          title:'',
+          title:'Oxygen',
           subtitle:'',
           copy:'',
           copy2:''
@@ -157,7 +177,7 @@ export class LogosService {
           name:'orbitl', 
           moreInfo:false,
           bannerImage:'',
-          title:'',
+          title:'Orbitl',
           subtitle:'',
           copy:'',
           copy2:''

@@ -1,0 +1,41 @@
+.container-web{
+    width:100%;
+    border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.sidebar{
+    width:20%;
+    background-color: white;
+    float:left;
+    height:100vh;
+    padding:20px;
+    overflow-y:scroll;
+}
+
+.main-content{
+    background-color:whitesmoke;
+    width:80%;
+    max-width:auto;
+    height:100vh;
+    float:left;
+}
+
+.web-block{
+    background-color:white;
+    width:100%;
+    border-radius: 7px;
+    border:1px solid rgba(0,0,0,0.13);
+}
+.web-block h3{
+    font-size:15px;
+    margin:0px;
+    padding:10px;
+}
+.web-image{
+    width:100%;
+    border-radius: 7px;
+    height: 10vw;
+}
+.sidebar h2{
+    text-align: center;
+}
