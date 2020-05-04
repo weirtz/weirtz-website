@@ -9,7 +9,7 @@ export class DesignComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-
+  ngOnInit(): void {
   }
+
 }

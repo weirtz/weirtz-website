@@ -12,9 +12,14 @@ import { WebComponent } from './web/web.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { GamesComponent } from './games/games.component';
 import { GameComponent } from './games/game/game.component';
-import { DesignComponent } from './design/design.component';
+import { DesignsComponent } from './designs/designs.component';
+import { DesignComponent } from './designs/design/design.component';
 import { ContactComponent } from './contact/contact.component';
 import { LogoComponent } from './logos/logo/logo.component';
+import { DesignPixelSortingComponent } from './designs/special-pages/design-pixel-sorting/design-pixel-sorting.component';
+import { DesignApricityComponent } from './designs/special-pages/design-apricity/design-apricity.component';
+import { DesignDesignDecalsComponent } from './designs/special-pages/design-design-decals/design-design-decals.component';
+import { DesignPrevailGamingComponent } from './designs/special-pages/design-prevail-gaming/design-prevail-gaming.component';
 
 const appRoutes: Routes = [
     { path: '', component: AboutComponent },
@@ -25,7 +30,17 @@ const appRoutes: Routes = [
     { path: 'web', component: WebComponent },
     { path: 'photography', component: PhotographyComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'design', component: DesignComponent },
+
+    //Special pages on /designs otehrwise fall back to children 
+    {path: 'designs/pixel-sorting', component: DesignPixelSortingComponent},
+    {path: 'designs/apricity-media-group', component: DesignApricityComponent},
+    {path: 'designs/design-decals', component: DesignDesignDecalsComponent},
+    {path: 'designs/prevail-gaming', component: DesignPrevailGamingComponent},
+
+    { path: 'designs', component: DesignsComponent, children: [
+      //Fall back to these if no special page is available.
+      {path: ':url', component: DesignComponent},
+    ]},
     { path:'games', component: GamesComponent, children: [
       {path:':game', component: GameComponent}
     ]},

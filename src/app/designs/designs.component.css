@@ -1,0 +1,54 @@
+
+.design{
+    
+    width:100%;
+    height:auto;
+    display: inline-block;
+    width:400px;
+    text-align: center;
+    margin:20px;
+}
+
+#designs{
+    text-align: center;
+}
+
+.inner-design{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    width:400px;
+    height:400px;
+}
+
+.thumbnail{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+}
+
+.thumbnail:hover{
+
+    transform: scale(1.2);
+}
+.inner-design img{
+    height:100%;
+    width:100%;
+}
+
+.design h3{
+    font-size:18px;
+    margin-top:10px;
+}
+
+.filter{
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius: 50px;
+    max-width:500px;
+    padding:10px 30px;
+    margin:0 auto;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+.filter a{
+    display: inline-block;
+}

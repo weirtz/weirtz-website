@@ -30,6 +30,7 @@ export class LogosComponent implements OnInit {
   }
   
   ngOnInit() {
+    //get logos array from service on load
     this.logos = this.logosService.getLogos();
     this.scrollingService.isShowingModal = false;
   }
