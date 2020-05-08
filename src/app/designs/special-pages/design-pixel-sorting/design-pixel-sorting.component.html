@@ -1,1 +1,4 @@
-<p>design-pixel-sorting works!</p>
+<router-outlet></router-outlet>
+<section id="photos">
+    <a *ngFor="let image of getImagesService()" [routerLink]="[image.id]"><img [src]="image.linkLow" alt="Pixel sorted image"></a>
+</section>

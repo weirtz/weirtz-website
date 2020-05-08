@@ -30,12 +30,17 @@ import { DesignPixelSortingComponent } from './designs/special-pages/design-pixe
 import { DesignApricityComponent } from './designs/special-pages/design-apricity/design-apricity.component';
 import { DesignDesignDecalsComponent } from './designs/special-pages/design-design-decals/design-design-decals.component';
 import { DesignPrevailGamingComponent } from './designs/special-pages/design-prevail-gaming/design-prevail-gaming.component';
+import { PixelsortingViewerComponent } from './designs/special-pages/design-pixel-sorting/pixelsorting-viewer/pixelsorting-viewer.component';
+
+//Components
+import { ImageLightboxComponent } from './global-component/image-lightbox/image-lightbox.component';
 
 //Services
 import { GamesService } from './games/games.service';
 import { LogosService } from './logos/logos.service';
 import { ScrollingService } from './services/scrolling.service';
 import { DesignsService } from './designs/designs.service';
+import { PixelsortingService } from './designs/special-pages/design-pixel-sorting/pixelsorting.service';
 
 
 @NgModule({
@@ -60,14 +65,16 @@ import { DesignsService } from './designs/designs.service';
     DesignPixelSortingComponent,
     DesignApricityComponent,
     DesignDesignDecalsComponent,
-    DesignPrevailGamingComponent
+    DesignPrevailGamingComponent,
+    ImageLightboxComponent,
+    PixelsortingViewerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [GamesService, LogosService, ScrollingService, DesignsService],
+  providers: [GamesService, LogosService, ScrollingService, DesignsService, PixelsortingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

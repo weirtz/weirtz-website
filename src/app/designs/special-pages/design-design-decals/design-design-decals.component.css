@@ -1,0 +1,40 @@
+.icon-wrapper{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    width:200px;
+    display: inline-block;
+    height:200px;
+    vertical-align: top;
+    margin:20px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.022),
+        0 31.8px 33.4px rgba(0, 0, 0, 0.006);
+    position: relative;
+}
+
+.dark{
+    background-color: #2C2F33!important;
+}
+
+.icon{
+    max-width:100%;
+    max-height:100%;
+    padding:30px;
+    vertical-align: middle;
+    /* vertical align lightbox image */
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+.icons{
+    text-align:center;
+    position:  relative;
+}
