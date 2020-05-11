@@ -1,4 +1,11 @@
 <router-outlet></router-outlet>
-<section id="photos">
+<!-- breadcrumb navigation. -->
+<app-breadcrumb></app-breadcrumb>
+<!-- Photos -->
+<div class="header">
+    <h1>Pixel Sorting</h1>
+    <p>Some of my images generated running them through various </p>
+</div>
+<section id="photos" [@galleryAnimation]="images.length">
     <a *ngFor="let image of getImagesService()" [routerLink]="[image.id]"><img [src]="image.linkLow" alt="Pixel sorted image"></a>
 </section>

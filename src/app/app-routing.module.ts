@@ -20,7 +20,6 @@ import { DesignPixelSortingComponent } from './designs/special-pages/design-pixe
 import { DesignApricityComponent } from './designs/special-pages/design-apricity/design-apricity.component';
 import { DesignDesignDecalsComponent } from './designs/special-pages/design-design-decals/design-design-decals.component';
 import { DesignPrevailGamingComponent } from './designs/special-pages/design-prevail-gaming/design-prevail-gaming.component';
-import { PixelsortingViewerComponent } from './designs/special-pages/design-pixel-sorting/pixelsorting-viewer/pixelsorting-viewer.component';
 
 //Components
 import { ImageLightboxComponent } from './global-component/image-lightbox/image-lightbox.component';
@@ -32,12 +31,14 @@ const appRoutes: Routes = [
       {path: ':name', component: LogoComponent}
     ]},
     { path: 'web', component: WebComponent },
-    { path: 'photography', component: PhotographyComponent },
+    { path: 'photography', component: PhotographyComponent, children: [
+      {path: ':id', component: ImageLightboxComponent}
+    ] },
     { path: 'contact', component: ContactComponent },
 
     //Special pages on /designs otehrwise fall back to children 
     {path: 'designs/pixel-sorting', component: DesignPixelSortingComponent, children: [
-      { path: ':id', component: PixelsortingViewerComponent }
+      { path: ':id', component: ImageLightboxComponent }
     ]},
     {path: 'designs/apricity-media-group', component: DesignApricityComponent},
     {path: 'designs/design-decals', component: DesignDesignDecalsComponent},

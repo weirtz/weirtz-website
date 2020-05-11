@@ -3,12 +3,17 @@
             bLinkUrl="https://www.instagram.com/bweirtz/"
             bLinkCopy="instagram.">
 </app-banner>
+<router-outlet></router-outlet>
+<section id="photos" [@galleryAnimation]="images.length">
+    <a *ngFor="let image of getImagesService()" [routerLink]="[image.id]"><img [src]="image.linkLow" alt="Photography image"></a>
+</section>
 
-<section id="photos">
-    <!-- Thumbnail image - click to open lightbox of image -->
+
+<!-- <section id="photos">
+     Thumbnail image - click to open lightbox of image 
     <a *ngFor="let image of assetsImages" href="/photography#{{image.name}}"><img class="thumbnail" [src]="image.link"></a>
    
-    <!-- Lightbox image - click to close image -->
+     Lightbox image - click to close image 
     <a href="/photography#browse" *ngFor="let image of assetsImages">
         <div class="background-lightbox" [id]="image.name">
             <h1>Title: {{image.title}}</h1>
@@ -27,4 +32,4 @@
             <img class="lightbox" [src]="image.link">
         </div>
     </a>
-</section>
+</section> -->

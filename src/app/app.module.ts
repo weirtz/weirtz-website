@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Routing
 import { AppRoutingModule } from './app-routing.module';
@@ -30,10 +31,10 @@ import { DesignPixelSortingComponent } from './designs/special-pages/design-pixe
 import { DesignApricityComponent } from './designs/special-pages/design-apricity/design-apricity.component';
 import { DesignDesignDecalsComponent } from './designs/special-pages/design-design-decals/design-design-decals.component';
 import { DesignPrevailGamingComponent } from './designs/special-pages/design-prevail-gaming/design-prevail-gaming.component';
-import { PixelsortingViewerComponent } from './designs/special-pages/design-pixel-sorting/pixelsorting-viewer/pixelsorting-viewer.component';
 
 //Components
 import { ImageLightboxComponent } from './global-component/image-lightbox/image-lightbox.component';
+import { BreadcrumbComponent } from './global-component/breadcrumb/breadcrumb.component';
 
 //Services
 import { GamesService } from './games/games.service';
@@ -41,6 +42,7 @@ import { LogosService } from './logos/logos.service';
 import { ScrollingService } from './services/scrolling.service';
 import { DesignsService } from './designs/designs.service';
 import { PixelsortingService } from './designs/special-pages/design-pixel-sorting/pixelsorting.service';
+import { PhotographyService } from './photography/photography.service';
 
 
 @NgModule({
@@ -67,14 +69,15 @@ import { PixelsortingService } from './designs/special-pages/design-pixel-sortin
     DesignDesignDecalsComponent,
     DesignPrevailGamingComponent,
     ImageLightboxComponent,
-    PixelsortingViewerComponent
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
-  providers: [GamesService, LogosService, ScrollingService, DesignsService, PixelsortingService],
+  providers: [GamesService, LogosService, ScrollingService, DesignsService, PixelsortingService, PhotographyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

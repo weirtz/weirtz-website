@@ -3,12 +3,27 @@ import { LogosService } from './logos.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ScrollingService } from '../services/scrolling.service';
 import { fakeAsync } from '@angular/core/testing';
+import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
 
 @Component({
   selector: 'app-logos',
   templateUrl: './logos.component.html',
   styleUrls: ['./logos.component.css'],
-  providers: [LogosService]
+  providers: [LogosService],
+  animations:[
+    trigger('logoAnimation', [
+      transition('* => *', [ // each time the binding value changes
+        query(':enter', [
+          //properties before animation begins
+          style({ opacity:0, transform: 'scale(0)' }),
+          stagger(80, [
+            //animnation after
+            animate('0.3s', style({ opacity:1, transform: 'scale(1)' }))
+          ])
+        ])
+      ])
+    ])
+  ]
 })
 
 export class LogosComponent implements OnInit {
@@ -34,4 +49,10 @@ export class LogosComponent implements OnInit {
     this.logos = this.logosService.getLogos();
     this.scrollingService.isShowingModal = false;
   }
+
+
+
+
+      
+    
 }  

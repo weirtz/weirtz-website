@@ -1,0 +1,16 @@
+.breadcrumb{
+    background-color: white;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    width: 50%;
+    min-width: 500px;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding:10px 20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.breadcrumb p{
+    display: inline-block;
+    margin: 0px;
+}

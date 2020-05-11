@@ -30,6 +30,11 @@
     margin:30px;
 }
 
+@keyframes logoIn {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+  }
+
 .thumbnail2{
     position: absolute;
     max-width:150%;
