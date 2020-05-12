@@ -4,138 +4,192 @@ export class PhotographyService {
     private images = [
         {
             id:27,
-            linkLow:'../../assets/photos/file (27).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(1).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file1.webp',
+            webpHigh:'../../assets/photos/webp/high/file1.webp'
         },
         {
             id:26,
-            linkLow:'../../assets/photos/file (26).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(2).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file2.webp',
+            webpHigh:'../../assets/photos/webp/high/file2.webp'
         },
         {
             id:25,
-            linkLow:'../../assets/photos/file (25).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(3).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file3.webp',
+            webpHigh:'../../assets/photos/webp/high/file3.webp'
         },
         {
             id:24,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(4).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(4).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file4.webp',
+            webpHigh:'../../assets/photos/webp/high/file4.webp'
         },
         {
             id:23,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(5).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(5).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file5.webp',
+            webpHigh:'../../assets/photos/webp/high/file5.webp'
         },
         {
             id:22,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(6).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(6).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file6.webp',
+            webpHigh:'../../assets/photos/webp/high/file6.webp'
         },
         {
             id:21,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(7).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(7).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file7.webp',
+            webpHigh:'../../assets/photos/webp/high/file7.webp'
         },
         {
             id:20,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(8).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(8).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file8.webp',
+            webpHigh:'../../assets/photos/webp/high/file8.webp'
         },
         {
             id:19,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(9).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(9).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file9.webp',
+            webpHigh:'../../assets/photos/webp/high/file9.webp'
         },
         {
             id:18,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(10).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(10).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file10.webp',
+            webpHigh:'../../assets/photos/webp/high/file10.webp'
         },
         {
             id:17,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(11).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(11).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file11.webp',
+            webpHigh:'../../assets/photos/webp/high/file11.webp'
         },
         {
             id:16,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(12).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(12).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file12.webp',
+            webpHigh:'../../assets/photos/webp/high/file12.webp'
         },
         {
             id:15,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(13).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(13).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file13.webp',
+            webpHigh:'../../assets/photos/webp/high/file13.webp'
         },
         {
             id:14,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(14).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(14).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file14.webp',
+            webpHigh:'../../assets/photos/webp/high/file14.webp'
         },
         {
             id:13,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(15).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(15).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file15.webp',
+            webpHigh:'../../assets/photos/webp/high/file15.webp'
         },
         {
             id:12,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(16).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(16).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file16.webp',
+            webpHigh:'../../assets/photos/webp/high/file16.webp'
         },
         {
             id:11,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file17.webp',
+            webpHigh:'../../assets/photos/webp/high/file17.webp'
         },
         {
             id:10,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file18.webp',
+            webpHigh:'../../assets/photos/webp/high/file18.webp'
         },
         {
             id:9,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file19.webp',
+            webpHigh:'../../assets/photos/webp/high/file19.webp'
         },
         {
             id:8,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file20.webp',
+            webpHigh:'../../assets/photos/webp/high/file20.webp'
         },
         {
             id:7,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file21.webp',
+            webpHigh:'../../assets/photos/webp/high/file21.webp'
         },
         {
             id:6,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file22.webp',
+            webpHigh:'../../assets/photos/webp/high/file22.webp'
         },
         {
             id:5,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file23.webp',
+            webpHigh:'../../assets/photos/webp/high/file23.webp'
         },
         {
             id:4,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file24.webp',
+            webpHigh:'../../assets/photos/webp/high/file24.webp'
         },
         {
             id:3,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file25.webp',
+            webpHigh:'../../assets/photos/webp/high/file25.webp'
         },
         {
             id:2,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file26.webp',
+            webpHigh:'../../assets/photos/webp/high/file26.webp'
         },
         {
             id:1,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file27.webp',
+            webpHigh:'../../assets/photos/webp/high/file27.webp'
         }
       ];
 

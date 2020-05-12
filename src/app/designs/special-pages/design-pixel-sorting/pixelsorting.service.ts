@@ -4,88 +4,122 @@ export class PixelsortingService {
     private images = [
         {
             id:1,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(1).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(1).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(1).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(1).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:2,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(2).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(2).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(2).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(2).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:3,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(3).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(3).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(3).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(3).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:4,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(4).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(4).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(4).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(4).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:5,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(5).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(5).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(5).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(5).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:6,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(6).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(6).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(6).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(6).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:7,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(7).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(7).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(7).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(7).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:8,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(8).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(8).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(8).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(8).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:9,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(9).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(9).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(9).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(9).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:10,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(10).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(10).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(10).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(10).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:11,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(11).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(11).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(11).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(11).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:12,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(12).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(12).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(12).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(12).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:13,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(13).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(13).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(13).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(13).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:14,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(14).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(14).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(14).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(14).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:15,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(15).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(15).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(15).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(15).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:16,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(16).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(16).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(16).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(16).jpg',
+            webpLow:'',
+            webpHigh:''
         },
         {
             id:17,
-            linkLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
-            linkHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg'
+            jpgLow:'../../assets/designs/pixel-sorting/low/file(17).jpg', 
+            jpgHigh:'../../assets/designs/pixel-sorting/high/file(17).jpg',
+            webpLow:'',
+            webpHigh:''
         }
       ];
 

@@ -11,7 +11,9 @@ import { PhotographyService } from '../../photography/photography.service';
   styleUrls: ['./image-lightbox.component.css']
 })
 export class ImageLightboxComponent implements OnInit {
-  image: {id: number, linkLow: string, linkHigh: string};
+  image: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string};
+
+  //get url segments
   tree: UrlTree = this.router.parseUrl(this.router.url);
   g: UrlSegmentGroup = this.tree.root.children[PRIMARY_OUTLET];
   s: UrlSegment[] = this.g.segments;
@@ -51,8 +53,13 @@ export class ImageLightboxComponent implements OnInit {
     //Subscribe to params changes.
     this.route.params.subscribe(
       (params: Params) => {
-        this.image = this.pixelsortingService.getImage(+params['id']);
+        
+        if(this.s[1].path == 'pixel-sorting'){
+          this.image = this.pixelsortingService.getImage(+params['id']);
+        }else if(this.s[0].path == 'photography'){
+          this.image = this.photographyService.getImage(+params['id']);
+        }
       }
     )
   }
-}
+} 

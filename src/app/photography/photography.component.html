@@ -4,8 +4,14 @@
             bLinkCopy="instagram.">
 </app-banner>
 <router-outlet></router-outlet>
-<section id="photos" [@galleryAnimation]="images.length">
-    <a *ngFor="let image of getImagesService()" [routerLink]="[image.id]"><img [src]="image.linkLow" alt="Photography image"></a>
+<section id="photos" >
+    <a *ngFor="let image of getImagesService()" [routerLink]="[image.id]">
+        <picture>
+            <source srcset="{{image.webpLow}}" type="image/webp">
+            <source srcset="{{image.jpgLow}}" type="image/jpeg">
+            <img [src]="image.jpgLow" alt="Photograph">
+        </picture>
+    </a>
 </section>
 
 

@@ -24,7 +24,7 @@ import { trigger, transition, query, style, stagger, animate } from '@angular/an
 })
 
 export class PhotographyComponent implements OnInit {
-  images: {id: number, linkLow: string, linkHigh: string}[] = [];
+  images: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string}[] = [];
   
   constructor(private photographyService: PhotographyService) { }
   
