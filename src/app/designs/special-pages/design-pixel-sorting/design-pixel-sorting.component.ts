@@ -23,7 +23,7 @@ import {trigger, transition, style, animate, query, stagger} from '@angular/anim
   ]
 })
 export class DesignPixelSortingComponent implements OnInit {
-  images: {id: number, linkLow: string, linkHigh: string}[] = [];
+  images: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string}[] = [];
 
   constructor(private pixelsortingService: PixelsortingService) { }
 
