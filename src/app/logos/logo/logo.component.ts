@@ -1,17 +1,36 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, HostBinding } from '@angular/core';
 import { Subscribable, Subscription } from 'rxjs';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LogosService } from '../logos.service';
 import { LogosComponent } from '../logos.component';
 import { ScrollingService } from '../../services/scrolling.service';
+import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-logo',
   templateUrl: './logo.component.html',
-  styleUrls: ['./logo.component.css']
+  styleUrls: ['./logo.component.css'],
+  animations:[
+    trigger('logoAnimation', [
+      transition(':enter', [
+        query('.image-container-noinfo', [
+          //properties before animation begins
+          style({ opacity:0, transform: 'scale(0.7)', }),
+          stagger(80, [
+            //animnation after
+            animate('0.2s ease-out', style({ opacity:1, transform: 'scale(1)' }))
+          ])
+        ])
+      ])
+    ])
+  ]
 })
 export class LogoComponent implements OnInit {
   logo: {name: string, link: string, moreInfo: boolean, bannerImage: string, title: string, subtitle: string, copy: string, copy2: string};
+
+  //Enable page animations
+  @HostBinding('@logoAnimation')
+  public animatePage = true;
 
   paramsSubscription: Subscription;
 

@@ -8,6 +8,7 @@
     -moz-column-gap:      5px;
     column-count:         5;
     column-gap:           5px;  
+    transform: scale(1);
   }
   
   #photos img {

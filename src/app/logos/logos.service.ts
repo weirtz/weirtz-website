@@ -68,7 +68,7 @@ export class LogosService {
           moreInfo:true,
           bannerImage:'../../assets/logos/nullnut/banner-nullnut.jpg',
           title:'Nullnut',
-          subtitle:'Software development',
+          subtitle:'Software development team',
           copy:'',
           copy2:''
         },
