@@ -1,8 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LogosService } from './logos.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ScrollingService } from '../services/scrolling.service';
-import { fakeAsync } from '@angular/core/testing';
+import { ScrollingService } from '../../global-services/scrolling.service';
 import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
 
 @Component({

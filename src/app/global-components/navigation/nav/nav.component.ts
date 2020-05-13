@@ -1,5 +1,14 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Event,
+         NavigationCancel,
+         NavigationEnd,
+         NavigationError,
+         NavigationStart,
+         Router, 
+         RouterEvent,
+         RouteConfigLoadStart,
+         RouteConfigLoadEnd
+        } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -17,8 +26,25 @@ export class NavComponent implements OnInit {
   private background: HTMLElement;
   private links: HTMLElement;
   private globalNav: HTMLElement;
+
+  public isShowingRouteLoadIndicator : boolean;
   
-  constructor(public router: Router) {}
+
+
+  constructor(public router: Router) {
+
+    this.isShowingRouteLoadIndicator  = false;
+    var asyncLoadCount = 0;
+
+    this.router.events.subscribe((event: RouterEvent) : void => {  
+    if(event instanceof RouteConfigLoadStart){
+      asyncLoadCount++;
+    }else if(event instanceof RouteConfigLoadEnd){
+      asyncLoadCount--;
+    }
+    this.isShowingRouteLoadIndicator = !! asyncLoadCount;
+  });
+  }
 
   ngOnInit() {
     // define variables

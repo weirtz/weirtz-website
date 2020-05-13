@@ -1,3 +1,7 @@
+.loading-bar{
+    height: 20px;
+    background-color: red;
+}
 #site-logo{
     width:170px!important;
     height:auto;

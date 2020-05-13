@@ -16,10 +16,9 @@ import {
 export class AppComponent {
   loading = false;
 
-
-
   constructor(private router: Router) {
     this.router.events.subscribe((event: Event) => {
+      
       switch (true) {
         case event instanceof NavigationStart: {
           this.loading = true;

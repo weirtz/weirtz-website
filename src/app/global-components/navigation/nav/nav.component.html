@@ -26,6 +26,9 @@
             <a (click)="clearNav()" routerLink="contact">Contact</a>
         </div>
     </div>
+    
+    <div class="loading-bar" *ngIf="isShowingRouteLoadIndicator"></div>
+
 </div>
 
 <div id="mobile-background"></div>
