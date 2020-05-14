@@ -4,24 +4,19 @@ import { ScrollingService } from '../../../global-services/scrolling.service';
 import { ActivatedRoute, Router, Params, UrlTree, UrlSegmentGroup, PRIMARY_OUTLET, UrlSegment } from '@angular/router';
 import { PixelsortingService } from '../../../pages/designs/pages/design-pixel-sorting/pixelsorting.service';
 import { PhotographyService } from '../../../pages/photography/photography.service';
-import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
+import { trigger, transition, query, style, stagger, animate, state } from '@angular/animations';
 
 @Component({
   selector: 'app-image-lightbox',
   templateUrl: './image-lightbox.component.html',
   styleUrls: ['./image-lightbox.component.css'],
   animations:[
-    trigger('lightboxAnimation', [
-      transition(':enter', [
-        query('.lightbox-main-image', [
-          //properties before animation begins
-          style({ opacity:0, transform: 'scale(0.7)', }),
-          stagger(80, [
-            //animnation after
-            animate('0.4s ease-out', style({ opacity:1, transform: 'scale(1)' }))
-          ])
-        ])
-      ])
+    //Run animation after image has loaded with boolean 'loading' from 'getLoading()'
+    //Animation property on HTML component checks if loaded then plays this animation.
+    trigger('animationLoaded', [
+      state('0', style({ opacity:1, transform: 'scale(1)' })),
+      state('1', style({ opacity:0, transform: 'scale(0.7)'})),
+      transition('1 => 0', animate('0.3s ease-out'))
     ])
   ]
 })
@@ -30,10 +25,6 @@ export class ImageLightboxComponent implements OnInit {
   image: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string};
   private loadedImage: HTMLElement;
   private loading: boolean = true;
-
-  //Enable page animations
-  @HostBinding('@lightboxAnimation')
-  public animatePage = true;
 
   //get url segments
   tree: UrlTree = this.router.parseUrl(this.router.url);
