@@ -1,11 +1,7 @@
-<div class="colorbar"></div>
 <div id="global-nav">
     <div class="nav-container">
-        <!--<div class="logo" *ngIf="router.url === '/about'">
-            <img src="/assets/global/logo.png" alt="Logo Brendan Weirtz">
-        </div>-->
         <div class="logo-container">
-            <a (click)="clearNav()" routerLink="/" href="/"><img id="site-logo" src="/assets/global/logo.png" alt="Logo Brendan Weirtz"></a>
+            <a (click)="clearNav()" routerLink="/"><img id="site-logo" src="/assets/global/logo.png" alt="Logo Brendan Weirtz"></a>
         </div>
         
         <div id="mobile-nav">
@@ -17,18 +13,17 @@
 
 
         <div class="links" id="links">
-            <a (click)="clearNav()" routerLink="about">About</a>
-            <a (click)="clearNav()" routerLink="logos">Logos</a>
-            <a (click)="clearNav()" routerLink="designs">Designs</a>
-            <a (click)="clearNav()" routerLink="web">Web Development</a>
-            <a (click)="clearNav()" routerLink="photography">Photography</a>
-            <a (click)="clearNav()" routerLink="games">Games</a>
-            <a (click)="clearNav()" routerLink="contact">Contact</a>
+            <a (click)="clearNav()" routerLink="/about">About</a>
+            <a (click)="clearNav()" routerLink="/logos">Logos</a>
+            <!-- <a (click)="clearNav()" routerLink="designs">Designs</a> -->
+            <a (click)="clearNav()" routerLink="/web">Web Development</a>
+            <a (click)="clearNav()" routerLink="/photography">Photography</a>
+            <!-- <a (click)="clearNav()" routerLink="games">Games</a> -->
+            <!-- <a (click)="clearNav()" routerLink="contact">Contact</a> -->
         </div>
     </div>
-    
-    <div class="loading-bar" *ngIf="isShowingRouteLoadIndicator"></div>
-
+    <mat-progress-bar mode="indeterminate" *ngIf="isShowingRouteLoadIndicator"></mat-progress-bar>
 </div>
+
 
 <div id="mobile-background"></div>

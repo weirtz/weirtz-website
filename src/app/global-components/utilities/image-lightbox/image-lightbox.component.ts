@@ -1,9 +1,9 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ScrollingService } from 'src/app/services/scrolling.service';
+import { ScrollingService } from '../../../global-services/scrolling.service';
 import { ActivatedRoute, Router, Params, UrlTree, UrlSegmentGroup, PRIMARY_OUTLET, UrlSegment } from '@angular/router';
-import { PixelsortingService } from '../../designs/special-pages/design-pixel-sorting/pixelsorting.service';
-import { PhotographyService } from '../../photography/photography.service';
+import { PixelsortingService } from '../../../pages/designs/pages/design-pixel-sorting/pixelsorting.service';
+import { PhotographyService } from '../../../pages/photography/photography.service';
 import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
 
 @Component({
@@ -25,6 +25,7 @@ import { trigger, transition, query, style, stagger, animate } from '@angular/an
     ])
   ]
 })
+
 export class ImageLightboxComponent implements OnInit {
   image: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string};
 

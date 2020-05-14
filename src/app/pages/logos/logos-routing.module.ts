@@ -8,10 +8,13 @@ import { LogosComponent } from '../logos/logos.component';
 const routes: Routes = [
   {
     path: '',
-    component: LogosComponent
-  },{
-    path: ':name',
-    component: LogoComponent
+    component: LogosComponent,
+    children: [
+      {
+        path: ':name',
+        component: LogoComponent
+      }
+    ]
   }
 ];
 

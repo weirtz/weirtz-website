@@ -10,6 +10,9 @@ import { BannerComponent } from './banner/banner.component';
   ],
   declarations: [
     BannerComponent
+  ],
+  exports: [
+    BannerComponent
   ]
 })
 

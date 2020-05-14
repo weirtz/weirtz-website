@@ -25,6 +25,7 @@ import { trigger, transition, query, style, stagger, animate } from '@angular/an
     ])
   ]
 })
+
 export class LogoComponent implements OnInit {
   logo: {name: string, link: string, moreInfo: boolean, bannerImage: string, title: string, subtitle: string, copy: string, copy2: string};
 

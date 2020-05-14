@@ -10,6 +10,7 @@ import { Event,
          RouteConfigLoadEnd
         } from '@angular/router';
 
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -36,13 +37,18 @@ export class NavComponent implements OnInit {
     this.isShowingRouteLoadIndicator  = false;
     var asyncLoadCount = 0;
 
-    this.router.events.subscribe((event: RouterEvent) : void => {  
-    if(event instanceof RouteConfigLoadStart){
-      asyncLoadCount++;
-    }else if(event instanceof RouteConfigLoadEnd){
-      asyncLoadCount--;
-    }
-    this.isShowingRouteLoadIndicator = !! asyncLoadCount;
+    this.router.events.subscribe((event: RouterEvent) => {  
+      if (event instanceof NavigationStart) {
+        this.isShowingRouteLoadIndicator = true;
+      }
+
+      // On NavigationEnd or NavigationError or NavigationCancel
+      // set showLoadingIndicator to false
+      if (event instanceof NavigationEnd ||
+        event instanceof NavigationError ||
+        event instanceof NavigationCancel) {
+        this.isShowingRouteLoadIndicator = false;
+      }
   });
   }
 
