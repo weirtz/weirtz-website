@@ -13,7 +13,7 @@ import { trigger, transition, query, style, stagger, animate } from '@angular/an
   animations:[
     trigger('logoAnimation', [
       transition(':enter', [
-        query('.image-container-noinfo', [
+        query('.image-container-noinfo, .panel', [
           //properties before animation begins
           style({ opacity:0, transform: 'scale(0.7)', }),
           stagger(80, [

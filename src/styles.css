@@ -45,3 +45,18 @@ body {
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#spinner-icon circle, #spinner-icon circle {
+    stroke: white!important;
+}
+
+#spinner-icon{
+    opacity: 0;
+    animation: fadeIn 0.5s ease 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity: 1;}
+}

@@ -28,6 +28,8 @@ import { trigger, transition, query, style, stagger, animate } from '@angular/an
 
 export class ImageLightboxComponent implements OnInit {
   image: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string};
+  private loadedImage: HTMLElement;
+  private loading: boolean = true;
 
   //Enable page animations
   @HostBinding('@lightboxAnimation')
@@ -44,15 +46,22 @@ export class ImageLightboxComponent implements OnInit {
     private scrollingService: ScrollingService,
     private photographyService: PhotographyService,
     private route: ActivatedRoute,
-    private router: Router) { 
-      //grab URL segments from URL to determine which service to use for retrieving images.
-      
-      
-    }
+    private router: Router) { }
+
+    
 
   //Call toggleModal function from scrolling.sercice
   toggleModal(){
     this.scrollingService.toggleModal();
+  }
+
+  getLoading(){
+    return this.loading;
+  }
+
+  imageLoaded(){
+    this.loadedImage.style.display = "block";
+    this.loading = false;
   }
 
   ngOnInit() {
@@ -60,6 +69,7 @@ export class ImageLightboxComponent implements OnInit {
     this.scrollingService.isShowingModal = true;
     this.scrollingService.disable();
 
+    this.loadedImage = document.getElementById("load-listener");
     //Grab the image id from the link parameters
     const id = +this.route.snapshot.params['id'];
 

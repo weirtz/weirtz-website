@@ -139,14 +139,14 @@
     .logo{
         margin-left:0px;
         margin-right:0px;
+        margin-bottom: 18px;
+        margin-top: 18px;
         display: block;
         box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.004),
         0 6.7px 5.3px rgba(0, 0, 0, 0.008),
         0 7.5px 10px rgba(0, 0, 0, 0.06),
-        0 12.3px 7.9px rgba(0, 0, 0, 0.002),
-        0 11.8px 10.4px rgba(0, 0, 0, 0.006),
-        0 10px 10px rgba(0, 0, 0, 0.05);
+        0 12.3px 7.9px rgba(0, 0, 0, 0.012);
     }
     .folder-container{
         right:10px;

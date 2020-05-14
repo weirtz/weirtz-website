@@ -35,7 +35,6 @@ export class NavComponent implements OnInit {
   constructor(public router: Router) {
 
     this.isShowingRouteLoadIndicator  = false;
-    var asyncLoadCount = 0;
 
     this.router.events.subscribe((event: RouterEvent) => {  
       if (event instanceof NavigationStart) {

@@ -5,11 +5,13 @@ import { ImageLightboxComponent } from 'src/app/global-components/utilities/imag
 import { PhotographyService } from '../../../pages/photography/photography.service';
 import { PixelsortingService } from 'src/app/pages/designs/pages/design-pixel-sorting/pixelsorting.service';
 import { RouterModule } from '@angular/router';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatProgressSpinnerModule
   ],
   declarations: [
     ImageLightboxComponent

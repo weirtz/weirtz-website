@@ -1,10 +1,13 @@
 <a class="close-lightbox" (click)="toggleModal()" routerLink=".."><img src="/assets/ui/md-x-white.svg"></a>
 <a routerLink=".." (click)="toggleModal()">
     <div class="background">
+        <div class="spinner" *ngIf="getLoading()">
+            <mat-spinner id="spinner-icon"></mat-spinner>
+        </div>
         <picture>
             <source [srcset]="image.webpHigh" type="image/webp">
             <source [srcset]="image.jpgHigh" type="image/jpeg">
-            <img class="lightbox-main-image" [src]="image.jpgHigh" alt="Photograph">
+            <img id="load-listener" class="lightbox-main-image" [src]="image.jpgHigh" alt="Photograph" (load)="imageLoaded()">
         </picture>
     </div>
 </a>
