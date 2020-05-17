@@ -20,5 +20,6 @@ export class DesignsComponent implements OnInit {
   ngOnInit() {
     //get designs from service on load
     this.designs = this.designsService.getDesigns();
+    window.scroll(0,0);
   }
 }

@@ -41,14 +41,21 @@
 
 .filter{
     background-color: white;
-    border:1px solid rgba(0,0,0,0.2);
     border-radius: 50px;
     max-width:500px;
     padding:10px 30px;
     margin:0 auto;
     margin-top:40px;
     margin-bottom:20px;
+    text-align: center;
+
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086);
 }
 .filter a{
     display: inline-block;
+    margin-right:20px;
 }

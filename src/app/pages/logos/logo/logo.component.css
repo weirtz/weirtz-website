@@ -3,7 +3,7 @@
     right:22px;
     top:20px;
     text-decoration: none;
-    z-index:20;
+    z-index:302;
 }
 
 .background{
@@ -14,7 +14,7 @@
     right:0;
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(5px);
-    z-index:20;
+    z-index:300;
 }
 
 .panel{
@@ -87,13 +87,13 @@
         bottom:0;
         right:0;
         background-color: rgba(0,0,0,0);
-        z-index:21;
+        z-index:301;
         pointer-events: none;
 }
 
 .panel-center{
     margin:0 auto;
-    max-width:75%;
+    max-width:65%;
     margin-top:70px;
     margin-bottom:70px;
 }
@@ -106,7 +106,7 @@ h1{
 }
 
 h3{
-    font-family: "Roboto";
+    font-family: "Roboto"!important;
     font-weight: 600;
     font-size:15px;
     text-transform: uppercase;
@@ -117,9 +117,18 @@ h3{
 }
 
 .no-info-image{
+    padding:50px 40px;
+    max-width: 100%;
+    max-height:100%;
+    display:block;
     margin:0 auto;
-    width:100%;
-    display: block;
+    /* vertical align lightbox image */
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
 }
 
 .no-info-title{
@@ -128,9 +137,13 @@ h3{
     font-weight:500;
     text-transform: unset;
     display: inline-block;
-    padding:7px 15px;
+    padding:5px 25px;
     border-radius: 20px;
-    border:1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top:10px;
+    left: 0;
+    right: 0;
+    color: #72799c;
 }
 
 .panel-noinfo{
@@ -139,21 +152,29 @@ h3{
     bottom:0;
     right:0;
     left:0;
-    z-index:21;
+    z-index:301;
     pointer-events: none;
     padding:10px;
+
+    
 }
 
 .image-container-noinfo{
     background-color: white;
     max-width:700px;
-    display: block;
-    margin:0 auto;
     padding:50px 90px;
     border-radius:10px;
-    position: relative;
-    top:10%;
     text-align: center;
+
+    height:400px;
+
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    position: absolute;
+
 }
 
 .banner-image{
@@ -164,13 +185,17 @@ h3{
 }
 
 .copy1{
-    max-width:600px;
+    max-width:700px;
     margin-bottom:50px;
 }
 
 .copy{
     font-size:20px;
+    line-height: 25px;
+    
 }
+
+/* Logo more info */
 
 @media only screen and (max-width: 1410px) {
     .scroll-container{
@@ -186,3 +211,20 @@ h3{
     }
 }
 
+/* Logo no info */
+
+@media only screen and (max-width: 725px) {
+    .image-container-noinfo{
+        max-width: 100%;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .image-container-noinfo{
+        height:100%;
+        top:0%;
+        border-radius: 0px;
+        padding:10px 20px;
+    }
+}

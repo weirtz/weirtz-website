@@ -39,8 +39,6 @@ export class ImageLightboxComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router) { }
 
-    
-
   //Call toggleModal function from scrolling.sercice
   toggleModal(){
     this.scrollingService.toggleModal();

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-design-design-decals',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DesignDesignDecalsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
+    window.scroll(0,0);
   }
-
 }

@@ -35,6 +35,7 @@ export class DesignPixelSortingComponent implements OnInit {
   ngOnInit(){
     //Get the images in the array from the service file.
     this.images = this.pixelsortingService.getImages();
+    window.scroll(0,0);
   }
 
 }

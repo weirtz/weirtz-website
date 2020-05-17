@@ -110,7 +110,10 @@
     }
     .sun{
         display: none;
-    }
+	}
+	.trees{
+		display: none;
+	}
 }
 
 /*Mobile images*/

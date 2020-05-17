@@ -47,6 +47,7 @@ export class LogosComponent implements OnInit {
     //get logos array from service on load
     this.logos = this.logosService.getLogos();
     this.scrollingService.isShowingModal = false;
+    window.scroll(0,0);
   }
 
 

@@ -1,23 +1,23 @@
 .footer-text{
     margin-left:20px;
     position: relative;
-    bottom: 0;
-    left:0;
+
     float: left;
+    padding:20px;
 }
 .footer-text-two{
     width:200px;
     float: right;
+    padding:20px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
-   }
+}
 
-   .angular-logo img{
-       max-width:20px;
-       vertical-align: middle;
-       margin-right:5px;
-   }
+.angular-logo img{
+    max-width:20px;
+    vertical-align: middle;
+    margin-right:5px;
+}

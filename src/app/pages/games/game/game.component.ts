@@ -38,5 +38,4 @@ export class GameComponent implements OnInit {
       this.game = this.gamesService.getGame(params['game']);
     }
   )
-
 }}

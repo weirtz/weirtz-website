@@ -1,3 +1,7 @@
+.router-link-active{
+    color:#007bff!important;
+}
+
 #site-logo{
     width:170px!important;
     height:auto;
@@ -17,28 +21,29 @@
     padding:10px;
     /* font-family:montserrat; */
     font-weight:400;
+    font-size:15px;
     vertical-align: bottom;
     padding-bottom:8px;
     color:#333;
+    font-family:"Montserrat";
     /* background: rgb(177,177,177);
     background: linear-gradient(0deg, rgb(248, 248, 248) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);   */
 }
-/* .links a:hover{
-    background: rgb(177,177,177);
-    background: linear-gradient(0deg, rgb(0, 162, 255) 10%, rgba(255,255,255,1) 80%);
-    color:white;
-} */
+.links a:hover{
+    color:#007bff;
+} 
 #global-nav{
+
     border-bottom: 1px solid rgba(0,0,0,0.08);
-    /*-webkit-backdrop-filter: blur(15px);*/
-    /*backdrop-filter: blur(15px);*/
-    z-index:10;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    z-index:200;
     width:100%;
     height:auto;
-    position: relative;
+    position: fixed;
     margin:0 auto;
     display:block;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     height:60px;
 }
 .nav-container{
@@ -55,7 +60,7 @@
 }
 
 #mobile-nav{
-    z-index: 11;
+    z-index: 12;
     position: absolute;
     bottom:30%;
     right:20px;
@@ -63,7 +68,7 @@
 }
 
 #mobile-background{
-    position: absolute;
+    position: fixed;
     top:0;
     bottom:0;
     left:0;
@@ -71,7 +76,7 @@
     background-color: white;
     height: 100%;
     width: 100%;
-    z-index:9;
+    z-index:10;
     display: none;
 }
 
@@ -79,7 +84,7 @@
     to desktop from mobile nav sizing. (Reverts the JS mobile nav) */
 
 /* Going up in size */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
     #global-nav{
         border-bottom: 1px solid rgba(0,0,0,0.08)!important;
     }
@@ -104,7 +109,7 @@
     }
     .links a{
         display:block;
-        font-family:"Montserrat";
+        margin-bottom:18px;
         font-weight:500;
         font-size:30px;
     }

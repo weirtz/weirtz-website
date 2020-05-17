@@ -28,6 +28,7 @@ export class GamesComponent implements OnInit {
 
   ngOnInit() {
     this.games = this.gamesService.getGames();
+    window.scroll(0,0);
   }
 
 }

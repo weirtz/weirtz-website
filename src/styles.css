@@ -1,4 +1,6 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&family=Raleway:500&display=swap");
 
 body {
     background-color: white;

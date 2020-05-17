@@ -50,7 +50,7 @@ export class LogosService {
           title:'Prevail Gaming',
           subtitle:'Professional eSports team',
           copy:'Prevail is an eSports team based in Florida that was founded in early 2016. With members from all around the world and rising in the ranks of multiple game titles, They pride themselves in assisting with the development of new members and providing a non-toxic environment for current members in the gaming community. With Prevails thriving Discord server, there is no easier way to prove your skills.',
-          copy2:'Prevail approached me to assist in branding themselves with a fresh lick of paint. I got them geared up and armed with a fresh new logo, profile images, banners, and an eSports themed typeface to make sure their graphics are always looking on point.'
+          copy2:'Prevail approached me to assist in branding themselves with a fresh lick of paint. I got them geared up and armed with a fresh new logo, profile images, banners, and an eSports themed typeface to make sure their graphics are always looking sharp.'
         },
         {
           link:'../../assets/logos/paramount.png', 

@@ -1,12 +1,11 @@
 //Angular
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './pages/about/about.component';
 
 const appRoutes: Routes = [
-    { path: '', component: AboutComponent},
-    { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)},
+    { path: '', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)},
     { path: 'logos', loadChildren: () => import('./pages/logos/logos.module').then(m => m.LogosModule)},
+    { path: 'designs', loadChildren: () => import('./pages/designs/designs.module').then(m => m.DesignsModule)},
     { path: 'web', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)},
     { path: 'photography', loadChildren: () => import('./pages/photography/photography.module').then(m => m.PhotographyModule)},
 

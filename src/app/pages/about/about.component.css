@@ -1,24 +1,54 @@
+@keyframes typing {
+  from { width: 0; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}
+
+
 
 .container{
-  margin:0 auto;
+  color:#626888;
+  font:400 18px/1.44 Open Sans,sans-serif;
 }
 
-.hero{
-  background-color: white;
-  margin-bottom: 50px;
-  background: url(/assets/background/minecraft.png) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.hero-header{
+  padding:80px 0px;
+}
+.hero-text{
+  bottom:0;
+  left:0;
+  font-family: "Roboto";
+  font-weight:800;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin:0px;
+
+  font-size: 6vw;
+  line-height: 6vw;
+  text-transform: uppercase;
+  color: rgb(61, 62, 66);
+  filter: drop-shadow(4px 4px 5px rgba(0,0,0,.2));
+  overflow: hidden;
+
+ opacity: 0;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 }
 
-.hero-container{
-  position: relative;
-  height:300px;
-  max-width:1100px;
-  margin:0 auto;
+.ht1{
+  animation: 
+  typing 0.5s 0.03s  ease-out;
+  animation-fill-mode: forwards;
+
 }
+.ht2{
+  animation: 
+  typing 0.5s ease-out;
+  animation-fill-mode: forwards;
+
+
+}
+
+
 
 .content-module{
   background: rgba(0,0,0,0.9);
@@ -56,8 +86,9 @@
 
 .header span{
   position: absolute;
-  right:5px;
-  top:7px;
+  right: 5px;
+  top: 12px;
+  bottom:0;
   width:100px;
   text-align: right;
 }
@@ -66,6 +97,10 @@
   background-color:rgb(59, 59, 59);
   border-bottom:1px solid #4b4b4b;
   cursor: grab;
+  color:rgb(153, 166, 179);
+  font-size:13px;
+  font-weight:200!important;
+  font-family:"Roboto"!important;
 }
 
 .inner{
@@ -79,35 +114,8 @@ h3{
   padding:10px 15px;
   
 }
-.hero-text{
-  position: absolute;
-  bottom:0;
-  left:0;
-  font-family: "Raleway";
-  font-size:40px;
-  font-weight:500;
-  background-color: #F1F2F6;
-  padding-bottom:5px;
-  padding-left:25px;
-  padding-right:25px;
-  padding-top:10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  margin:0px;
-}
 
 
-::selection {
-    background: rgba(255, 255, 255, 0.99); /* WebKit/Blink Browsers */
-    color:black;
-  }
-::-moz-selection {
-    background: rgba(255, 255, 255, 0.99); /* WebKit/Blink Browsers */
-    color:black;
-  }
-a::selection{
-    color:inherit;
-}
 .content-module p{
     margin:0px;
 }
@@ -179,5 +187,53 @@ a{
     }
     50% {
       color: white;
+    }
+  }
+
+  @media only screen and (min-width: 2160px) {
+    .hero-text{
+        font-size: 125px;
+        line-height:130px;
+    }
+  }
+  @media only screen and (max-width: 2160px) {
+    .hero-text{
+        font-size: 125px;
+        line-height:130px;
+    }
+  }
+  
+  @media only screen and (max-width: 1500px) {
+    .hero-text{
+        font-size: 125px;
+        line-height:130px;
+    }
+  }
+  
+  @media only screen and (max-width: 1199px) {
+    .hero-text{
+        font-size: 100px;
+        line-height:110px;
+    }
+    .content-module{
+      width:100%;
+      max-width: 100%;
+      margin:0px;
+      margin-bottom:40px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .hero-text{
+        font-size: 80px;
+        line-height:90px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .hero-text{
+        font-size: 50px;
+        line-height:60px;
+    }
+    .hero-header{
+      padding:40px 0px;
     }
   }

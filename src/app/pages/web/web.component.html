@@ -5,12 +5,16 @@
 <div class="container-web">
     <div class="sidebar">
         <h2>WEBSITES</h2>
-        <div class="web-block">
-            <h3>Title</h3>
-            <div class="web-image" style="background-image: url('/assets/games/haunted-showers/banner.jpg');"></div>
+        <div class="web-block" *ngFor="let website of getWebsitesService()">
+            <h3>{{website.title}}</h3>
+            <a [routerLink]="website.url">
+                <div class="web-image">
+                    <img [src]="website.thumbnail" alt="Website thumbnail">
+                </div>
+            </a>
         </div>
     </div>
     <div class="main-content">
-
+        <router-outlet></router-outlet>
     </div>
 </div>

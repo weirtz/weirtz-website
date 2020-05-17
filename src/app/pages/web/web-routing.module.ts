@@ -7,7 +7,10 @@ import { WebComponent } from './web.component';
 const routes: Routes = [
   {
     path: '',
-    component: WebComponent
+    component: WebComponent,
+    children: [
+      {path: 'weirtz', loadChildren: () => import('./pages/weirtz/weirtz.module').then(m => m.WeirtzModule)}
+    ]
   }
 ];
 

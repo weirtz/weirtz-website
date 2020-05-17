@@ -29,18 +29,18 @@ export class DesignsService {
           title:'Prevail Gaming',
           thumbnail:'../../assets/designs/prevail-gaming/thumbnail.png'
         },
-        {
-          url:'nintendo-switch-vector', 
-          filter:'vector',
-          title:'Nintendo Switch vector art',
-          thumbnail:'../../assets/designs/nintendo-switch/thumbnail.png'
-        },
-        {
-          url:'iphone-x-vector', 
-          filter:'vector',
-          title:'iPhone X placement vector',
-          thumbnail:'../../assets/designs/iphone-placement/thumbnail.png'
-        }
+        // {
+        //   url:'nintendo-switch-vector', 
+        //   filter:'vector',
+        //   title:'Nintendo Switch vector art',
+        //   thumbnail:'../../assets/designs/nintendo-switch/thumbnail.png'
+        // },
+        // {
+        //   url:'iphone-x-vector', 
+        //   filter:'vector',
+        //   title:'iPhone X placement vector',
+        //   thumbnail:'../../assets/designs/iphone-placement/thumbnail.png'
+        // }
       ];
 
     getDesigns() {

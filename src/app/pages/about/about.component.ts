@@ -38,7 +38,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
     //Modify z index on click window
     $('.draggable').on('mousedown', function(event) { 
         $('.draggable').css('z-index','1');
-        $( this ).css('z-index','12');
+        $( this ).css('z-index','9');
         $('.header').css('cursor', 'grabbing');
     });
 
@@ -49,6 +49,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    window.scroll(0,0);
   }
 
 }

@@ -1,5 +1,5 @@
 .container{
-    padding:75px 0px;
+    padding:75px 20px;
     background-color:white;
     min-width:100%;
     margin:0 auto;
@@ -7,11 +7,12 @@
 
 .container h1{
     font-family: montserrat;
+    font-size: 40px;
     text-align: center;
     font-weight:300;
     padding:0px;
     margin:0px;
-    margin-bottom:10px;
+    margin-bottom:25px;
 }
 
 .container p{
@@ -20,5 +21,6 @@
     font-weight:300;
     padding:0px;
     margin:0px;
-    font-size:18px;
+    font-size:20px;
+    line-height: 25px;
 }

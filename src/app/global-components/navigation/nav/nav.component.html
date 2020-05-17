@@ -11,15 +11,14 @@
             </a>
         </div>
 
-
         <div class="links" id="links">
-            <a (click)="clearNav()" routerLink="/about">About</a>
-            <a (click)="clearNav()" routerLink="/logos">Logos</a>
-            <!-- <a (click)="clearNav()" routerLink="designs">Designs</a> -->
-            <a (click)="clearNav()" routerLink="/web">Web Development</a>
-            <a (click)="clearNav()" routerLink="/photography">Photography</a>
-            <!-- <a (click)="clearNav()" routerLink="games">Games</a> -->
-            <!-- <a (click)="clearNav()" routerLink="contact">Contact</a> -->
+            <a (click)="clearNav()" routerLink="/" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact: true}">About</a>
+            <a (click)="clearNav()" routerLink="/logos" routerLinkActive="router-link-active">Logos</a>
+            <a (click)="clearNav()" routerLink="designs" routerLinkActive="router-link-active">Designs</a>
+            <a (click)="clearNav()" routerLink="/web" routerLinkActive="router-link-active">Web Development</a>
+            <a (click)="clearNav()" routerLink="/photography" routerLinkActive="router-link-active">Photography</a>
+            <!-- <a (click)="clearNav()" routerLink="games" routerLinkActive="router-link-active">Games</a> -->
+            <!-- <a (click)="clearNav()" routerLink="contact" routerLinkActive="router-link-active">Contact</a> -->
         </div>
     </div>
     <mat-progress-bar mode="indeterminate" *ngIf="isShowingRouteLoadIndicator"></mat-progress-bar>

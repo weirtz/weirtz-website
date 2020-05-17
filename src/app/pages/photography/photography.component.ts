@@ -34,6 +34,7 @@ export class PhotographyComponent implements OnInit {
 
   ngOnInit() {
     this.images = this.photographyService.getImages();
+    window.scroll(0,0);
   }
 
 }
