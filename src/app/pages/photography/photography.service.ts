@@ -3,13 +3,6 @@ import { Injectable } from "@angular/core";
 export class PhotographyService {
     private images = [
         {
-            id:27,
-            jpgLow:'../../assets/photos/file (27).jpg', 
-            jpgHigh:'../../assets/photos/file (27).jpg',
-            webpLow:'../../assets/photos/webp/low/file1.webp',
-            webpHigh:'../../assets/photos/webp/high/file1.webp'
-        },
-        {
             id:26,
             jpgLow:'../../assets/photos/file (27).jpg', 
             jpgHigh:'../../assets/photos/file (27).jpg',
@@ -190,6 +183,13 @@ export class PhotographyService {
             jpgHigh:'../../assets/photos/file (27).jpg',
             webpLow:'../../assets/photos/webp/low/file27.webp',
             webpHigh:'../../assets/photos/webp/high/file27.webp'
+        },
+        {
+            id:27,
+            jpgLow:'../../assets/photos/file (27).jpg', 
+            jpgHigh:'../../assets/photos/file (27).jpg',
+            webpLow:'../../assets/photos/webp/low/file1.webp',
+            webpHigh:'../../assets/photos/webp/high/file1.webp'
         }
       ];
 

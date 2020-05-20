@@ -2,23 +2,28 @@
             bSubTitle="Digitally designed experiences.">
 </app-banner>
 
-<div class="filter">
-    <a href="#">All </a>
-    <a href="#">Vectors </a>
-    <a href="#">Digital</a>
-    <a href="#">Design</a>
+<div class="filter-container">
+    <div class="filter">
+        <a href="#">All </a>
+        <a href="#">Vectors </a>
+        <a href="#">Digital</a>
+        <a href="#">Design</a>
+    </div>
 </div>
 
 <div id="designs">
-    <div class="design" *ngFor="let design of getDesignsService()">
-        <a
-        [routerLink]="['/designs', design.url]" href="#">
-            <div class="inner-design">
-                <img class="thumbnail" [src]="design.thumbnail" alt="">
-            </div>
-        </a>
-        <h3>{{design.title}}</h3>
+    <div class="design-wrapper" *ngFor="let design of getDesignsService()">
+        <div class="design">
+            <a
+            [routerLink]="['/designs', design.url]" href="#">
+                <div class="inner-design">
+                    <img class="thumbnail" [src]="design.thumbnail" alt="">
+                </div>
+            </a>
+            <h3>{{design.title}}</h3>
+        </div>
     </div>
+    
 </div>
 
  

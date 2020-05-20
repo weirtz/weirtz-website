@@ -237,3 +237,22 @@ a{
       padding:40px 0px;
     }
   }
+  @media only screen and (max-width: 650px) {
+    .hero-text{
+        /* font-size: 40px; */
+        font-size:2.3em;
+        line-height:45px;
+    }
+    .hero-header{
+      padding:40px 0px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .hero-text{
+        font-size: 32px;
+        line-height:42px;
+    }
+    .hero-header{
+      padding:40px 0px;
+    }
+  }
