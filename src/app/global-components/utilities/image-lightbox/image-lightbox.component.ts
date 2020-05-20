@@ -1,10 +1,11 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ScrollingService } from '../../../global-services/scrolling.service';
-import { ActivatedRoute, Router, Params, UrlTree, UrlSegmentGroup, PRIMARY_OUTLET, UrlSegment } from '@angular/router';
+import { ActivatedRoute, Router, Params, UrlTree, UrlSegmentGroup, PRIMARY_OUTLET, UrlSegment, NavigationStart, RouterEvent } from '@angular/router';
 import { PixelsortingService } from '../../../pages/designs/pages/design-pixel-sorting/pixelsorting.service';
 import { PhotographyService } from '../../../pages/photography/photography.service';
 import { trigger, transition, query, style, stagger, animate, state } from '@angular/animations';
+
 
 @Component({
   selector: 'app-image-lightbox',
@@ -21,7 +22,10 @@ import { trigger, transition, query, style, stagger, animate, state } from '@ang
   ]
 })
 
+
 export class ImageLightboxComponent implements OnInit {
+
+
   image: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string};
   private loadedImage: HTMLElement;
   private loading: boolean = true;
@@ -37,7 +41,9 @@ export class ImageLightboxComponent implements OnInit {
     private scrollingService: ScrollingService,
     private photographyService: PhotographyService,
     private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router) { 
+
+    }
 
   //Call toggleModal function from scrolling.sercice
   toggleModal(){
@@ -68,7 +74,7 @@ export class ImageLightboxComponent implements OnInit {
     }else if(this.s[0].path == 'photography'){
       this.image = this.photographyService.getImage(id);
     }
-    
+
     //Subscribe to params changes.
     this.route.params.subscribe(
       (params: Params) => {
@@ -81,4 +87,6 @@ export class ImageLightboxComponent implements OnInit {
       }
     )
   }
+
+
 } 

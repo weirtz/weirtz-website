@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 import { Event,
          NavigationCancel,
          NavigationEnd,
@@ -9,6 +9,7 @@ import { Event,
          RouteConfigLoadStart,
          RouteConfigLoadEnd
         } from '@angular/router';
+import { ScrollingService } from 'src/app/global-services/scrolling.service';
 
 
 @Component({
@@ -19,6 +20,11 @@ import { Event,
 
 export class NavComponent implements OnInit {
 
+  // @HostListener('window:popstate', ['$event'])
+  // onPopState(event) {
+  //   this.scrollingService.enable();
+  // }
+
   //declare variables
   private h:number;
   private w: number;
@@ -27,12 +33,9 @@ export class NavComponent implements OnInit {
   private background: HTMLElement;
   private links: HTMLElement;
   private globalNav: HTMLElement;
-
   public isShowingRouteLoadIndicator : boolean;
-  
 
-
-  constructor(public router: Router) {
+  constructor(public router: Router, private scrollingService: ScrollingService) {
 
     this.isShowingRouteLoadIndicator  = false;
 
@@ -40,7 +43,6 @@ export class NavComponent implements OnInit {
       if (event instanceof NavigationStart) {
         this.isShowingRouteLoadIndicator = true;
       }
-
       // On NavigationEnd or NavigationError or NavigationCancel
       // set showLoadingIndicator to false
       if (event instanceof NavigationEnd ||

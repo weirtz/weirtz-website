@@ -42,7 +42,7 @@ export class LogosComponent implements OnInit {
   getLogosService(){
     return this.logos;
   }
-  
+
   ngOnInit() {
     //get logos array from service on load
     this.logos = this.logosService.getLogos();
