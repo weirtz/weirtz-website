@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WebService } from './web.service'
+import { Router} from '@angular/router';
 @Component({
   selector: 'app-web',
   templateUrl: './web.component.html',
@@ -8,34 +9,48 @@ import { WebService } from './web.service'
 })
 export class WebComponent implements OnInit {
   websites: {url: string, title: string, thumbnail: string}[] = []
-  private sidebar: HTMLElement;
-  private sidebarBackground: HTMLElement;
+  private styleTag: HTMLStyleElement;
 
-
-  constructor(private webService: WebService) { }
+  constructor(private webService: WebService, private router: Router) {}
 
   getWebsitesService(){
     return this.websites;
   }
 
-  public clearWebNav(){
-    this.sidebar.style.display = "none";
-    this.sidebarBackground.style.display = "none";
+  clearWebNav(){
+    this.webService.clearWebNav();
   }
 
-  public showWebNav(){
-    this.sidebar.style.display = "block";
-    this.sidebarBackground.style.display = "block";
-  }
+  private buildStyleElement() : HTMLStyleElement {
+		var style = document.createElement( "style" );
+
+		style.type = "text/css";
+		style.setAttribute( "data-debug", "Injected by scrollingService." );
+		style.textContent = `
+			app-footer {
+        display: none !important ;
+      }
+      body{
+        overflow: hidden !important;
+      }
+		`;
+		return( style );
+	}
 
   ngOnInit() {
     //get designs from service on load
     this.websites = this.webService.getDesigns();
     window.scroll(0,0);
 
-    this.sidebar = document.getElementById("sidebar");
-    this.sidebarBackground = document.getElementById("sidebar-background");
+    this.webService.setSideBar(document.getElementById("sidebar"));
+    this.webService.setSidebarBackground(document.getElementById("sidebar-background"));
 
+    this.styleTag = this.buildStyleElement();
+    document.body.appendChild( this.styleTag );
+  }
+
+  ngOnDestroy() {
+    document.body.removeChild( this.styleTag );
   }
 
 }

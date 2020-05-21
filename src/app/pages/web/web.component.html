@@ -1,15 +1,9 @@
-<app-banner bTitle="Web Development" 
-            bSubTitle="Client projects, personal projects, and concepts.">
-</app-banner>
 <div class="container-web">
-
-    <a class="show-sidebar close-web-nav" (click)="showWebNav()">Show Menu</a>
-
     <a (click)="clearWebNav()" class="close-web-nav"><div class="sidebar-background" id="sidebar-background"></div></a>
     <div id="sidebar" class="sidebar">
-        <a (click)="clearWebNav()" class="close-web-nav close-sidebar"><span><p>Close menu</p></span></a>
-        <h2>WEBSITES</h2>
-        <p>Choose a site to view.</p>
+        <a (click)="clearWebNav()" class="close-web-nav close-sidebar"><span><p>Hide menu</p></span></a>
+        <h2 class="side-title">WEBSITES</h2>
+        <p class="side-subtitle">Choose a site to view.</p>
         <div class="web-block" *ngFor="let website of getWebsitesService()">
             <h3>{{website.title}}</h3>
             <a [routerLink]="website.url" (click)="clearWebNav()">

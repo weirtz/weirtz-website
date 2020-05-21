@@ -1,0 +1,70 @@
+.router-temp-content{
+    text-align: center;
+    position: relative;
+    margin-top:15%;
+    width:auto;
+}
+
+.router-temp-content h1{
+    font-size:40px;
+    color:rgb(63, 72, 80);
+}
+.router-temp-content p{
+    font-size:18px;
+    color:rgb(124, 136, 148);
+}
+
+.desktop hr{
+    width:60%;
+    margin-top:30px;
+    margin-bottom:30px;
+    border:1px solid rgba(0,0,0,0.1);
+}
+
+.show-sidebar{
+    background: rgb(0,203,255);
+    background: -moz-linear-gradient(90deg, rgba(0,203,255,1) 0%, rgba(0,134,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,203,255,1) 0%, rgba(0,134,255,1) 100%);
+    background: linear-gradient(90deg, rgba(0,203,255,1) 0%, rgba(0,134,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cbff",endColorstr="#0086ff",GradientType=1);
+    color:white;
+    padding:10px 30px;
+    padding-bottom:9px;
+    border-radius: 50px;
+    top:20px;
+    left:10px;
+    z-index: 10;
+    text-transform:uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.2s ease-out all;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.show-sidebar:hover{
+    opacity:0.8;
+    color:rgba(255,255,255,0.4);
+}
+
+.second-sbbutton{
+    margin-top:20px;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.close-web-nav{
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1181px) {
+    .show-sidebar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1180px) {    
+    .desktop{
+        display: none;
+    }
+}

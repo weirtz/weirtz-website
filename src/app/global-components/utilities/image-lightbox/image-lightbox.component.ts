@@ -6,7 +6,6 @@ import { PixelsortingService } from '../../../pages/designs/pages/design-pixel-s
 import { PhotographyService } from '../../../pages/photography/photography.service';
 import { trigger, transition, query, style, stagger, animate, state } from '@angular/animations';
 
-
 @Component({
   selector: 'app-image-lightbox',
   templateUrl: './image-lightbox.component.html',
@@ -22,9 +21,7 @@ import { trigger, transition, query, style, stagger, animate, state } from '@ang
   ]
 })
 
-
 export class ImageLightboxComponent implements OnInit {
-
 
   image: {id: number, jpgLow: string, jpgHigh: string, webpLow: string, webpHigh: string};
   private loadedImage: HTMLElement;
@@ -88,5 +85,7 @@ export class ImageLightboxComponent implements OnInit {
     )
   }
 
-
+  ngOnDestroy() {
+    document.body.removeChild( this.scrollingService.getStyleTag() );
+  }
 } 

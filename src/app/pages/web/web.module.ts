@@ -13,7 +13,7 @@ import { WebService } from './web.service';
   ],
   declarations: [
     WebComponent
-  ],
+    ],
   providers: [
     WebService
   ]

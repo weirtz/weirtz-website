@@ -15,7 +15,11 @@ export class ScrollingService {
 			this.enable();
 
 		}
-  	}
+	  }
+	  
+	public getStyleTag(){
+		return this.styleTag
+	}
 
 	public disable() : void {
 		document.body.appendChild( this.styleTag );
