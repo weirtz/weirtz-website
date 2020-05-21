@@ -49,10 +49,4 @@ export class LogosComponent implements OnInit {
     this.scrollingService.isShowingModal = false;
     window.scroll(0,0);
   }
-
-
-
-
-      
-    
 }  

@@ -11,9 +11,6 @@ export class ScrollingService {
 		if ( this.isShowingModal = ! this.isShowingModal ) {
 			this.disable();
 
-		} else {
-			this.enable();
-
 		}
 	  }
 	  

@@ -60,4 +60,12 @@ export class LogoComponent implements OnInit {
       }
     )
   }
+  
+  ngOnDestroy() {
+    try {
+      document.body.removeChild( this.scrollingService.getStyleTag());
+    } catch (error) {
+      console.warn('Clicked to exit (Did not use browser back button)');
+    }
+  }
 }
