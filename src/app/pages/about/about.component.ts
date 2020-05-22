@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import * as $ from 'jquery';
 import 'jqueryui'
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,7 @@ import 'jqueryui'
 })
 export class AboutComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(private title: Title) { }
 
   ngAfterViewInit(): void {
 
@@ -49,7 +50,10 @@ export class AboutComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    //Set page at top
     window.scroll(0,0);
+    //Set title
+    this.title.setTitle("Brendan Weirtz");
   }
 
 }

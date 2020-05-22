@@ -3,6 +3,8 @@ import { LogosService } from './logos.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ScrollingService } from '../../global-services/scrolling.service';
 import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
+import { LoaderService } from './loader.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-logos',
@@ -30,8 +32,8 @@ export class LogosComponent implements OnInit {
 
   constructor(private logosService: LogosService,
               private scrollingService: ScrollingService,
-              private router: Router,
-              private route: ActivatedRoute) {}
+              private loaderService: LoaderService,
+              private title: Title) {}
   
   //Call toggleModal function from scrolling.sercice
   toggleModal(){
@@ -44,9 +46,12 @@ export class LogosComponent implements OnInit {
   }
 
   ngOnInit() {
-    //get logos array from service on load
+    //get logos
     this.logos = this.logosService.getLogos();
     this.scrollingService.isShowingModal = false;
+    //Set window at top
     window.scroll(0,0);
+    //Set title
+    this.title.setTitle("Custom Logos");
   }
 }  

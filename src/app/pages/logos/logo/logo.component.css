@@ -103,6 +103,8 @@ h1{
     font-weight:300;
     font-size:52px;
     margin-left:-5px;
+    line-height: 50px;
+    margin-bottom:0px;
 }
 
 h3{
@@ -203,12 +205,20 @@ h3{
     }
 }
 
+
+@media only screen and (max-width: 900px) {
+    h1{
+        font-size: 45px;
+    }
+}
+
 @media only screen and (max-height: 800px) {
     .scroll-container{
         height:100%;
         top:0%;
         border-radius: 0px;
     }
+    
 }
 
 /* Logo no info */
@@ -217,6 +227,10 @@ h3{
     .image-container-noinfo{
         max-width: 100%;
         border-radius: 0px;
+    }
+
+    h1{
+        font-size:40px;
     }
 }
 

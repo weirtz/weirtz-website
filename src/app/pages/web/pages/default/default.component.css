@@ -14,13 +14,6 @@
     color:rgb(124, 136, 148);
 }
 
-.desktop hr{
-    width:60%;
-    margin-top:30px;
-    margin-bottom:30px;
-    border:1px solid rgba(0,0,0,0.1);
-}
-
 .show-sidebar{
     background: rgb(0,203,255);
     background: -moz-linear-gradient(90deg, rgba(0,203,255,1) 0%, rgba(0,134,255,1) 100%);
@@ -56,6 +49,20 @@
     cursor: pointer;
 }
 
+.desktop{
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding:20px 50px;
+    margin:0 auto;
+    width:50%;
+    min-width: 400px;
+    max-width: 650px;
+    margin-top:70px;
+}
+
+.desktop p{
+    margin:0px;
+}
 
 @media only screen and (min-width: 1181px) {
     .show-sidebar{

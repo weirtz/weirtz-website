@@ -19,7 +19,7 @@ export class WebService {
     {
       url:'nullnut', 
       title:'Nullnut Development',
-      thumbnail:'../../assets/web/pages/weirtz/thumbnail.png'
+      thumbnail:'../../assets/web/pages/nullnut/thumbnail.png'
     }
   ];
 

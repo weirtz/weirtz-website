@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WebService } from './web.service'
 import { Router} from '@angular/router';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-web',
   templateUrl: './web.component.html',
@@ -11,7 +12,9 @@ export class WebComponent implements OnInit {
   websites: {url: string, title: string, thumbnail: string}[] = []
   private styleTag: HTMLStyleElement;
 
-  constructor(private webService: WebService, private router: Router) {}
+  constructor(private webService: WebService, 
+              private router: Router,
+              private title: Title) {}
 
   getWebsitesService(){
     return this.websites;
@@ -41,12 +44,14 @@ export class WebComponent implements OnInit {
     //get designs from service on load
     this.websites = this.webService.getDesigns();
     window.scroll(0,0);
-
+    //Set up mobile sidebar
     this.webService.setSideBar(document.getElementById("sidebar"));
     this.webService.setSidebarBackground(document.getElementById("sidebar-background"));
-
+    //Remove footer
     this.styleTag = this.buildStyleElement();
     document.body.appendChild( this.styleTag );
+    //Set title
+    this.title.setTitle("Web Development");
   }
 
   ngOnDestroy() {

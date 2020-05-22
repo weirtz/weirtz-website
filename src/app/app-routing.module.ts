@@ -8,6 +8,7 @@ const appRoutes: Routes = [
     { path: 'designs', loadChildren: () => import('./pages/designs/designs.module').then(m => m.DesignsModule)},
     { path: 'web', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)},
     { path: 'photography', loadChildren: () => import('./pages/photography/photography.module').then(m => m.PhotographyModule)},
+    { path: '**', loadChildren: () => import('./pages/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)},
 
     //{ path: 'contact', component: ContactComponent },
 

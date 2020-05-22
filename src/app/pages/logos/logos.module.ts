@@ -5,6 +5,7 @@ import { LogoComponent } from './logo/logo.component';
 import { LogosRoutingModule } from './logos-routing.module';
 import { ScrollingService } from '../../global-services/scrolling.service';
 import { InfoModule } from '../../global-components/info/info.module'
+import { LoaderService } from './loader.service';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { InfoModule } from '../../global-components/info/info.module'
     LogoComponent
   ],
   providers: [
-    ScrollingService 
+    ScrollingService,
+    LoaderService
   ]
 })
 
