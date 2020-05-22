@@ -22,14 +22,13 @@
                 <p class="copy copy1">{{logo.copy}}</p>
                 <p class="copy copy2">{{logo.copy2}}</p>
                 <div class="library">
-                    <!-- USE [] on ngfor instead and then {{}} inside for array name??? -->
                     <!-- <img *ngFor="let image of Images" src="" alt=""> -->
                 </div> 
                 
             </div>
             <img *ngIf="logo.bannerImage" class="banner-image" [src]="logo.bannerImage" alt="Banner image">
             <!-- End Main Content -->
-            
+            <div class="button-container"><a *ngIf="logo.moreButton" routerLink="{{logo.moreButton}}" class="more-button">View more of this brand</a></div>
         </div>
     </div>
 </div>

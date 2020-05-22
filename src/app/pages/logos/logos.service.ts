@@ -10,7 +10,8 @@ export class LogosService {
           title:'Morris Brothers Inc.',
           subtitle:'Serving the recycling needs of Stark County since 1980.',
           copy:'A staple to the community, Morris Brothers has recycled scrap metal keeping Stark County cleaner and greener since 1980. They value their customers who are essentially neighbors plus being family owned and operated sets them apart from competitors because they treat everyone like family.',
-          copy2:'"One man\'s trash is another man\'s treasure!"'
+          copy2:'"One man\'s trash is another man\'s treasure!"',
+          moreButton:''
         },
         {
           link:'../../assets/logos/mca.png', 
@@ -20,7 +21,8 @@ export class LogosService {
           title:'MCA Tow Targets',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/finite.png', 
@@ -28,9 +30,10 @@ export class LogosService {
           moreInfo:true,
           bannerImage:'../../assets/logos/finite-skies/banner-finite.jpg',
           title:'Finite Skies',
-          subtitle:'',
+          subtitle:'Online Entertainment',
           copy:'In 2011 Finite Skies started as just a little Minecraft server named "Seabreyh City" catering towards a small game going large. Growing larger, developing Minecraft mods for players to enjoy, Videos and Livestreams for many to watch, and a community for all to join.',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/chosen.png', 
@@ -40,7 +43,8 @@ export class LogosService {
           title:'Chosen Acres',
           subtitle:'In pursuit of parlor perfection',
           copy:'Placeholder',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/prevail-2.png', 
@@ -50,17 +54,19 @@ export class LogosService {
           title:'Prevail Gaming',
           subtitle:'Professional eSports team',
           copy:'Prevail is an eSports team based in Florida that was founded in early 2016. With members from all around the world and rising in the ranks of multiple game titles, They pride themselves in assisting with the development of new members and providing a non-toxic environment for current members in the gaming community. With Prevails thriving Discord server, there is no easier way to prove your skills.',
-          copy2:'Prevail approached me to assist in branding themselves with a fresh lick of paint. I got them geared up and armed with a fresh new logo, profile images, banners, and an eSports themed typeface to make sure their graphics are always looking sharp.'
+          copy2:'Prevail approached me to assist in branding themselves with a fresh lick of paint. I got them geared up and armed with a fresh new logo, profile images, banners, and an eSports themed typeface to make sure their graphics are always looking sharp.',
+          moreButton:'/designs/prevail-gaming'
         },
         {
           link:'../../assets/logos/paramount.png', 
           name:'paramount-elite', 
           moreInfo:true,
-          bannerImage:'',
+          bannerImage:'../../assets/logos/paramount/banner-paramount.jpg',
           title:'Paramount Elite',
           subtitle:'Emergency restoration services',
           copy:'Placeholder',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/nullnut.png', 
@@ -70,7 +76,8 @@ export class LogosService {
           title:'Nullnut',
           subtitle:'Software development team',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/williams-and-case.png', 
@@ -80,7 +87,8 @@ export class LogosService {
           title:'Williams and Case',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/ieg.png', 
@@ -90,7 +98,8 @@ export class LogosService {
           title:'International Esports Gaming',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/apricity.png', 
@@ -100,7 +109,8 @@ export class LogosService {
           title:'Apricity Media Group',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/dragonfly-2.png', 
@@ -110,17 +120,19 @@ export class LogosService {
           title:'Dragonfly Labs',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/concord.png', 
           name:'concord', 
           moreInfo:true,
-          bannerImage:'',
+          bannerImage:'../../assets/logos/concord/banner-concord.jpg',
           title:'Concord',
-          subtitle:'',
+          subtitle:'MMO Social gaming',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/kaitlyns-kreations.png', 
@@ -130,7 +142,8 @@ export class LogosService {
           title:'Kaitlyns Kreations',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/toledo.png', 
@@ -140,7 +153,8 @@ export class LogosService {
           title:'University of Toledo College Republicans',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/petes-restaurant.png', 
@@ -150,7 +164,8 @@ export class LogosService {
           title:'Petes Restaurant',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/aphelion.png', 
@@ -160,7 +175,8 @@ export class LogosService {
           title:'Aphelion',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/oxygen.png', 
@@ -170,7 +186,8 @@ export class LogosService {
           title:'Oxygen',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         },
         {
           link:'../../assets/logos/orbitl.png', 
@@ -180,7 +197,8 @@ export class LogosService {
           title:'Orbitl',
           subtitle:'',
           copy:'',
-          copy2:''
+          copy2:'',
+          moreButton:''
         }
       ];
 
