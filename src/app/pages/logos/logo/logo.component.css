@@ -223,8 +223,8 @@ h3{
 }
 
 .copy{
-    font-size:20px;
-    line-height: 25px;
+    font-size:19px;
+    line-height: 22px;
     
 }
 
@@ -241,6 +241,10 @@ h3{
     h1{
         font-size: 45px;
     }
+    .copy{
+        font-size:16px;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (max-height: 800px) {
@@ -249,7 +253,12 @@ h3{
         top:0%;
         border-radius: 0px;
     }
-    
+}
+
+@media only screen and (max-width: 700px) {
+    .panel-center{
+        max-width: 88%;
+    }
 }
 
 /* Logo no info */
@@ -274,3 +283,4 @@ h3{
         padding:10px 20px;
     }
 }
+
