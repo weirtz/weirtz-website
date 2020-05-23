@@ -74,4 +74,22 @@
     .desktop{
         display: none;
     }
+
+}
+
+@media only screen and (max-width: 470px) {    
+    .router-temp-content{
+        padding:0px 20px;
+    }    
+}
+
+@media only screen and (max-width: 430px) {    
+    .router-temp-content h1{
+        font-size:30px;
+        margin-bottom:4px;
+    }
+    .router-temp-content p{
+        font-size:15px;
+    }
+       
 }
