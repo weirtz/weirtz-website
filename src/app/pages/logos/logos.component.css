@@ -7,9 +7,10 @@
 
 .thumbnail{
     display:inline-block;
-    max-height:250px;
+    max-width:345px;
     padding:50px;
     z-index:4;
+    width:100%;
     position: relative;
 }
 

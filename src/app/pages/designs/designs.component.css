@@ -13,10 +13,12 @@
     width:100%;
     max-width:400px;
     display: inline-block;
+    vertical-align: top;
 }
 
 #designs{
     text-align: center;
+    margin-top: 40px;
 }
 
 .inner-design{
@@ -69,4 +71,63 @@
 .filter a{
     display: inline-block;
     margin-right:20px;
+}
+
+@media only screen and (max-width: 1645px) {
+    .design-wrapper{
+        max-width:350px;
+    }    
+}
+
+@media only screen and (max-width: 1440px) {
+    .design-wrapper{
+        max-width:300px;
+    }    
+}
+
+@media only screen and (max-width: 1200px) {
+    .design-wrapper{
+        max-width:380px;
+        margin:10px;
+    }    
+}
+
+@media only screen and (max-width: 810px) {
+    .design-wrapper{
+        max-width:300px;
+    }    
+}
+
+@media only screen and (max-width: 645px) {
+    .design-wrapper{
+        margin:0px;
+        padding:5%;
+    }    
+    #designs{
+        margin-top:20px;
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    .design-wrapper{
+        margin:0px;
+        padding:20px;
+        max-width: 40vw;
+        padding-bottom: 0px;
+    }    
+    #designs{
+        margin-top:20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .design-wrapper{
+        margin:0px;
+        padding:20px;
+        max-width: 100%;
+        padding-bottom: 0px;
+    }    
+    #designs{
+        margin-top:50px;
+    }
 }
