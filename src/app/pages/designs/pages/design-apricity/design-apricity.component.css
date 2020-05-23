@@ -1,6 +1,7 @@
 .service-icon{
     display: inline-block;
-    max-width:200px;
+	max-width:200px;
+	width:100%;
     border-radius: 10px;
     margin:20px;
     padding:10px;
@@ -313,3 +314,21 @@ flex-shrink: 0;
 	box-shadow: 0px 0px 70px rgba(255,255,255,0.4);
 }
 
+@media only screen and (max-width : 1000px ){
+	.service-icon{
+		max-width:170px;
+	}
+}
+
+@media only screen and (max-width : 780px ){
+	.service-icon{
+		max-width:150px;
+		margin:10px;
+	}
+}
+@media only screen and (max-width : 440px ){
+	.service-icon{
+		max-width:40%;
+		margin:5px;
+	}
+}
