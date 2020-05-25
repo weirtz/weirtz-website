@@ -13,16 +13,23 @@
 }
 .error-image{
     max-width:400px;
+    width:100%;
+    margin:0 auto;
+    display: block;
 }
 
 .message{
     text-align:center;
-    font-family: Montserrat;
+    font-family: Roboto;
+    color: rgb(56, 59, 65);
 }
 
 .title{
     font-weight: 300;
-    font-size:35px;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .sub-title{
@@ -35,6 +42,26 @@
     padding:10px 5px;
 }
 
-.container{
+.error-content{
     text-align:center;
+    width:100%;
+    margin:0 auto;
+    padding:0px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .error-content{
+        margin:0 auto;
+        text-align: center;
+        width:100%!important;
+    }
+    .title{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .error-image{
+        max-width: 100%;
+    }
 }
