@@ -8,7 +8,7 @@ import { DesignsRoutingModule } from './designs-routing.module';
   imports: [
     CommonModule,
     DesignsRoutingModule,
-    InfoModule,
+    InfoModule
   ],
   declarations: [
     DesignsComponent

@@ -6,13 +6,15 @@ import { NavigationModule } from 'src/app/global-components/navigation/navigatio
 import { ScrollingService } from 'src/app/global-services/scrolling.service';
 import { PixelsortingService } from './pixelsorting.service';
 import { ImageLightboxModule } from 'src/app/global-components/utilities/image-lightbox/image-lightbox.module';
+import { InfoModule } from 'src/app/global-components/info/info.module';
 
 @NgModule({
   imports: [
     CommonModule,
     DesignPixelSortingRoutingModule,
     NavigationModule,
-    ImageLightboxModule
+    ImageLightboxModule,
+    InfoModule
   ],
   declarations: [
     DesignPixelSortingComponent

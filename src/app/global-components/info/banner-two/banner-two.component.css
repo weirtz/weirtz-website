@@ -1,0 +1,94 @@
+.header h1{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size:50px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.contain-bg{
+    background-color: white;
+    padding-top:15px;
+}
+
+.subtitle{
+    font-size:18px;
+    line-height: 23px;
+}
+
+.header{
+    padding:50px 20px;
+}
+
+.discontinued{
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
+    border:2px solid rgb(243, 4, 84);
+    color:rgb(243, 4, 84);
+    border-radius: 50px;
+    vertical-align: middle;
+    margin-left:50px;
+}
+
+.discontinued p{
+    margin:0px;
+    padding:0px 30px;
+    font-size:14px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.discontinued{
+    display: inline-block;
+}
+
+@media only screen and (max-width: 830px) {
+    .header h1{
+        font-size:35px;
+        margin-bottom:10px;
+    }
+    .discontinued p{
+        font-size:12px;
+        padding:0px 20px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .header h1{
+        display: block;
+        margin:0 auto;
+        text-align: center;
+        margin-bottom:0px;
+    }
+    .discontinued{
+        display: block;
+        margin:0 auto;
+        text-align: center;
+        max-width: 200px;
+    }
+    .subtitle{
+        text-align:center;
+        margin:0 auto;
+        font-size: 17px;
+        margin-top: 10px;
+        line-height: 22px;
+    }
+    .disc1{
+        display:none;
+    }
+    .disc2{
+        display:block;
+        margin-top:35px;
+    }
+}
+
+@media only screen and (min-width: 581px) {
+    .disc1{
+        display:inline-block;
+        vertical-align: super;
+    }
+    .disc2{
+        display:none;
+    }
+}

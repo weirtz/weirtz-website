@@ -3,16 +3,19 @@ import { CommonModule } from '@angular/common';
 
 //Components
 import { BannerComponent } from './banner/banner.component';
+import { BannerTwoComponent } from './banner-two/banner-two.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    BannerComponent
+    BannerComponent,
+    BannerTwoComponent
   ],
   exports: [
-    BannerComponent
+    BannerComponent,
+    BannerTwoComponent
   ]
 })
 

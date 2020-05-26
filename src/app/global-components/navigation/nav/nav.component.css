@@ -25,7 +25,6 @@
     vertical-align: bottom;
     padding-bottom:8px;
     color:#333;
-    font-family:"Montserrat";
     /* background: rgb(177,177,177);
     background: linear-gradient(0deg, rgb(248, 248, 248) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);   */
 }
@@ -80,7 +79,7 @@
     display: none;
 }
 
-/* This code make sure that desktop nav is visible once resizing back 
+/* This code makes sure that desktop nav is visible once resizing back 
     to desktop from mobile nav sizing. (Reverts the JS mobile nav) */
 
 /* Going up in size */
@@ -93,6 +92,9 @@
     }
     #mobile-background{
         display:none!important;
+    }
+    .links a{
+        font-family:"Roboto"!important;
     }
 }
 
