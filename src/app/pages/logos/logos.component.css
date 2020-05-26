@@ -2,7 +2,7 @@
     text-align: center;
     position: relative;
     max-width:1700px;
-    margin-top:50px;
+    padding-top:50px;
 }
 
 .thumbnail{
@@ -140,8 +140,8 @@
     .logo{
         margin-left:0px;
         margin-right:0px;
-        margin-bottom: 18px;
-        margin-top: 18px;
+        margin-bottom: 36px;
+        margin-top: 0px;
         display: block;
         box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.004),
@@ -153,5 +153,11 @@
         right:10px;
         bottom:-45px;
         max-width:60px;
+    }
+    .logos{
+        background-color: rgb(226, 228, 235);
+    }
+    .logo{
+
     }
 }
