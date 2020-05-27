@@ -1,12 +1,12 @@
-<app-banner *ngIf="getRouter().url === '/games'"
+<!-- <app-banner *ngIf="getRouter().url === '/games'"
             bTitle="Game Development" 
             bSubTitle="Projects and experiments. "
             bLinkCopy="visit steam publications."
             bLinkUrl="https://store.steampowered.com/search/?developer=Nullnut">
-</app-banner>
+</app-banner> -->
 
-<div *ngIf="getRouter().url === '/games'">
+<!-- <div *ngIf="getRouter().url === '/games'">
     <a class="btn btn-secondary ml-4 mt-4 mb-4" [routerLink]="['/games', game.id]" href="#" *ngFor="let game of getGames()">{{ game.name }}</a>
-</div>
+</div> -->
 
 <router-outlet></router-outlet>
