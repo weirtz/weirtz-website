@@ -98,7 +98,6 @@
     bottom:0;
     right:0;
     left:0;
-
     z-index:9;
     background-color:rgba(0,0,0,0.2);
 }
@@ -136,6 +135,7 @@
         bottom:-45px;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .logo{
         margin-left:0px;
@@ -156,8 +156,5 @@
     }
     .logos{
         background-color: rgb(226, 228, 235);
-    }
-    .logo{
-
     }
 }

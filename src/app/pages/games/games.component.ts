@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { GamesService } from './games.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-games',
@@ -14,7 +15,8 @@ export class GamesComponent implements OnInit {
 
   constructor(private gamesService: GamesService,
     private router: Router,
-    private route: ActivatedRoute) {
+    private route: ActivatedRoute,
+    private title: Title) {
 }
 
   //Getters
@@ -29,8 +31,9 @@ export class GamesComponent implements OnInit {
   ngOnInit() {
     this.games = this.gamesService.getGames();
     window.scroll(0,0);
+    //Set title
+    this.title.setTitle("Game Development");
   }
-
 }
 
     

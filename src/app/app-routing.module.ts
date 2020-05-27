@@ -8,22 +8,10 @@ const appRoutes: Routes = [
     { path: 'designs', loadChildren: () => import('./pages/designs/designs.module').then(m => m.DesignsModule)},
     { path: 'web', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)},
     { path: 'photography', loadChildren: () => import('./pages/photography/photography.module').then(m => m.PhotographyModule)},
+    { path: 'games', loadChildren: () => import('./pages/games/games.module').then(m => m.GamesModule)},
+    { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)},
     { path: '**', loadChildren: () => import('./pages/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)},
 
-    //{ path: 'contact', component: ContactComponent },
-
-    //Special pages on /designs otehrwise fall back to children 
-    //{path: 'designs/pixel-sorting', component: DesignPixelSortingComponent, children: [
-    //  { path: ':id', component: ImageLightboxComponent }
-    //]},
-    //{path: 'designs/apricity-media-group', component: DesignApricityComponent},
-    //{path: 'designs/design-decals', component: DesignDesignDecalsComponent},
-    //{path: 'designs/prevail-gaming', component: DesignPrevailGamingComponent},
-
-    //{ path: 'designs', component: DesignsComponent, children: [
-      //Fall back to these if no special page is available.
-      //{path: ':url', component: DesignComponent},
-    //]},
     //{ path:'games', component: GamesComponent, children: [
      // {path:':game', component: GameComponent}
     //]},
