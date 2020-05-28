@@ -40,6 +40,12 @@ export class DesignsService {
         //   filter:'vector',
         //   title:'iPhone X placement vector',
         //   thumbnail:'../../assets/designs/iphone-placement/thumbnail.png'
+        // },
+        // {
+        //   url:'done-is-better-than-perfect', 
+        //   filter:'design',
+        //   title:'Done is better than perfect',
+        //   thumbnail:'../../assets/designs/iphone-placement/thumbnail.png'
         // }
       ];
 
