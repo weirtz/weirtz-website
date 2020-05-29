@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1000px) {
+    .img1{
+        width:100%;
+        margin-bottom:40px;
+    }
+    
+    .img2{
+        width:40vw;
+        margin:0px 20px;
+        margin-bottom:40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .img2{
+        width:70vw;
+    }
+}

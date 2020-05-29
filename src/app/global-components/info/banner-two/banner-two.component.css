@@ -9,6 +9,7 @@
 .contain-bg{
     background-color: white;
     padding-top:15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .subtitle{
@@ -20,17 +21,24 @@
     padding:50px 20px;
 }
 
-.discontinued{
-    display:inline-block;
-    background-color: rgb(255, 255, 255);
+.color-disc{
     border:2px solid rgb(243, 4, 84);
     color:rgb(243, 4, 84);
+}
+.color-dev{
+    border:2px solid rgb(11, 146, 63);
+    color:rgb(11, 146, 63);
+}
+
+.info{
+    display:inline-block;
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
     vertical-align: middle;
     margin-left:50px;
 }
 
-.discontinued p{
+.info p{
     margin:0px;
     padding:0px 30px;
     font-size:14px;
@@ -39,16 +47,12 @@
     letter-spacing: 2px;
 }
 
-.discontinued{
-    display: inline-block;
-}
-
 @media only screen and (max-width: 830px) {
     .header h1{
         font-size:35px;
         margin-bottom:10px;
     }
-    .discontinued p{
+    .info p{
         font-size:12px;
         padding:0px 20px;
     }
@@ -61,7 +65,7 @@
         text-align: center;
         margin-bottom:0px;
     }
-    .discontinued{
+    .info{
         display: block;
         margin:0 auto;
         text-align: center;

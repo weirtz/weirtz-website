@@ -24,6 +24,10 @@ export class WebComponent implements OnInit {
     this.webService.clearWebNav();
   }
 
+  showWebNav(){
+    this.webService.showWebNav();
+  }
+  
   private buildStyleElement() : HTMLStyleElement {
 		var style = document.createElement( "style" );
 

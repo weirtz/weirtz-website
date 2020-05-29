@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { WeirtzComponent } from './weirtz.component';
+import { NullnutComponent } from './nullnut.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: WeirtzComponent
+    component: NullnutComponent
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class WeirtzRoutingModule { }
+export class NullnutRoutingModule { }
