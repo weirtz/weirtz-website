@@ -13,11 +13,13 @@ export class BannerTwoComponent implements OnInit {
   @Input() bLinkCopy: string;
   //Having attribute below on banner-two-component will add discontinued html
   @Input('is-discontinued') discontinued: boolean;
+  @Input('is-development') development: boolean;
 
   constructor() { }
 
   ngOnInit() {
     this.discontinued = this.discontinued !== undefined;
+    this.development = this.development !== undefined;
   }
   
 }

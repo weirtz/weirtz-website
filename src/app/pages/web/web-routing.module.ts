@@ -10,7 +10,9 @@ const routes: Routes = [
     path: '', component: WebComponent,
     children: [
       {path: '', component: DefaultComponent},
-      {path: 'weirtz', loadChildren: () => import('./pages/weirtz/weirtz.module').then(m => m.WeirtzModule)}
+      {path: 'weirtz', loadChildren: () => import('./pages/weirtz/weirtz.module').then(m => m.WeirtzModule)},
+      {path: 'apricity-media-group', loadChildren: () => import('./pages/apricity/apricity.module').then(m => m.ApricityModule)},
+      {path: 'nullnut', loadChildren: () => import('./pages/nullnut/nullnut.module').then(m => m.NullnutModule)}
     ]
   }
 ];
