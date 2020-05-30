@@ -12,10 +12,7 @@ import { AppComponent } from './app.component';
 
 //Global Modules
 import { NavigationModule } from './global-components/navigation/navigation.module';
-import { InfoModule } from './global-components/info/info.module';
-import { CommonModule } from '@angular/common';
 import { NavComponent } from './global-components/navigation/nav/nav.component';
-
 import {MatProgressBarModule} from '@angular/material/progress-bar'
 
 

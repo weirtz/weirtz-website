@@ -1,32 +1,57 @@
-<!-- <form action="" ngSubmit="submitForm()">
-    <div class="field">
-        <label for="name" class="label">Name</label>
-        <input type="text"
-               name="name"
-               class="input"
-               required 
-               placeholder="First name">
-        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched">
-            Your name is required.
+<div class="bg-contact">
+    <div class="container">
+        <div class="side-content">
+            <h1>Hey, friend!</h1>
+            <p>I cannot wait to work on something amazing together, and I'd love to hear your plans! Questions regarding how I can take your brand to the next level, concerns about where your company is now, and thoughts or ideas on our next big project together can be sent via this form! Your feedback is important and I look forward to getting in touch.</p>
         </div>
-    </div>
-
-    <div class="field">
-        <label for="email" class="label">Email</label>
-        <input type="text"
-               name="email"
-               class="input"
-               required
-               email
-               placeholder="me@gmail.com">
-        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
-            Invalid Email address.
+        
+        <div class="form-container">
+            <div class="form-inner">
+                <div>
+                    <h1 class="chat-title">Let's chat</h1>
+                </div>
+                <div id="success-image">
+                    <img src="assets/contact/andy.png" alt="Success image">
+                    <h3>Message sent!</h3>
+                </div>
+                <form id="form-opacity" (ngSubmit)="submit()" [formGroup]="contactForm">
+                    <mat-form-field appearance="fill" autocomplete="on" style="margin-right:20px;">
+                        <mat-label>First name</mat-label>
+                        <input formControlName="firstNameInput" [(ngModel)]="firstName" name="fname" matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Last name</mat-label>
+                        <input formControlName="lastNameInput" [(ngModel)]="lastName" name="lname" matInput>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill" style="width:100%;">
+                        <mat-label>Email</mat-label>
+                        <input formControlName="emailInput" [(ngModel)]="email" name="email" matInput>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill" style="width:70%;">
+                        <mat-label>How did you hear of me?</mat-label>
+                        <mat-select name="selectedNotice" [(ngModel)]="selectedNotice" formControlName="selectedNoticeInput">
+                            <mat-option *ngFor="let value of selectedNoticeList" [value]="value">{{value}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill" style="width:100%;">
+                        <mat-label>Message</mat-label>
+                        <textarea matInput formControlName="messageInput" [(ngModel)]="message" style="min-height:200px;"></textarea>
+                    </mat-form-field>
+                    <div class="submit-button">
+                        <button class="btn btn-primary submit" [disabled]="contactForm.invalid"><p>Submit</p></button>
+                    </div>
+                </form>
+            </div>
         </div>
+        
+        <style>
+            footer{
+                position: absolute!important;
+                bottom:0!important;
+            }
+        </style>
     </div>
-
-    <button class="button"
-            type="submit"
-            [disabled]="contactForm.invalid">
-        Submit
-    </button>
-</form> -->
+</div>

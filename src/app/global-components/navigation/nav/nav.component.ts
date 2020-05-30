@@ -1,13 +1,10 @@
-import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
-import { Event,
-         NavigationCancel,
+import { Component, OnInit } from '@angular/core';
+import { NavigationCancel,
          NavigationEnd,
          NavigationError,
          NavigationStart,
          Router, 
-         RouterEvent,
-         RouteConfigLoadStart,
-         RouteConfigLoadEnd
+         RouterEvent
         } from '@angular/router';
 import { ScrollingService } from 'src/app/global-services/scrolling.service';
 

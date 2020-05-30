@@ -3,15 +3,29 @@ import { CommonModule } from '@angular/common';
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactComponent } from './contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpService } from './http.service';
+import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   imports: [
     CommonModule,
     ContactRoutingModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
+    ],
   declarations: [
       ContactComponent
+  ],
+  providers: [
+    HttpService
   ]
 })
 export class ContactModule { }

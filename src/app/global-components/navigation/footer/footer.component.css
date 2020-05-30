@@ -16,6 +16,7 @@
 footer {
     position: relative;
     width: 100%;
+    bottom:0;
 }
 
 .angular-logo img{
