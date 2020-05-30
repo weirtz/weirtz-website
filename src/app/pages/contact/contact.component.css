@@ -1,17 +1,93 @@
+.side-content{
+    position: absolute;
+    left:0;
+    width:40%;
+    padding-top:10vw;
+}
+
+.side-content p{
+    font-size: 18px;
+    line-height: 23px;
+    font-family: roboto;
+    font-weight:400;
+    color:white;
+}
+
+#success-image{
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width:300px;
+    max-height:300px;
+    width:100%;
+    margin: auto;
+    z-index: 10;
+    padding:20px;
+    display: none;
+}
+
+#success-image img{
+    width: 100%;
+    max-width:300px;
+    margin:0 auto;
+    position: relative;
+}
+
+#success-image h3{
+    font-size: 30px;
+    font-family: Roboto;
+    text-align: center;
+    margin-top:40px;
+}
+
+.side-content h1{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size:30px;
+    font-family:roboto;
+    color:white;
+    text-transform: uppercase;
+}
+
+.container{
+    position: relative;
+    
+}
+
+.bg-contact{
+    position: relative;
+    height:30vw;
+    min-height:420px;
+    background: rgb(0,173,255);
+    background: -moz-radial-gradient(circle, rgba(0,173,255,1) 36%, rgba(37,103,223,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,173,255,1) 36%, rgba(37,103,223,1) 100%);
+    background: radial-gradient(circle, rgba(0,173,255,1) 36%, rgba(37,103,223,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00adff",endColorstr="#2567df",GradientType=1);}
+
 .form-container{
     margin:0 auto;
     text-align: center;
-    width:50vw;
-    float:right;
+    width:60%;
+    position: absolute;
+    right:0;
+    padding-bottom:100px;
+}
+
+.return{
+    float:unset;
 }
 
 .form-inner{
     text-align: left;
     display: inline-block;
+    position: relative;
     background-color: white;
     border-radius: 6px;
     padding:20px 40px;
-    margin-top:5vw;
+    margin-top:10%;
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -28,14 +104,48 @@
     color: rgb(47, 47, 63);
     padding:20px 0px;
 }
+
 .submit{
     margin:0 auto;
     width:100%;
     border:0px;
 }
+
 .submit p{
     margin:0px;
 }
+
 .submit-button{
     text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .form-container{
+        position: relative;
+        width:100%;
+    }
+    .side-content{
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .container{
+        padding:0px;
+    }
+    .form-inner{
+        border-radius: 0px;
+        width:100%;
+        border-top:1px solid rgba(0,0,0,0.1);
+    }
+    .side-content{
+        padding:0px 30px;
+        padding-top:80px;
+        margin-bottom:30px;
+    }
+    mat-form-field{
+        width:100%;
+    }
+
 }

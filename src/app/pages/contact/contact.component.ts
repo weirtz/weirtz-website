@@ -10,6 +10,10 @@ import { HttpService } from './http.service';
 })
 export class ContactComponent implements OnInit {
 
+  private styleTag: HTMLStyleElement;
+  private formOpacity: HTMLElement;
+  private successImage: HTMLElement;
+
   firstName: string;
   lastName: string;
   email: string;
@@ -29,6 +33,19 @@ export class ContactComponent implements OnInit {
     });
   }
 
+  private buildStyleElement() : HTMLStyleElement {
+		var style = document.createElement( "style" );
+
+		style.type = "text/css";
+		style.setAttribute( "data-debug", "Injected by scrollingService." );
+		style.textContent = `
+			footer{
+        display:none!important;
+      }
+		`;
+		return( style );
+	}
+
   //AWS - SMTP Server.
   //Nodemailer - email
   //Send user form to Nodemailer, who passes to AWS Secure Email Service.
@@ -42,17 +59,21 @@ export class ContactComponent implements OnInit {
       message: this.message
     }
 
-    this.http.sendEmail("http://localhost:3000/sendmail", emailContent).subscribe(
+    this.http.sendEmail("http://ec2-3-22-42-144.us-east-2.compute.amazonaws.com:3000/sendmail", emailContent).subscribe(
       data => {
         let res:any = data; 
-        console.log(
-          `Message id is ${res.messageId}`
-        );
+        console.log(`Message id is ${res.messageId}`);
       },
       err => {
+        //Fail
         console.log(err);
       },() => {
-        console.log("Success")
+        //Success
+        console.log("Success");
+        //Show success message
+        this.formOpacity.style.opacity = "0";
+        this.formOpacity.style.pointerEvents = "none";
+        this.successImage.style.display = "block";
       }
     );
   //end submit
@@ -62,8 +83,11 @@ export class ContactComponent implements OnInit {
     window.scroll(0,0);
     //Set title
     this.title.setTitle("Contact");
+    //Get form selector for success message
+    this.formOpacity = document.getElementById("form-opacity");
+    this.successImage = document.getElementById("success-image");
+    //Remove footer
+    this.styleTag = this.buildStyleElement();
+    document.body.appendChild( this.styleTag );
   }
-
-
-
 }
