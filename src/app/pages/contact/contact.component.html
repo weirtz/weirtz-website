@@ -1,12 +1,56 @@
-<!-- <form action="" ngSubmit="submitForm()">
+<div class="form-container">
+    <div class="form-inner">
+        <div>
+            <h1 class="chat-title">Let's chat</h1>
+        </div>
+        
+        <form (ngSubmit)="submit()" [formGroup]="contactForm">
+            <mat-form-field appearance="fill" autocomplete="on" style="margin-right:20px;">
+                <mat-label>First name</mat-label>
+                <input formControlName="firstNameInput" [(ngModel)]="firstName" name="fname" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Last name</mat-label>
+                <input formControlName="lastNameInput" [(ngModel)]="lastName" name="lname" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill" style="width:100%;">
+                <mat-label>Email</mat-label>
+                <input formControlName="emailInput" [(ngModel)]="email" name="email" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill" style="width:70%;">
+            <mat-label>How did you hear of me?</mat-label>
+            <mat-select>
+                <mat-option value="option">Friend</mat-option>
+                <mat-option value="option">Social media</mat-option>
+                <mat-option value="option">Web search</mat-option>
+                <mat-option value="option">Other</mat-option>
+            </mat-select>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill" style="width:100%;">
+            <mat-label>Message</mat-label>
+            <textarea matInput formControlName="messageInput" [(ngModel)]="message" style="min-height:200px;"></textarea>
+            </mat-form-field>
+            <div class="submit-button">
+                <button class="btn btn-primary submit" [disabled]="contactForm.invalid"><p>Submit</p></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
     <div class="field">
         <label for="name" class="label">Name</label>
         <input type="text"
                name="name"
                class="input"
                required 
-               placeholder="First name">
-        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched">
+               placeholder="First name"
+               >
+        <div class="help is-error">
             Your name is required.
         </div>
     </div>
@@ -17,16 +61,30 @@
                name="email"
                class="input"
                required
-               email
-               placeholder="me@gmail.com">
-        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
+               placeholder="me@gmail.com"
+               >
+        <div class="help is-error">
             Invalid Email address.
+        </div>
+    </div>
+
+    <div class="field">
+        <label for="message" class="label">Message</label>
+        <input type="text"
+               name="message"
+               class="input"
+               required
+               placeholder="..."
+               >
+        <div class="help is-error">
+            Please enter your message.
         </div>
     </div>
 
     <button class="button"
             type="submit"
-            [disabled]="contactForm.invalid">
+            >
         Submit
     </button>
-</form> -->
+
+
