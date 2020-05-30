@@ -20,18 +20,15 @@
             </mat-form-field>
             <br>
             <mat-form-field appearance="fill" style="width:70%;">
-            <mat-label>How did you hear of me?</mat-label>
-            <mat-select>
-                <mat-option value="option">Friend</mat-option>
-                <mat-option value="option">Social media</mat-option>
-                <mat-option value="option">Web search</mat-option>
-                <mat-option value="option">Other</mat-option>
-            </mat-select>
+                <mat-label>How did you hear of me?</mat-label>
+                <mat-select name="selectedNotice" [(ngModel)]="selectedNotice" formControlName="selectedNoticeInput">
+                    <mat-option *ngFor="let value of selectedNoticeList" [value]="value">{{value}}</mat-option>
+                </mat-select>
             </mat-form-field>
             <br>
             <mat-form-field appearance="fill" style="width:100%;">
-            <mat-label>Message</mat-label>
-            <textarea matInput formControlName="messageInput" [(ngModel)]="message" style="min-height:200px;"></textarea>
+                <mat-label>Message</mat-label>
+                <textarea matInput formControlName="messageInput" [(ngModel)]="message" style="min-height:200px;"></textarea>
             </mat-form-field>
             <div class="submit-button">
                 <button class="btn btn-primary submit" [disabled]="contactForm.invalid"><p>Submit</p></button>

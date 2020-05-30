@@ -14,14 +14,18 @@ export class ContactComponent implements OnInit {
   lastName: string;
   email: string;
   message: string;
+  selectedNotice;
   contactForm;
+
+  selectedNoticeList = ['Friend', 'Social Media', 'Web search', 'Other'];
 
   constructor(private title: Title, public http: HttpService,formBuilder: FormBuilder) {
     this.contactForm = formBuilder.group({
-      firstNameInput: new FormControl('', Validators.compose([Validators.required, Validators.minLength(6)])),
-      lastNameInput: new FormControl('', Validators.compose([Validators.required, Validators.minLength(6)])),
+      firstNameInput: new FormControl('', Validators.compose([Validators.required])),
+      lastNameInput: new FormControl('', Validators.compose([Validators.required])),
       emailInput: new FormControl('', Validators.compose([Validators.required, Validators.email])),
-      messageInput: new FormControl('', Validators.compose([Validators.required]))
+      messageInput: new FormControl('', Validators.compose([Validators.required])),
+      selectedNoticeInput: new FormControl('')
     });
   }
 
@@ -34,6 +38,7 @@ export class ContactComponent implements OnInit {
       firstName: this.firstName,
       lastName: this.lastName,
       email: this.email,
+      selectedNotice: this.selectedNotice,
       message: this.message
     }
 
