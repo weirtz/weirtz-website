@@ -59,7 +59,7 @@ export class ContactComponent implements OnInit {
       message: this.message
     }
 
-    this.http.sendEmail("http://ec2-3-22-42-144.us-east-2.compute.amazonaws.com:3000/sendmail", emailContent).subscribe(
+    this.http.sendEmail("https://weirtz-website.uc.r.appspot.com/sendmail", emailContent).subscribe(
       data => {
         let res:any = data; 
         console.log(`Message id is ${res.messageId}`);
