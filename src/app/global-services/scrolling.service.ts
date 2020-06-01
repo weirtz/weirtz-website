@@ -27,16 +27,16 @@ export class ScrollingService {
 	}
 
 	// Create a HTML style element to place into DOM.
-	private buildStyleElement() : HTMLStyleElement {
-		var style = document.createElement( "style" );
+	private buildStyleElement() {//: HTMLStyleElement {
+		// var style = document.createElement( "style" );
 
-		style.type = "text/css";
-		style.setAttribute( "data-debug", "Injected by scrollingService." );
-		style.textContent = `
-			body {
-				overflow: hidden !important ;
-			}
-		`;
-		return( style );
+		// style.type = "text/css";
+		// style.setAttribute( "data-debug", "Injected by scrollingService." );
+		// style.textContent = `
+		// 	body {
+		// 		overflow: hidden !important ;
+		// 	}
+		// `;
+		// return( style );
 	}
 }
