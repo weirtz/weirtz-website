@@ -52,6 +52,15 @@
     text-transform: uppercase;
 }
 
+#spinner-icon{
+    display: none;
+}
+
+mat-spinner{
+    margin:0 auto;
+    display:block;
+  }
+
 .container{
     position: relative;
     

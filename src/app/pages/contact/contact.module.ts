@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MatSelectModule } from '@angular/material/select';
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatProgressSpinnerModule
     ],
   declarations: [
       ContactComponent

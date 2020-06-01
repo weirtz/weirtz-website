@@ -4,7 +4,6 @@
             <h1>Hey, friend!</h1>
             <p>I cannot wait to work on something amazing together, and I'd love to hear your plans! Questions regarding how I can take your brand to the next level, concerns about where your company is now, and thoughts or ideas on our next big project together can be sent via this form! Your feedback is important and I look forward to getting in touch.</p>
         </div>
-        
         <div class="form-container">
             <div class="form-inner">
                 <div>
@@ -41,17 +40,13 @@
                         <textarea matInput formControlName="messageInput" [(ngModel)]="message" style="min-height:200px;"></textarea>
                     </mat-form-field>
                     <div class="submit-button">
-                        <button class="btn btn-primary submit" [disabled]="contactForm.invalid"><p>Submit</p></button>
+                        <button class="btn btn-primary submit" id="submit-button" [disabled]="contactForm.invalid">
+                            <p id="submit-text">Submit</p>
+                            <mat-spinner id="spinner-icon" [diameter]="30"></mat-spinner>
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
-        
-        <style>
-            footer{
-                position: absolute!important;
-                bottom:0!important;
-            }
-        </style>
     </div>
 </div>
