@@ -13,6 +13,9 @@ export class ContactComponent implements OnInit {
   private styleTag: HTMLStyleElement;
   private formOpacity: HTMLElement;
   private successImage: HTMLElement;
+  private submitText: HTMLElement;
+  private submitLoadingIcon: HTMLElement;
+  private submitButton: HTMLElement;
 
   firstName: string;
   lastName: string;
@@ -51,6 +54,11 @@ export class ContactComponent implements OnInit {
   //Send user form to Nodemailer, who passes to AWS Secure Email Service.
   submit(){
 
+    //Show loading icon
+    this.submitText.style.display = "none";
+    this.submitLoadingIcon.style.display = "block";
+    this.submitButton.style.pointerEvents = "none";
+
     let emailContent = {
       firstName: this.firstName,
       lastName: this.lastName,
@@ -76,8 +84,7 @@ export class ContactComponent implements OnInit {
         this.successImage.style.display = "block";
       }
     );
-  //end submit
-  }
+  }  //end submit
 
   ngOnInit() {
     window.scroll(0,0);
@@ -86,6 +93,9 @@ export class ContactComponent implements OnInit {
     //Get form selector for success message
     this.formOpacity = document.getElementById("form-opacity");
     this.successImage = document.getElementById("success-image");
+    this.submitText = document.getElementById("submit-text");
+    this.submitLoadingIcon = document.getElementById("spinner-icon");
+    this.submitButton = document.getElementById("submit-button");
     //Remove footer
     this.styleTag = this.buildStyleElement();
     document.body.appendChild( this.styleTag );

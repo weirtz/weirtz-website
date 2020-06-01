@@ -1,10 +1,10 @@
 import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ScrollingService } from '../../../global-services/scrolling.service';
-import { ActivatedRoute, Router, Params, UrlTree, UrlSegmentGroup, PRIMARY_OUTLET, UrlSegment, NavigationStart, RouterEvent } from '@angular/router';
+import { ActivatedRoute, Router, Params, UrlTree, UrlSegmentGroup, PRIMARY_OUTLET, UrlSegment} from '@angular/router';
 import { PixelsortingService } from '../../../pages/designs/pages/design-pixel-sorting/pixelsorting.service';
 import { PhotographyService } from '../../../pages/photography/photography.service';
-import { trigger, transition, query, style, stagger, animate, state } from '@angular/animations';
+import { trigger, transition, style, animate, state } from '@angular/animations';
 
 @Component({
   selector: 'app-image-lightbox',
