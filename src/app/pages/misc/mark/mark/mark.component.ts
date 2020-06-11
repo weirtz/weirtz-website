@@ -25,7 +25,6 @@ export class MarkComponent implements OnInit {
     window.location.assign(this.marks[index].url);
   }
 
-  ngPre
   ngOnInit(): void {
   }
 
