@@ -1,7 +1,8 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, PLATFORM_ID, Inject } from '@angular/core';
 // import * as $ from 'jquery';
 // import 'jqueryui'
 import { Title } from '@angular/platform-browser';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-about',
@@ -10,7 +11,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class AboutComponent implements OnInit, AfterViewInit {
 
-  constructor(private title: Title) { }
+  constructor(private title: Title,
+              @Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngAfterViewInit(): void {
   }
@@ -51,7 +53,10 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     //Set page at top
-    window.scroll(0,0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scroll(0,0);
+    }
+    
     //Set title
     this.title.setTitle("Brendan Weirtz");
   }
