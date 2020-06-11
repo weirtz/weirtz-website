@@ -21,11 +21,11 @@ export class MarkComponent implements OnInit {
   ];
 
   constructor(private route:ActivatedRoute,private router:Router) { 
-    let index = Math.floor(Math.random() * (this.marks.length - 0));
-    window.location.assign(this.marks[index].url);
   }
 
   ngOnInit(): void {
+    let index = Math.floor(Math.random() * (this.marks.length - 0));
+    window.location.assign(this.marks[index].url);
   }
 
 }
