@@ -1,7 +1,6 @@
 //Angular
-// import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Routing
@@ -13,23 +12,25 @@ import { AppComponent } from './app.component';
 //Global Modules
 import { NavigationModule } from './global-components/navigation/navigation.module';
 import { NavComponent } from './global-components/navigation/nav/nav.component';
-import {MatProgressBarModule} from '@angular/material/progress-bar'
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MarkComponent } from './pages/misc/mark/mark/mark.component'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    MarkComponent
   ],
   imports: [
-    // BrowserModule,
-    // FormsModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
 
     NavigationModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    HammerModule
     
   ],
   providers: [],

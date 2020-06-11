@@ -1,10 +1,11 @@
-import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject  } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ScrollingService } from '../../../global-services/scrolling.service';
 import { ActivatedRoute, Router, Params, UrlTree, UrlSegmentGroup, PRIMARY_OUTLET, UrlSegment} from '@angular/router';
 import { PixelsortingService } from '../../../pages/designs/pages/design-pixel-sorting/pixelsorting.service';
 import { PhotographyService } from '../../../pages/photography/photography.service';
 import { trigger, transition, style, animate, state } from '@angular/animations';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-image-lightbox',
@@ -38,7 +39,8 @@ export class ImageLightboxComponent implements OnInit {
     private scrollingService: ScrollingService,
     private photographyService: PhotographyService,
     private route: ActivatedRoute,
-    private router: Router) { 
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: Object) { 
 
     }
 
@@ -61,7 +63,10 @@ export class ImageLightboxComponent implements OnInit {
     this.scrollingService.isShowingModal = true;
     this.scrollingService.disable();
 
-    this.loadedImage = document.getElementById("load-listener");
+    if (isPlatformBrowser(this.platformId)) {
+      this.loadedImage = document.getElementById("load-listener");
+    }
+    
     //Grab the image id from the link parameters
     const id = +this.route.snapshot.params['id'];
 

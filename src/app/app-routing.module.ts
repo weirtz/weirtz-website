@@ -1,6 +1,7 @@
 //Angular
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MarkComponent } from './pages/misc/mark/mark/mark.component';
 
 const appRoutes: Routes = [
     { path: '', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)},
@@ -10,6 +11,7 @@ const appRoutes: Routes = [
     { path: 'photography', loadChildren: () => import('./pages/photography/photography.module').then(m => m.PhotographyModule)},
     { path: 'games', loadChildren: () => import('./pages/games/games.module').then(m => m.GamesModule)},
     { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)},
+    { path: 'mark', component: MarkComponent},
     { path: '**', loadChildren: () => import('./pages/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)},
 
     //{ path:'games', component: GamesComponent, children: [
@@ -22,7 +24,9 @@ const appRoutes: Routes = [
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes, {
+    initialNavigation: 'enabled'
+})
     ],
     exports: [RouterModule]
 })
