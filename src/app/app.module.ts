@@ -13,16 +13,14 @@ import { AppComponent } from './app.component';
 import { NavigationModule } from './global-components/navigation/navigation.module';
 import { NavComponent } from './global-components/navigation/nav/nav.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MarkComponent } from './pages/misc/mark/mark/mark.component'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
-    MarkComponent
-  ],
+    NavComponent
+    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,

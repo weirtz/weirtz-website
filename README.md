@@ -3,6 +3,7 @@ My personal website/portfolio.
 ## Installation and initialization
 Use the package manager npm to install required packages.
 
+deploying to firebase currently broken due to angular server rendering integration.
 
 ```bash
 npm install
