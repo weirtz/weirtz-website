@@ -16,6 +16,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
   }
+  
   //   //Draggable elements
   //   $(function() {
   //     //init draggable elements
