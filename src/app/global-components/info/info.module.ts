@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 //Components
 import { BannerComponent } from './banner/banner.component';
 import { BannerTwoComponent } from './banner-two/banner-two.component';
+import { BannerImageComponent } from './banner-image/banner-image.component';
 
 @NgModule({
   imports: [
@@ -11,11 +12,13 @@ import { BannerTwoComponent } from './banner-two/banner-two.component';
   ],
   declarations: [
     BannerComponent,
-    BannerTwoComponent
+    BannerTwoComponent,
+    BannerImageComponent
   ],
   exports: [
     BannerComponent,
-    BannerTwoComponent
+    BannerTwoComponent,
+    BannerImageComponent
   ]
 })
 

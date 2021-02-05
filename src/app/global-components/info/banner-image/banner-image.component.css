@@ -1,0 +1,62 @@
+.container{
+    background-color:white;
+    min-width:100%;
+    margin:0 auto;
+    position: relative;
+}
+
+.container h1{
+    font-family: 'Heebo', sans-serif;
+    font-size: 38px;
+    text-align: left;
+    font-weight:800;
+    padding:0px;
+    margin:0px;
+    margin-bottom:15px;
+    line-height:40px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.container p{
+    text-align:left;
+    font-family: 'Heebo', sans-serif;
+    font-weight:600;
+    padding:0px;
+    margin:0px;
+    font-size:20px;
+    line-height: 25px;
+}
+
+.image-container{
+    background-color: rgb(226, 226, 226);
+    position: absolute;
+    top:0;
+    right: 10%;
+    width: 400px;
+    height:100%;
+    transition: 0.2s all;
+}
+
+.container:hover .image-container{
+    right: 5%;
+    background-color: white;
+}
+
+.container:hover{
+    background-color: #007bff;
+    color:white;
+}
+
+.inner{
+    max-width: 1700px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    display: block;
+    padding:75px 20px;
+}
+
+.banner-image{
+    height:100%;
+}

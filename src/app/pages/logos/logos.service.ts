@@ -177,28 +177,6 @@ export class LogosService {
           copy:'',
           copy2:'',
           moreButton:''
-        },
-        {
-          link:'../../assets/logos/oxygen.png', 
-          name:'oxygen', 
-          moreInfo:false,
-          bannerImage:'',
-          title:'Oxygen',
-          subtitle:'',
-          copy:'',
-          copy2:'',
-          moreButton:''
-        },
-        {
-          link:'../../assets/logos/orbitl.png', 
-          name:'orbitl', 
-          moreInfo:false,
-          bannerImage:'',
-          title:'Orbitl',
-          subtitle:'',
-          copy:'',
-          copy2:'',
-          moreButton:''
         }
       ];
 

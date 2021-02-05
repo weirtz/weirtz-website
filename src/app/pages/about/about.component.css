@@ -51,11 +51,8 @@
 }
 
 .content-module{
-  background: rgba(0,0,0,0.9);
-  background: -moz-linear-gradient(-45deg,  #000000e3 0%, #303030e8 100%);
-  background: -webkit-linear-gradient(-45deg,  #000000f3 0%,#303030f6 100%);
-  background: linear-gradient(135deg,  #000000d3 0%,#303030e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#303030',GradientType=1 );
+  background: rgb(39,39,40);
+  background: linear-gradient(111deg, rgba(39,39,40,1) 0%, rgba(56,56,56,1) 35%, rgba(72,81,102,1) 100%);
   backdrop-filter:blur(10px);
   display: inline-block;
   max-width:800px;
@@ -72,10 +69,7 @@
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
+  0 12.5px 10px rgba(0, 0, 0, 0.20);
 }
 
 .header-circle{
@@ -96,11 +90,8 @@
 .header{
   background-color:rgb(59, 59, 59);
   border-bottom:1px solid #4b4b4b;
-  cursor: grab;
-  color:rgb(153, 166, 179);
-  font-size:13px;
-  font-weight:200!important;
-  font-family:"Roboto"!important;
+  color:rgb(232, 232, 240);
+
 }
 
 .inner{
@@ -109,9 +100,13 @@
 }
 
 h3{
-  font-size:20px;
+  font-size:15px;
   margin:0px;
   padding:10px 15px;
+  font-weight:200!important;
+  font-family:"Roboto"!important;
+  text-transform: uppercase;
+
   
 }
 

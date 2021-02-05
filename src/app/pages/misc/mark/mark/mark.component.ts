@@ -25,10 +25,10 @@ export class MarkComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    let index = Math.floor(Math.random() * (this.marks.length - 0));
-    console.log(this.marks[index].url);
+    // let index = Math.floor(Math.random() * (this.marks.length - 0));
+    // console.log(this.marks[index].url);
 
-    window.location.assign(this.marks[index].url);
+    // window.location.assign(this.marks[index].url);
   }
 
 }

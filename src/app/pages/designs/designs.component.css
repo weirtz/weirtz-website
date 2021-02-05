@@ -23,10 +23,10 @@
 
 .inner-design{
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: white;
     max-width:400px;
-    max-height:400px;
+    max-height:260px;
     width:100%;
 }
 
@@ -34,10 +34,6 @@
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
 }
 
-.thumbnail:hover{
-
-    transform: scale(1.2);
-}
 .inner-design img{
     height:100%;
     width:100%;

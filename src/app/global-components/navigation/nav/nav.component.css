@@ -4,7 +4,7 @@
 
 #site-logo{
     height:60px;
-    padding:15px;
+    padding:17px;
 }
 .logo-container{
     float:left;
@@ -41,9 +41,10 @@
     position: fixed;
     margin:0 auto;
     display:block;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
     height:60px;
 }
+
 .nav-container{
     width:100%;
     max-width:1200px;
@@ -105,13 +106,31 @@
     .links{
         display: none;
         top:90px;
-        right:5%;
-        text-align:right;
+        left:5%;
+        text-align:left;
+
     }
     .links a{
         display:block;
         margin-bottom:18px;
-        font-weight:500;
-        font-size:30px;
+        font-family: 'Heebo', sans-serif;
+        font-size: 32px;
+        font-weight:800;
+    }
+    #site-logo{
+        height:60px;
+        padding:17px;
+        margin:0 auto;
+        display: block;
+    }
+    .logo-container{
+        float:none;
+    }
+    #mobile-nav{
+        z-index: 120;
+        position: absolute;
+        bottom:30%;
+        left:20px;
+        cursor: pointer;
     }
 }
