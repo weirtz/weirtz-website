@@ -1,0 +1,22 @@
+.login{
+    margin:0 auto;
+    display: block;
+    max-width:400px;
+    border-radius:10px;
+overflow: hidden;}
+.container{
+    width:100%;
+}
+
+.login-top{
+    background-color: red;
+    text-align: center;
+    text-transform: capitalize;
+    padding:10px 5px;
+}
+
+.login-bottom{
+    background-color: blue;
+    text-align: center;
+    padding:50px 10px;
+}

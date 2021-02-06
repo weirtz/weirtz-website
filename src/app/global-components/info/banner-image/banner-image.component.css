@@ -3,6 +3,7 @@
     min-width:100%;
     margin:0 auto;
     position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .container h1{
@@ -46,6 +47,8 @@
 .container:hover{
     background-color: #007bff;
     color:white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
 }
 
 .inner{

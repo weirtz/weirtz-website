@@ -60,6 +60,10 @@
   0 41.8px 33.4px rgba(0, 0, 0, 0.086);
 }
 
+app-banner-image{
+    margin-bottom:30px;
+}
+
 .filter-container{
     padding:0px 20px;
 }

@@ -14,14 +14,14 @@
 
 .photo-id{
     flex-grow: 1;
-    height: 350px;
+    height: 310px;
     margin: 2px;
     margin-left:4px;
     margin-right:0px;
 }
   
 #photos img {
-    height: 350px;
+    height: 310px;
     object-fit: cover;
     max-width: 100%;
     min-width: 100%;
