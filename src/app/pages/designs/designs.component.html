@@ -1,5 +1,5 @@
 <app-banner-image 
-    (click)="toggleShow()" 
+    (click)="showLogos=!showLogos" 
     bTitle="Logo Design" 
     bSubTitle="Hand crafted logos, fresh off the artboard.">
 </app-banner-image>
@@ -16,7 +16,7 @@
 </div> -->
 
 <!-- Logos -->
-<div *ngIf="isShown" class="container logos" [@logoAnimation]="logos.length">
+<div *ngIf="showLogos" class="container logos" [@logoAnimation]="logos.length">
 
     <div class="logo" *ngFor="let logo of getLogosService()">
 
@@ -39,48 +39,32 @@
             </a>
         </div>
        
-        <!-- Else no Info-->
-        <!-- <ng-template #elseBlock>
-            <div class="blur">
-                <img class="thumbnail no-drag" [src]="logo.link">
-                <img class="thumbnail2 no-drag" [src]="logo.link">
-            </div>
-        </ng-template> -->
     </div>
 </div>
 
 <app-banner-image 
-    (click)="toggleShow()" 
+    (click)="showDesigns=!showDesigns" 
     bTitle="Graphics & Designs" 
     bSubTitle="Digitally designed experiences.">
 </app-banner-image>
 
-<!-- <div class="filter-container">
-    <div class="filter">
-        <a href="#">All </a>
-        <a href="#">Vectors </a>
-        <a href="#">Digital</a>
-        <a href="#">Design</a>
-    </div>
-</div> -->
-
-<div id="designs" *ngIf="isShown">
+<div class="container" *ngIf="showDesigns">
     <div class="design-wrapper" *ngFor="let design of getDesignsService()">
         <div class="design">
             <a
             [routerLink]="['/designs', design.url]" href="#">
                 <div class="inner-design">
-                    <img class="thumbnail" [src]="design.thumbnail" alt="">
+                    <img class="thumbnail-designs" [src]="design.thumbnail" alt="">
                 </div>
             </a>
-            <h3>{{design.title}}</h3>
         </div>
+        <h3>{{design.title}}</h3>
     </div>
     
 </div>
 
 <app-banner-image 
-    (click)="toggleShow()" 
+    (click)="showDigital=!showDigital" 
     bTitle="Digital Manipulation" 
     bSubTitle="Gitch art">
 </app-banner-image>

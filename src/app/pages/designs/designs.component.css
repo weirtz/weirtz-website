@@ -1,19 +1,28 @@
 
 .design{
-    /*width for image 400px*/
-    max-width:400px;
-    width:100%;
-    height:auto;
+    position: relative;
     display: inline-block;
-    text-align: center;
+    height:auto;
+    width:auto;
+    background-color:White;
+    border-radius:5px;
+    box-shadow:
+        0 2.8px 3.2px rgba(0, 0, 0, 0.134),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.022);
+    margin:30px 30px 15px 30px;
 }
 
 .design-wrapper{
-    padding:20px;
-    width:100%;
-    max-width:400px;
+    position: relative;
     display: inline-block;
-    vertical-align: top;
+    height: auto;
+    width: auto;
+    background-color: White;
+    border-radius: 5px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 2%), 0 31.8px 33.4px rgb(0 0 0 / 1%), 0 50px 50px rgb(0 0 0 / 12%);
+    margin: 30px;
 }
 
 #designs{
@@ -25,12 +34,12 @@
     overflow: hidden;
     border-radius: 6px;
     background-color: white;
-    max-width:400px;
+    max-width:260px;
     max-height:260px;
     width:100%;
 }
 
-.thumbnail{
+.thumbnail-designs{
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
 }
 

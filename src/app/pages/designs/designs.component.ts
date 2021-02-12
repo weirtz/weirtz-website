@@ -31,7 +31,10 @@ export class DesignsComponent implements OnInit {
   //copy designs array from service.
   designs: {url: string, filter: string, title: string, thumbnail: string}[] = []
   logos: {link: string, name: string, moreInfo: boolean}[] = [];
-  isShown: boolean; //Hide accordian content on headers.
+
+  showLogos: boolean = false; //Hide accordian content on headers.
+  showDesigns: boolean = false; //Hide accordian content on headers.
+  showDigital: boolean = false; //Hide accordian content on headers.
 
   constructor(private designsService: DesignsService,
               private title: Title,
@@ -53,11 +56,6 @@ export class DesignsComponent implements OnInit {
     return this.logos;
   }
 
-  //Show and hide header content accordians.
-  toggleShow() {
-    this.isShown = ! this.isShown;
-  }
-
   ngOnInit() {
     //get designs from service on load
     this.designs = this.designsService.getDesigns();
@@ -66,6 +64,5 @@ export class DesignsComponent implements OnInit {
     //Set page at top
     window.scroll(0,0);
     this.title.setTitle("Design");
-    this.isShown = false;
   }
 }
