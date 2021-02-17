@@ -9,43 +9,50 @@ export class DesignsService {
           url:'pixel-sorting', 
           filter:'digital',
           title:'Pixel Sorting',
-          thumbnail:'../../assets/designs/pixel-sorting/thumbnail.png'
+          thumbnail:'../../assets/designs/pixel-sorting/thumbnail.png',
+          moreInfo:true
         },
         {
           url:'apricity-media-group', 
           filter:'design',
           title:'Apricity Media Group',
-          thumbnail:'../../assets/designs/apricity/thumbnail.png'
+          thumbnail:'../../assets/designs/apricity/thumbnail.png',
+          moreInfo:true
         },
         {
           url:'design-decals', 
           filter:'vector',
           title:'Design Decals - iOS Sticker Pack',
-          thumbnail:'../../assets/designs/design-decals/thumbnail.png'
+          thumbnail:'../../assets/designs/design-decals/thumbnail.png',
+          moreInfo:true
         },
         {
           url:'prevail-gaming', 
           filter:'design',
           title:'Prevail Gaming',
-          thumbnail:'../../assets/designs/prevail-gaming/thumbnail.png'
+          thumbnail:'../../assets/designs/prevail-gaming/thumbnail.png',
+          moreInfo:true
         },
         {
           url:'nintendo-switch-vector', 
           filter:'vector',
           title:'Nintendo Switch vector art',
-          thumbnail:'../../assets/designs/nintendo-switch/thumbnail.png'
+          thumbnail:'../../assets/designs/nintendo-switch/thumbnail.png',
+          moreInfo:true
         },
         {
           url:'iphone-x-vector', 
           filter:'vector',
           title:'iPhone X placement vector',
-          thumbnail:'../../assets/designs/iphone-placement/thumbnail.png'
+          thumbnail:'../../assets/designs/iphone-placement/thumbnail.png',
+          moreInfo:true
         },
         {
           url:'done-is-better-than-perfect', 
           filter:'design',
           title:'Done is better than perfect',
-          thumbnail:'../../assets/designs/done-is-better-than-perfect/thumbnail.png'
+          thumbnail:'../../assets/designs/done-is-better-than-perfect/thumbnail.png',
+          moreInfo:true
         }
       ];
 

@@ -15,7 +15,12 @@
 .about-text{
   max-width:600px;
 }
-
+.about-right{
+  background-color: white;
+  float:right;
+  height:100%;
+  position: relative;
+}
 .social{
   position: -webkit-sticky;
   position: sticky;

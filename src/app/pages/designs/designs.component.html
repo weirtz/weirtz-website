@@ -50,6 +50,9 @@
 
 <div class="container" *ngIf="showDesigns">
     <div class="design-wrapper" *ngFor="let design of getDesignsService()">
+
+        <h3>{{design.title}}</h3>
+
         <div class="design">
             <a
             [routerLink]="['/designs', design.url]" href="#">
@@ -58,7 +61,14 @@
                 </div>
             </a>
         </div>
-        <h3>{{design.title}}</h3>
+        
+        <!-- Folder Icons -->
+        <div *ngIf="design.moreInfo" class="folder-container">
+            <div class="folders">
+                <span><img class="folder1 no-drag" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
+                <span><img class="folder2 no-drag" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
+            </div>
+        </div>  
     </div>
     
 </div>
