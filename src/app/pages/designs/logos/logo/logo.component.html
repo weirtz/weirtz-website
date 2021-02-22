@@ -1,11 +1,11 @@
 
 
-<a routerLink="/logos" (click)="toggleModal()" href="#"><div class="background"></div></a>
+<a routerLink="../.." (click)="toggleModal()" href="#"><div class="background"></div></a>
 
 <div class="lightbox-container" *ngIf="logo.moreInfo">
     <div class="scroll-container">
         <div class="panel">
-            <a class="close-lightbox" (click)="toggleModal()" routerLink="/logos" href="/logos"><!-- <span class="close-text">CLOSE WINDOW </span> --><img src="/assets/ui/md-x-black.svg"></a>
+            <a class="close-lightbox" (click)="toggleModal()" routerLink="../.." href="../.."><!-- <span class="close-text">CLOSE WINDOW </span> --><img src="/assets/ui/md-x-black.svg"></a>
             <!-- Hero Logo Image -->
             <div class="hero">
                 <div class="blur">
@@ -36,7 +36,7 @@
 <div *ngIf="!logo.moreInfo">
     <div class="panel-noinfo">
         <div class="image-container-noinfo">
-            <a class="close-lightbox" (click)="toggleModal()" routerLink="/logos" href="/logos"><!-- <span class="close-text">CLOSE WINDOW </span> --><img src="/assets/ui/md-x-black.svg"></a>
+            <a class="close-lightbox" (click)="toggleModal()" routerLink="../.." href="../.."><!-- <span class="close-text">CLOSE WINDOW </span> --><img src="/assets/ui/md-x-black.svg"></a>
 
             <img class="no-info-image no-drag" [src]="logo.link">
 

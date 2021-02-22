@@ -24,6 +24,7 @@
         
         <div> 
             <a [routerLink]="['/designs/logos', logo.name]" (click)="toggleModal()" href="#">
+                <!-- <a [routerLink]="[{ outlets: { 'logoRouter': ['/designs/logos', logo.name] } }]" (click)="toggleModal()" href="#"> -->
                 <div class="blur">
                     <img class="thumbnail no-drag" [src]="logo.link">
                     <img class="thumbnail2 no-drag" [src]="logo.link">
@@ -44,7 +45,7 @@
 
 <app-banner-image 
     (click)="showDesigns=!showDesigns" 
-    bTitle="Graphics & Designs" 
+    bTitle="Graphics / Designs" 
     bSubTitle="Digitally designed experiences.">
 </app-banner-image>
 
@@ -75,6 +76,6 @@
 
 <app-banner-image 
     (click)="showDigital=!showDigital" 
-    bTitle="Digital Manipulation" 
+    bTitle="Digital" 
     bSubTitle="Gitch art">
 </app-banner-image>

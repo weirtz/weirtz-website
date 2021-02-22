@@ -8,12 +8,9 @@
   padding:80px 0px;
 }
 
-.social hr {
-  border-top:1px solid rgba(255,255,255,0.3);
-}
 
 .about-text{
-  max-width:600px;
+  max-width:400px;
 }
 .about-right{
   background-color: white;
@@ -29,6 +26,16 @@
   background-image: linear-gradient(to bottom, #363636 0%, rgb(29, 29, 29) 100%)!important;
 }
 
+.social ul{
+  list-style-type: none;
+  padding: 0px;
+}
+.social li{
+  margin-bottom:15px;
+}
+.social a{
+  color:white;
+}
 .content-module{
   background: #141E30;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
@@ -48,6 +55,10 @@
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.20);
+}
+
+.cm-main{
+  width:100%;
 }
 
 .header-circle{
@@ -109,20 +120,8 @@ h3{
 a{
     color:#007bff;
 }
-
-.blinking-cursor {
-    font-weight: 500;
-    color: white;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-  }
   
-  .inner ul{
-    margin:0px;
-  }
+
   
   @media only screen and (max-width: 1199px) {
     .content-module{

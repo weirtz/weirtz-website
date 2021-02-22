@@ -2,8 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, HostBinding } from '@an
 import { Subscribable, Subscription } from 'rxjs';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { LogosService } from '../logos.service';
-import { LogosComponent } from '../logos.component';
-import { ScrollingService } from '../../../global-services/scrolling.service';
+import { ScrollingService } from '../../../../global-services/scrolling.service';
 import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
 
 @Component({

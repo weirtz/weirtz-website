@@ -1,0 +1,334 @@
+.service-icon{
+    display: inline-block;
+	max-width:200px;
+	width:100%;
+    border-radius: 10px;
+    margin:20px;
+    padding:10px;
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.1);
+}
+.services{
+    text-align: center;
+}
+.container{
+    background-color:white;
+}
+.container h2{
+    padding:50px 10px;
+    margin:0px;
+}
+
+.background{
+    background-color: white;
+}
+
+.banner{
+    width:100%;
+}
+
+.outline{
+}
+
+.shadow{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086)!important;
+    margin-top:40px!important;
+    margin-bottom:40px!important;
+}
+/* HERO */
+
+
+
+#hero{
+    overflow: hidden!important;
+    position: relative;
+    text-align: center;
+}
+
+.hero-logo{
+    max-width:600px;
+    z-index: 80;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10%;
+    padding-bottom: 13%;
+    width:100%;
+    position: relative;
+}
+
+#hero{
+    background:url(/assets/designs/apricity/hero/sky.jpg) no-repeat bottom center/cover;
+    background-size: cover;
+	-webkit-background-size: cover;
+}
+
+@media only screen and (max-width : 650px ){
+	#hero1{
+    background:url(/assets/designs/apricity/hero/sky-mobile.jpg) no-repeat bottom center/cover!important;
+    background-size: cover; 
+	-webkit-background-size: cover;
+
+    }
+
+    .moon{
+        display:none;
+    }
+	
+	.sun-beam-mobile,.sun-mobile,.trees-mobile{
+		display:block!important;
+	}	
+	.trees-mobile{
+		bottom:0!important;
+		width:100%!important;
+		z-index:100;
+	}
+	.sun-mobile{
+		bottom:-20px;
+		z-index:50;
+		width:200px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+        right: 0;
+        opacity: 0.2;
+	}
+	.sun-beam-mobile{
+		bottom:-100px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		max-width:350px;
+		animation: sunbeams 6s infinite;
+    }
+    .sun-beam{
+        display: none;
+    }
+    .sun{
+        display: none;
+	}
+	.trees{
+		display: none;
+	}
+}
+
+/*Mobile images*/
+	
+.sun-beam-mobile,.sun-mobile,.trees-mobile{
+	display:none;
+}
+
+
+
+.hero1-asset{
+	position:absolute;
+}
+
+.trees, .trees-mobile{
+	bottom:0!important;
+    width:100%;
+    bottom: 0;
+    position: absolute;
+    left:0;
+    z-index: 51;
+}
+
+.sun{
+	bottom:-180px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.sun-beam{
+	bottom:-320px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	max-width:700px;
+	animation: sunbeams 6s infinite;
+}
+
+@media only screen and (max-width : 930px ){
+	.sun{
+		bottom:-100px;
+		max-width:300px;
+	}
+	.sun-beam{
+		bottom:-200px;
+		max-width:500px;
+	}
+}
+
+@media only screen and (max-width : 720px ){
+	.sun{
+		bottom:-100px;
+		max-width:250px;
+	}
+	.sun-beam{
+		bottom:-180px;
+		max-width:400px;
+	}
+	.h1-text{
+        top: 42%!important;
+	}
+}
+
+@keyframes sunbeams {
+	0% {transform: scale(0.95)}
+	50%{transform: scale(1.15)}
+	100%{transform: scale(0.95)}
+}
+
+.stars{
+flex-shrink: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    left:0;
+    top:0;
+}
+
+.moon{
+	top:150px;
+	left:50px;
+	z-index: 500;
+}
+
+.star1{
+	
+	top:-200px;
+	right:-50px;
+	animation: star1 10s infinite;
+	-webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+@keyframes star1 {
+	0% {top:-200px;right:-50px;}
+	20%{top:650px;right:800px;}
+	100%{top:650px;right:800px;opacity:0;}
+}
+
+.star2{
+	animation: star2 10s infinite;
+	-webkit-animation-delay: 10s;
+    animation-delay: 10s;
+	top:-250px;
+	left:700px;
+	
+}
+
+@keyframes star2 {
+	0% {top:-250px;left:700px;}
+	20%{top:500px;left:-50px;}
+	100%{top:500px;left:-50px;opacity:0;}
+}
+
+
+.h1-text{
+	max-width:700px;
+	color:white;
+	position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    right:0 ;
+	left:0 ;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	z-index:500;
+	padding:20px;
+}
+
+.h1-text h1{
+	font-family: prominder;
+	font-size:80px;
+	padding:20px;
+	margin:0px;
+}
+
+
+
+@media only screen and (max-width : 464px ){
+	.h1-text h1{
+		font-size: 60px;
+	}
+	.h1-text p{
+	margin-top:10px;
+}
+}
+
+@media only screen and (max-width : 360px ){
+	.h1-text h1{
+		font-size: 50px!important;
+	}
+	.h1-text p{
+	margin-top:10px!important;
+}
+}
+	/*<link href="https://fonts.googleapis.com/css?family=||Press+Start+2P|:300,400||" rel="stylesheet">  Khand  Boogaloo Slabo+27px */
+.h1-text p{
+	padding-bottom:10px!important;
+	font-family: "roboto";
+	font-size:30px;
+	font-weight:200;
+	margin-top:-20px;
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.h1-button{
+
+	text-decoration: none;
+	font-family: "roboto";
+	font-weight:600;
+	background-color:rgba(0,0,0,0.3);
+	padding-top:13px!important;
+	padding-bottom:13px!important;
+    font-size:15px;
+	margin-top:0px!important;
+	color:white!important;
+	padding:20px;
+	padding-left:17px!important;
+	padding-right:17px!important;
+	border-radius:50px;
+	transition:0.5s all;
+	margin:0 auto;
+	overflow:hidden;
+	box-shadow:0px 0px 0px rgba(255,255,255,0.0);
+	background: #03d3b2;
+    background: -moz-linear-gradient(top,  #03d3b2 0%, #00bed3 100%);
+    background: -webkit-linear-gradient(top,  #03d3b2 0%,#00bed3 100%);
+    background: linear-gradient(to bottom,  #03d3b2 0%,#00bed3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03d3b2', endColorstr='#00bed3',GradientType=0 );
+}
+
+.h1-button:hover{
+	background-color:white;
+	color:#5bd5bf;
+	box-shadow: 0px 0px 70px rgba(255,255,255,0.4);
+}
+
+@media only screen and (max-width : 1000px ){
+	.service-icon{
+		max-width:170px;
+	}
+}
+
+@media only screen and (max-width : 780px ){
+	.service-icon{
+		max-width:150px;
+		margin:10px;
+	}
+}
+@media only screen and (max-width : 440px ){
+	.service-icon{
+		max-width:40%;
+		margin:5px;
+	}
+}

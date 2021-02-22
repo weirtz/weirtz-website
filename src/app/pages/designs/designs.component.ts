@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { DesignsService } from './designs.service';
 import { Title } from '@angular/platform-browser';
 import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
-import { LogosService } from '../logos/logos.service';
+import { LogosService } from './logos/logos.service';
 import { ScrollingService } from '../../global-services/scrolling.service';
-import { LoaderService } from '../logos/loader.service';
+import { LoaderService } from './logos/loader.service';
 
 @Component({
   selector: 'app-design',
   templateUrl: './designs.component.html',
-  styleUrls: ['./designs.component.css', './logos.component.css'],
-  providers: [DesignsService],
+  styleUrls: ['./designs.component.css', './logos/logos.component.css'],
+  providers: [DesignsService, LogosService],
   animations:[
     trigger('logoAnimation', [
       transition('* => *', [ // each time the binding value changes
@@ -63,6 +63,7 @@ export class DesignsComponent implements OnInit {
     this.scrollingService.isShowingModal = false;
     //Set page at top
     window.scroll(0,0);
+    //Sset title
     this.title.setTitle("Design");
   }
 }
