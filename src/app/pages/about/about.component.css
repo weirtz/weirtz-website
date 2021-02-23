@@ -8,16 +8,19 @@
   padding:80px 0px;
 }
 
+h1{
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+}
 
 .about-text{
-  max-width:400px;
+  max-width:470px;
+  font-family: Poppins;
+  font-size:17px;
 }
-.about-right{
-  background-color: white;
-  float:right;
-  height:100%;
-  position: relative;
-}
+
 .social{
   position: -webkit-sticky;
   position: sticky;
@@ -30,12 +33,19 @@
   list-style-type: none;
   padding: 0px;
 }
+
 .social li{
-  margin-bottom:15px;
+  margin-bottom:1px;
 }
+
+li svg{
+  margin-right:10px!important;
+}
+
 .social a{
   color:white;
 }
+
 .content-module{
   background: #141E30;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
@@ -55,6 +65,12 @@
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.20);
+  font-family: Poppins;
+}
+
+.console{
+  background-color: black!important;
+  background: black!important;
 }
 
 .cm-main{
@@ -92,7 +108,6 @@ h3{
   margin:0px;
   padding:4px 20px;
   font-weight:600;
-  font-family:"Roboto";
   text-transform: uppercase;
   border: 1px solid white;
   position: relative;

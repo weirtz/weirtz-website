@@ -35,7 +35,7 @@
     top:0;
     right: 10%;
     height:100%;
-    transition: 0.2s all;
+    transition: 0.2s all ease;
 }
 
 .container:hover .image-container{

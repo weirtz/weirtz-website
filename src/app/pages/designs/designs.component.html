@@ -7,14 +7,6 @@
 <!-- Logo Modal -->
 <router-outlet></router-outlet>
 
-<!-- Individual Logo Pages - Lightbox -->
-<!-- <div class="lightbox">
-    <div class="lb-inner">
-        <a href="/logos#browse"><img class="close-lightbox" src="/assets/ui/md-x-black.svg"></a>
-
-    </div>
-</div> -->
-
 <!-- Logos -->
 <div *ngIf="showLogos" class="container logos" [@logoAnimation]="logos.length">
 
@@ -23,8 +15,7 @@
         <!-- If more Info -->
         
         <div> 
-            <a [routerLink]="['/designs/logos', logo.name]" (click)="toggleModal()" href="#">
-                <!-- <a [routerLink]="[{ outlets: { 'logoRouter': ['/designs/logos', logo.name] } }]" (click)="toggleModal()" href="#"> -->
+            <a [routerLink]="['logos', logo.name]" (click)="toggleModal()" href="#">
                 <div class="blur">
                     <img class="thumbnail no-drag" [src]="logo.link">
                     <img class="thumbnail2 no-drag" [src]="logo.link">

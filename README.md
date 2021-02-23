@@ -9,7 +9,7 @@ deploying to firebase currently broken due to angular server rendering integrati
 npm install
 ```
 
-deploy to firebase
+deploy to firebase (for client rendering, server side rendering for SEO is a different process.) 
 
 ng build --prod
 firebase deploy
