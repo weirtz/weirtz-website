@@ -165,17 +165,18 @@ h3{
 
 .no-info-title{
     text-align:center;
-    font-family:Montserrat;
-    font-weight:500;
+    font-family:Poppins;
+    font-weight:300;
+    font-size: 20px;
     text-transform: unset;
     display: inline-block;
     padding:5px 25px;
     border-radius: 20px;
     position: absolute;
-    top:10px;
+    bottom:-60px;
     left: 0;
     right: 0;
-    color: #72799c;
+    color: #ffffff;
 }
 
 .panel-noinfo{

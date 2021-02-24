@@ -1,12 +1,18 @@
-<app-banner-image 
+<!-- <app-banner-image 
     (click)="showLogos=!showLogos" 
     bTitle="Logo Design" 
     bSubTitle="Hand crafted logos, fresh off the artboard.">
-</app-banner-image>
+</app-banner-image> -->
 
 <!-- Logo Modal -->
 <router-outlet></router-outlet>
 
+<br><br>
+
+<div class="section-title">
+    <h1>Logo Design</h1>
+    <h3>Hand crafted logos, fresh off the artboard.</h3>
+</div>
 <!-- Logos -->
 <div *ngIf="showLogos" class="container logos" [@logoAnimation]="logos.length">
 
@@ -34,11 +40,18 @@
     </div>
 </div>
 
-<app-banner-image 
+<!-- <app-banner-image 
     (click)="showDesigns=!showDesigns" 
     bTitle="Graphics / Designs" 
     bSubTitle="Digitally designed experiences.">
-</app-banner-image>
+</app-banner-image> -->
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="section-title">
+    <h1>Graphics / Designs</h1>
+    <h3>Digitally designed experiences.</h3>
+</div>
 
 <div class="container" *ngIf="showDesigns">
     <div class="design-wrapper" *ngFor="let design of getDesignsService()">
@@ -65,8 +78,8 @@
     
 </div>
 
-<app-banner-image 
+<!-- <app-banner-image 
     (click)="showDigital=!showDigital" 
     bTitle="Digital" 
     bSubTitle="Gitch art">
-</app-banner-image>
+</app-banner-image> -->

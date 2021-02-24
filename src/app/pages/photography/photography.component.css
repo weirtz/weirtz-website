@@ -1,35 +1,40 @@
 #photos {
     display: flex;
     flex-wrap: wrap;
-    overflow:hidden;
+    overflow:show;
     /*Used to remove photo white border on left side of screen.*/
     margin-left:-4px;
     margin-top:2px;
+    background-color: white;
 }
 
 #photos::after{
     content: '';
-    flex-grow: 9999999;
+    flex-grow: 999999;
 }
 
 .photo-id{
     flex-grow: 1;
-    height: 310px;
+    height: 400px;
     margin: 2px;
     margin-left:4px;
     margin-right:0px;
 }
-  
+.photo-id:hover img{
+    transform: scale(0.9);
+    z-index:1000000!important;
+    position: relative;
+    display: block;
+}
+
+
 #photos img {
-    height: 310px;
+    height: 400px;
     object-fit: cover;
     max-width: 100%;
     min-width: 100%;
     vertical-align: bottom;
     transition:0.2s all ease;
-}
-
-.photo-id:hover img{
-    transform: scale(0.98);
+    z-index: 0;
 }
 

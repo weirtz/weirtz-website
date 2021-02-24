@@ -32,9 +32,9 @@ export class DesignsComponent implements OnInit {
   designs: {url: string, filter: string, title: string, thumbnail: string}[] = []
   logos: {link: string, name: string, moreInfo: boolean}[] = [];
 
-  showLogos: boolean = false; //Hide accordian content on headers.
-  showDesigns: boolean = false; //Hide accordian content on headers.
-  showDigital: boolean = false; //Hide accordian content on headers.
+  showLogos: boolean = true; //Hide accordian content on headers.
+  showDesigns: boolean = true; //Hide accordian content on headers.
+  showDigital: boolean = true; //Hide accordian content on headers.
 
   constructor(private designsService: DesignsService,
               private title: Title,

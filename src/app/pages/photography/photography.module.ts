@@ -5,16 +5,17 @@ import { PhotographyComponent } from './photography.component';
 import { PhotographyRoutingModule } from './photography-routing.module';
 import { ScrollingService } from '../../global-services/scrolling.service';
 import { InfoModule } from 'src/app/global-components/info/info.module';
-import { ImageLightboxComponent } from 'src/app/global-components/utilities/image-lightbox/image-lightbox.component';
-import { PhotographyService } from './photography.service';
+
 import { ImageLightboxModule } from '../../global-components/utilities/image-lightbox/image-lightbox.module';
+import { AngularTiltModule } from 'angular-tilt';
 
 @NgModule({
   imports: [
     CommonModule,
     PhotographyRoutingModule,
     InfoModule,
-    ImageLightboxModule
+    ImageLightboxModule,
+    AngularTiltModule
   ],
   declarations: [
     PhotographyComponent,

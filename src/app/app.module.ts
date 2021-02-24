@@ -13,6 +13,8 @@ import { AppComponent } from './app.component';
 import { NavigationModule } from './global-components/navigation/navigation.module';
 import { NavComponent } from './global-components/navigation/nav/nav.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -28,7 +30,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
     NavigationModule,
     MatProgressBarModule,
-    HammerModule
+    HammerModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     
   ],
   providers: [],
