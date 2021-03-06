@@ -1,11 +1,13 @@
 .router-link-active{
-    color:#007bff!important;
+    opacity:0.5;
 }
 
 #site-logo{
     height:60px;
     padding:17px;
+    
 }
+
 .logo-container{
     float:left;
 }
@@ -80,14 +82,16 @@
     display: none;
 }
 
+.l-white{
+    display: none;
+}
+
 /* This code makes sure that desktop nav is visible once resizing back 
     to desktop from mobile nav sizing. (Reverts the JS mobile nav) */
 
 /* Going up in size */
 @media only screen and (min-width: 801px) {
-    #global-nav{
-        border-bottom: 1px solid rgba(0,0,0,0.08)!important;
-    }
+
     #links{
         display: inline-block!important;
     }
@@ -133,4 +137,5 @@
         left:20px;
         cursor: pointer;
     }
+
 }

@@ -4,12 +4,14 @@ import { WebComponent } from './web.component';
 import { WebRoutingModule } from './web-routing.module';
 import { InfoModule } from 'src/app/global-components/info/info.module';
 import { WebService } from './web.service';
+import { AngularTiltModule } from 'angular-tilt';
 
 @NgModule({
   imports: [
     CommonModule,
     WebRoutingModule,
-    InfoModule
+    InfoModule,
+    AngularTiltModule
   ],
   declarations: [
     WebComponent

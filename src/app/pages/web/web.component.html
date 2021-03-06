@@ -1,24 +1,123 @@
 <div class="container-web">
 
-    <div class="open-mobile" (click)="showWebNav()">
-        <p>SHOW MENU</p>
-    </div>
+    <!--SECTION 1-->
+    <section class="web1">
+        <div class="width-container">
+            <div class="hero-text">
+                <div class="hero-text-inner">
+                    <h1>Find your business online.</h1>
+                    <p class="sub-text">Building a brand is like finding your own voice. It's the personality, mood, 
+                    and reputation of your business. Who are you, and who do you want to be?</p>
+                    <a href="web#work"><div class="hero-button"> 
+                    <p>View work</p>
+                </div></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/assets/web/hero-image.svg" alt="">
+            </div>
+        </div>
+    </section>
 
-    <a (click)="clearWebNav()" class="close-web-nav"><div class="sidebar-background" id="sidebar-background"></div></a>
-    <div id="sidebar" class="sidebar">
-        <a (click)="clearWebNav()" class="close-web-nav close-sidebar"><span><p>Hide menu</p></span></a>
-        <h2 class="side-title">WEBSITES</h2>
-        <p class="side-subtitle">Choose a site to view.</p>
-        <div class="web-block" *ngFor="let website of getWebsitesService()">
-            <h3>{{website.title}}</h3>
-            <a [routerLink]="website.url" (click)="clearWebNav()">
-                <div class="web-image">
-                    <img [src]="website.thumbnail" alt="Website thumbnail">
+    <!--SECTION 2-->
+    <section class="web2">
+        <div class="web2-text">
+
+            <p class="sub-text">
+                My previous accomplishments were a result of one simple observation: <br>
+                <strong>advertising agencies tended to ignore small business owners</strong>.
+            </p>
+            <p class="sub-text break1">
+                This knowledge led me to envision of the first "big" agency services for "small" businesses. 
+                For years, I have cultivated growth and helped to evolve numerous small businesses and taken them to the next level.
+            </p>
+
+            <br> <br>
+
+            <p class="sub-text break2">
+                Small business owners need to stand out in the crowd of millions of brand names 
+                and products. Consider how your brand can have an influence on your 
+                customer experience and the customer experience of others.
+            </p>
+
+            <br><br>
+
+            <p class="sub-text">
+                From finding your target audience, to creating an aesthetic specific to your products and 
+                services, or creating a general mood in regards to how customers and clients 
+                view the face of your company, These are all integral to the success of your business. 
+                I assist my clients in creating a uniquely recognizable and distinguishable brand. 
+            </p>
+        </div>
+    </section>
+
+    <!--SECTION 3-->
+    <section class="web3" id="work">
+        <img class="devider-top no-drag" src="/assets/web/deviders/top.svg">
+        <img class="devider-bottom no-drag" src="/assets/web/deviders/bottom.svg">
+
+        <br><br><br><br>
+
+        <h2>Clients I've worked with</h2>
+        <div class="logo-container">
+            <img src="/assets/web/logos/logo1.png" alt="Pete's Restaurant">
+            <img src="/assets/web/logos/logo2.png" alt="C.R. Kurtz">
+            <img src="/assets/web/logos/logo3.png" alt="Kraus' Pizza">
+            <img src="/assets/web/logos/logo4.png" alt="Chore Chaser">
+            <img src="/assets/web/logos/logo5.png" alt="Charlie Courier Service">
+            <img src="/assets/web/logos/logo6.png" alt="Bugh Inc.">
+            <img src="/assets/web/logos/logo7.png" alt="Boyle's Nursery">
+            <img src="/assets/web/logos/logo9.png" alt="Paramount Elite">
+            <img src="/assets/web/logos/logo10.png" alt="Morris Brothers">
+            <img src="/assets/web/logos/logo11.png" alt="American Medical Personnel">
+            <img src="/assets/web/logos/logo12.png" alt="Hercules Manufacturing">
+            <img src="/assets/web/logos/logo13.png" alt="DAC">
+            <img src="/assets/web/logos/logo14.png" alt="All makes and models">
+            <img src="/assets/web/logos/logo15.png" alt="JA Ondrus">
+            <img src="/assets/web/logos/logo16.png" alt="People Connect">
+            <img src="/assets/web/logos/logo17.png" alt="Roto-Rooter">
+            <img src="/assets/web/logos/logo18.png" alt="Pipitone Law">
+            <img src="/assets/web/logos/logo20.png" alt="The Toys Time Forgot">
+            <img src="/assets/web/logos/logo21.png" alt="Short Stops">
+            <img src="/assets/web/logos/logo22.png" alt="Remelt Scientific">
+            <img src="/assets/web/logos/logo23.png" alt="Marcuse">
+        </div>
+    </section>
+
+    <!--SECTION 4-->
+    <section class="web4">
+        <h2>Work</h2>
+        <h3>A few examples of client work.</h3>
+
+        <div class="website-container">
+            <a href="http://www.herculesmanufacturing.com/" target="_blank">
+                <div class="website">
+                    <div class="header"><p>Hercules Mfg.</p></div>
+                    <img src="/assets/web/websites/hercules.png" alt="">
+                </div>
+            </a>
+   
+            <a href="https://www.bughinc.com/" target="_blank">
+                <div class="website">
+                    <div class="header"><p>Bugh Inc.</p></div>
+                    <img src="/assets/web/websites/bugh.png" alt="">
+                </div>
+            </a>
+
+            <a href="http://www.crkurtzinc.com/" target="_blank">
+                <div class="website">
+                    <div class="header"><p>C.R. Kurtz</p></div>
+                    <img src="/assets/web/websites/kurtz.png" alt="">
                 </div>
             </a>
         </div>
-    </div>
-    <div class="main-content">
-        <router-outlet></router-outlet>
-    </div>
+
+    </section>
+
+    <!--SECTION 5-->
+    <section class="web5">
+        <a routerLink="/contact">Let's start your business</a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    
 </div>

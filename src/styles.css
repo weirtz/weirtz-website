@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
     display: block;
     position: relative;
-    padding-bottom: 55px; /* height of your footer */
 }
 
 ::-webkit-scrollbar-track{   

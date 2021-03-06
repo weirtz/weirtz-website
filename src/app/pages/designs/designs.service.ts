@@ -33,27 +33,27 @@ export class DesignsService {
           thumbnail:'../../assets/designs/prevail-gaming/thumbnail.png',
           moreInfo:true
         },
-        {
-          url:'nintendo-switch-vector', 
-          filter:'vector',
-          title:'Nintendo Switch vector art',
-          thumbnail:'../../assets/designs/nintendo-switch/thumbnail.png',
-          moreInfo:true
-        },
-        {
-          url:'iphone-x-vector', 
-          filter:'vector',
-          title:'iPhone X placement vector',
-          thumbnail:'../../assets/designs/iphone-placement/thumbnail.png',
-          moreInfo:true
-        },
-        {
-          url:'done-is-better-than-perfect', 
-          filter:'design',
-          title:'Done is better than perfect',
-          thumbnail:'../../assets/designs/done-is-better-than-perfect/thumbnail.png',
-          moreInfo:true
-        }
+        // {
+        //   url:'nintendo-switch-vector', 
+        //   filter:'vector',
+        //   title:'Nintendo Switch vector art',
+        //   thumbnail:'../../assets/designs/nintendo-switch/thumbnail.png',
+        //   moreInfo:true
+        // },
+        // {
+        //   url:'iphone-x-vector', 
+        //   filter:'vector',
+        //   title:'iPhone X placement vector',
+        //   thumbnail:'../../assets/designs/iphone-placement/thumbnail.png',
+        //   moreInfo:true
+        // },
+        // {
+        //   url:'done-is-better-than-perfect', 
+        //   filter:'design',
+        //   title:'Done is better than perfect',
+        //   thumbnail:'../../assets/designs/done-is-better-than-perfect/thumbnail.png',
+        //   moreInfo:true
+        // }
       ];
 
     getDesigns() {

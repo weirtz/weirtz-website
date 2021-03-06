@@ -14,10 +14,10 @@ import { isPlatformBrowser } from '@angular/common';
       transition('* => *', [ // each time the binding value changes
         query(':enter', [
           //properties before animation begins
-          style({ opacity:0}),
-          stagger(80, [
+          style({ opacity:0 }),
+          stagger(20, [
             //animnation after
-            animate('0.6s', style({ opacity:1}))
+            animate('0.2s ease-in', style({ opacity:1 }))
           ])
         ])
       ])

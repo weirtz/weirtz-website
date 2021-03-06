@@ -1,7 +1,7 @@
 #photos {
     display: flex;
     flex-wrap: wrap;
-    overflow:show;
+    overflow:hidden;
     /*Used to remove photo white border on left side of screen.*/
     margin-left:-4px;
     margin-top:2px;

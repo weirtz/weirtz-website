@@ -2,7 +2,7 @@
   "name": "Brendan Weirtz",
   "theme_color": "#ffffff",
   "background_color": "#fafafa",
-  "display": "standalone",
+  "display": "minimal-ui",
   "scope": "./",
   "start_url": "./",
   "icons": [

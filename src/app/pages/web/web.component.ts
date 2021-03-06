@@ -34,12 +34,24 @@ export class WebComponent implements OnInit {
 		style.type = "text/css";
 		style.setAttribute( "data-debug", "Injected by scrollingService." );
 		style.textContent = `
-			app-footer {
-        display: none !important ;
+      #global-nav{
+        background-color:rgba(0,0,0,0.0)!important;
+        -webkit-backdrop-filter: blur(0px)!important;
+        backdrop-filter: blur(0px)!important;
+        
+          border-bottom: 0px solid rgba(0,0,0,0.08)!important;
+      position:absolute!important;
       }
-      body{
-        overflow: hidden !important;
+      .links a{
+        color:white!important;
       }
+      .l-white{
+        display:inline!important;
+      }
+      .l-black{
+        display:none;
+      }
+
 		`;
 		return( style );
 	}
@@ -56,6 +68,7 @@ export class WebComponent implements OnInit {
     document.body.appendChild( this.styleTag );
     //Set title
     this.title.setTitle("Web Development");
+
   }
 
   ngOnDestroy() {
