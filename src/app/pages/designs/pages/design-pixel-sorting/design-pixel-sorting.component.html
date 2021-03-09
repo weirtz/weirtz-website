@@ -5,10 +5,12 @@
 ></app-banner-two>
 <section id="photos" [@galleryAnimation]="images.length">
     <a class="photo-id" *ngFor="let image of getImagesService()" [routerLink]="[image.id]">
-        <picture>
-            <source [srcset]="image.webpLow" type="image/webp">
-            <source [srcset]="image.jpgLow" type="image/jpeg">
-            <img [src]="image.jpgLow" alt="Pixel sorted image">
-        </picture>
+        <div aTilt>
+            <picture>
+                <source [srcset]="image.webpLow" type="image/webp">
+                <source [srcset]="image.jpgLow" type="image/jpeg">
+                <img [src]="image.jpgLow" alt="Pixel sorted image">
+            </picture>
+        </div>
     </a>
 </section>

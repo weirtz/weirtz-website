@@ -7,6 +7,7 @@ import { ScrollingService } from 'src/app/global-services/scrolling.service';
 import { PixelsortingService } from './pixelsorting.service';
 import { ImageLightboxModule } from 'src/app/global-components/utilities/image-lightbox/image-lightbox.module';
 import { InfoModule } from 'src/app/global-components/info/info.module';
+import { AngularTiltModule } from 'angular-tilt';
 
 @NgModule({
   imports: [
@@ -14,14 +15,15 @@ import { InfoModule } from 'src/app/global-components/info/info.module';
     DesignPixelSortingRoutingModule,
     NavigationModule,
     ImageLightboxModule,
-    InfoModule
+    InfoModule,
+    AngularTiltModule
   ],
   declarations: [
     DesignPixelSortingComponent
   ],
   providers: [
-      ScrollingService,
-      PixelsortingService
+    ScrollingService,
+    PixelsortingService
   ]
 })
 export class DesignPixelSortingModule { }
