@@ -38,18 +38,28 @@ export class WebComponent implements OnInit {
         background-color:rgba(0,0,0,0.0)!important;
         -webkit-backdrop-filter: blur(0px)!important;
         backdrop-filter: blur(0px)!important;
-        
-          border-bottom: 0px solid rgba(0,0,0,0.08)!important;
-      position:absolute!important;
+        border-bottom: 0px solid rgba(0,0,0,0.08)!important;
+        position:absolute!important;
       }
-      .links a{
-        color:white!important;
+      
+      /* Going down in size */
+      @media only screen and (max-width: 800px) { 
+        .links a{
+          color:unset!important;
+        }
+      }
+
+      /* Going up in size */
+      @media only screen and (min-width: 801px) { 
+        .links a{
+          color:white!important;
+        }
       }
       .l-white{
-        display:inline!important;
+        display:inline-block!important;
       }
       .l-black{
-        display:none;
+        display:none!important;
       }
 
 		`;
