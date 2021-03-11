@@ -1,25 +1,12 @@
-<h1>BASE</h1>
-
-<div *ngIf="auth.user$ | async as user; else login">
-    {{ user | json }}
-    <hr>
-    <button class="button" (click)="auth.signOut()">Sign Out</button>
+<!-- Children -->
+<router-outlet></router-outlet>
+<br><br><br><br><br>
+<div>
+    <h1>Auth</h1>
 </div>
-
-<ng-template #login>
-    <button class="button" (click)="auth.googleSignin()">Log in with googs</button>
-</ng-template>
-
-<div class="container">
-    <div class="login">
-        <div class="login-top">
-            Authorization
-        </div>
-        <div class="login-bottom">
-            <input type="text">
-        </div>
-    </div>
-</div>
-
- 
+<button type="button" class="btn btn-primary"><a routerLink="sign-in" style="color:white;">Sign-in</a></button>
+<button type="button" class="btn btn-primary"><a routerLink="sign-up" style="color:white;">Sign-up</a></button>
+<button type="button" class="btn btn-primary"><a routerLink="forgot-password" style="color:white;">forgot-password</a></button>
+<button type="button" class="btn btn-primary"><a routerLink="verify-email" style="color:white;">verify-email</a></button>
+<button type="button" class="btn btn-primary"><a routerLink="account" style="color:white;">account</a></button>
 

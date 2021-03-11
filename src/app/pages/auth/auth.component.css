@@ -1,22 +1,188 @@
-.login{
+
+.design{
+    position: relative;
+    display: inline-block;
+    height:auto;
+    width:auto;
+    background-color:White;
+    border-radius:5px;
+    box-shadow:
+        0 2.8px 3.2px rgba(0, 0, 0, 0.134),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.022);
+    margin:15px 30px 30px 30px;
+}
+
+.section-title{
+    max-width: 1550px;
     margin:0 auto;
-    display: block;
-    max-width:400px;
-    border-radius:10px;
-overflow: hidden;}
-.container{
+    display:block;
+    margin-top:40px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.section-title h1, h3{
+    font-family: Poppins;
+}
+
+.section-title h1{
+    font-weight: 600;
+    font-size:70px;
+    line-height: 70px;
+}
+
+.section-title h3{
+    font-weight: 400;
+    margin-top:40px;
+    font-size:30px;
+    line-height:35px;
+}
+
+/* Folders */
+.folder-container{
+    position: absolute;
+    bottom:-50px;
+    right:-28px;
+    height: 100px;
+    width: 100px;
+    z-index:4;
+}
+
+.design-wrapper:hover .folder1{
+    opacity:0;
+}
+
+.design-wrapper:hover .folder2{
+    opacity:1;
+}
+
+.design-wrapper{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    background-color: White;
+    border-radius: 5px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 2%), 0 31.8px 33.4px rgb(0 0 0 / 1%), 0 50px 50px rgb(0 0 0 / 12%);
+    margin: 30px;
+}
+
+#designs{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.inner-design{
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: white;
+    max-width:260px;
+    max-height:260px;
     width:100%;
 }
 
-.login-top{
-    background-color: red;
-    text-align: center;
-    text-transform: capitalize;
-    padding:10px 5px;
+.thumbnail-designs{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
 }
 
-.login-bottom{
-    background-color: blue;
+.inner-design img{
+    height:100%;
+    width:100%;
+}
+
+.design-wrapper h3{
     text-align: center;
-    padding:50px 10px;
+    margin-bottom:0px;
+    margin-top:15px;
+}
+
+.filter{
+    background-color: white;
+    border-radius: 50px;
+    max-width:500px;
+    padding:10px 30px;
+    margin:0 auto;
+    margin-top:40px;
+    margin-bottom:20px;
+    text-align: center;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+}
+
+app-banner-image{
+    margin-bottom:30px;
+}
+
+.filter-container{
+    padding:0px 20px;
+}
+
+.filter a{
+    display: inline-block;
+    margin-right:20px;
+}
+
+@media only screen and (max-width: 1645px) {
+    .design-wrapper{
+        max-width:350px;
+    }    
+}
+
+@media only screen and (max-width: 1440px) {
+    .design-wrapper{
+        max-width:300px;
+    }    
+}
+
+@media only screen and (max-width: 1200px) {
+    .design-wrapper{
+        max-width:380px;
+        margin:10px;
+    }    
+}
+
+@media only screen and (max-width: 810px) {
+    .design-wrapper{
+        max-width:300px;
+    }    
+}
+
+@media only screen and (max-width: 645px) {
+    .design-wrapper{
+        margin:0px;
+        padding:5%;
+    }    
+    #designs{
+        margin-top:20px;
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    .design-wrapper{
+        margin:0px;
+        padding:20px;
+        max-width: 40vw;
+        padding-bottom: 0px;
+    }    
+    #designs{
+        margin-top:20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .design-wrapper{
+        margin:0px;
+        padding:20px;
+        max-width: 100%;
+        padding-bottom: 0px;
+    }    
+    #designs{
+        margin-top:50px;
+    }
 }

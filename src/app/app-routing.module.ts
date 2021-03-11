@@ -10,7 +10,11 @@ const appRoutes: Routes = [
     { path: 'games', loadChildren: () => import('./pages/games/games.module').then(m => m.GamesModule)},
     { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)},
     { path: 'mark', loadChildren: () => import('./pages/misc/mark/mark/mark.module').then(m => m.MarkModule)},
+    { path: 'auth', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)},
     { path: '**', loadChildren: () => import('./pages/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)},
+
+
+
 
     //{ path:'games', component: GamesComponent, children: [
      // {path:':game', component: GameComponent}
