@@ -3,8 +3,6 @@ import { User } from "../services/user";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Router } from "@angular/router";
-
-//POSSIBLY OUTDATED WITH ANGULAR 11
 import firebase from 'firebase/app'
 
 @Injectable({
@@ -39,7 +37,7 @@ export class AuthService {
     return this.afAuth.signInWithEmailAndPassword(email, password)
       .then((result) => {
         this.ngZone.run(() => {
-          this.router.navigate(['auth/account']);
+          this.router.navigate(['/account']);
         });
         this.SetUserData(result.user);
       }).catch((error) => {
@@ -64,7 +62,7 @@ export class AuthService {
   SendVerificationMail() {
     return this.afAuth.currentUser.then(u => u.sendEmailVerification())
     .then(() => {
-    this.router.navigate(['auth/verify-email']);
+    this.router.navigate(['/verify-email']);
     })
     }
 
@@ -87,7 +85,11 @@ export class AuthService {
   // Sign in with Google
   GoogleAuth() {
     //NOTE: This might not work, firebase.auth outdated. not for angular 11.
-    return this.AuthLogin(new firebase.auth.GoogleAuthProvider());
+    return this.AuthLogin(new firebase.auth.GoogleAuthProvider())
+    .then(() => {
+      //Refresh page and send to account.
+      window.location.replace('/account');
+      })
   }
 
   // Auth logic to run auth providers
@@ -95,7 +97,7 @@ export class AuthService {
     return this.afAuth.signInWithPopup(provider)
     .then((result) => {
        this.ngZone.run(() => {
-          this.router.navigate(['auth/account']);
+          this.router.navigate(['/account']);
         })
       this.SetUserData(result.user);
     }).catch((error) => {
@@ -122,9 +124,10 @@ export class AuthService {
 
   // Sign out 
   SignOut() {
+    
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
-      this.router.navigate(['auth/sign-in']);
+      window.location.replace('/sign-in');
     })
   }
 

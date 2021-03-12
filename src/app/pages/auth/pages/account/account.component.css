@@ -1,0 +1,13 @@
+.navbar-brand p{
+text-align: center;
+margin: 0px;
+padding: 15px 5px;
+font-family: Poppins;
+font-size: 15px;
+}
+
+.navbar-brand{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}

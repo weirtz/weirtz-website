@@ -1,10 +1,12 @@
 <div id="global-nav">
+    <!-- Nav Logos -->
     <div class="nav-container">
         <div class="logo-container">
             <a (click)="clearNav()" routerLink="/"><img class="site-logo l-black" src="/assets/global/logo-black.svg" alt="Logo Brendan Weirtz"></a>
             <a (click)="clearNav()" routerLink="/"><img class="site-logo l-white" src="/assets/global/logo-white.svg" alt="Logo Brendan Weirtz"></a>
         </div>
-          
+        
+        <!-- Mobile Nav -->
         <div id="mobile-nav">
             <a (click)="nav()">
                 <span id="menu-open"><img src="/assets/ui/menu-close.svg" alt="Menu Open"></span>
@@ -12,6 +14,14 @@
             </a>
         </div>
 
+        <!-- Account -->
+        <div class="account" *ngIf="authService.userData as user">
+            <a routerLink="/account">
+                <img class="acc-image" src="{{(user.photoURL) ? user.photoURL : '/assets/auth/user.jpg'}}" alt="{{user.displayName}}">
+            </a>
+        </div>
+
+        <!-- Links -->
         <div class="links" id="links">
             <a (click)="clearNav()" routerLink="/" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact: true}">About</a>
             <a (click)="clearNav()" routerLink="designs" routerLinkActive="router-link-active">Design</a>
@@ -20,10 +30,11 @@
             <a (click)="clearNav()" routerLink="photography" routerLinkActive="router-link-active">Photography</a>
             <!-- <a (click)="clearNav()" routerLink="games" routerLinkActive="router-link-active">Games</a> -->
             <a (click)="clearNav()" routerLink="contact" routerLinkActive="router-link-active">Contact</a>
+            <a *ngIf="!authService.userData as user" class="sign-in" (click)="clearNav()" routerLink="sign-in" routerLinkActive="router-link-active">Sign in</a>
+
         </div>
     </div>
     <mat-progress-bar mode="indeterminate" *ngIf="isShowingRouteLoadIndicator"></mat-progress-bar>
 </div>
-
 
 <div id="mobile-background"></div>

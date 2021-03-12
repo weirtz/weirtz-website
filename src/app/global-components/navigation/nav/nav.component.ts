@@ -8,6 +8,7 @@ import { NavigationCancel,
         } from '@angular/router';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { ScrollingService } from 'src/app/global-services/scrolling.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 
 @Component({
@@ -35,7 +36,8 @@ export class NavComponent implements OnInit {
 
   constructor(public router: Router, 
               private scrollingService: ScrollingService,
-              @Inject(PLATFORM_ID) private platformId: Object) {
+              @Inject(PLATFORM_ID) private platformId: Object,
+              public authService: AuthService) {
 
     this.isShowingRouteLoadIndicator  = false;
 
@@ -111,6 +113,10 @@ export class NavComponent implements OnInit {
       this.links.style.display = "none";
       this.globalNav.style.borderBottom = "1px solid rgba(0,0,0,0.08)";
     }
+  }
+
+  public refreshNav(){
+    this.ngOnInit();
   }
 
   // $(window).resize(function(e) {
