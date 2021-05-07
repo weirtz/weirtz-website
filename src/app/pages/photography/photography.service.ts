@@ -3,6 +3,48 @@ import { Injectable } from "@angular/core";
 export class PhotographyService {
     private images = [
         {
+            id:29,
+            jpgLow:'../../assets/photos/jpg/low/file29.jpg', 
+            jpgHigh:'../../assets/photos/jpg/high/file29.jpg',
+            webpLow:'../../assets/photos/webp/low/file29.webp',
+            webpHigh:'../../assets/photos/webp/high/file29.webp'
+        },
+        {
+            id:28,
+            jpgLow:'../../assets/photos/jpg/low/file28.jpg', 
+            jpgHigh:'../../assets/photos/jpg/high/file28.jpg',
+            webpLow:'../../assets/photos/webp/low/file28.webp',
+            webpHigh:'../../assets/photos/webp/high/file28.webp'
+        },
+        {
+            id:30,
+            jpgLow:'../../assets/photos/jpg/low/file30.jpg', 
+            jpgHigh:'../../assets/photos/jpg/high/file30.jpg',
+            webpLow:'../../assets/photos/webp/low/file30.webp',
+            webpHigh:'../../assets/photos/webp/high/file30.webp'
+        },
+        {
+            id:31,
+            jpgLow:'../../assets/photos/jpg/low/file31.jpg', 
+            jpgHigh:'../../assets/photos/jpg/high/file31.jpg',
+            webpLow:'../../assets/photos/webp/low/file31.webp',
+            webpHigh:'../../assets/photos/webp/high/file31.webp'
+        },
+        {
+            id:32,
+            jpgLow:'../../assets/photos/jpg/low/file32.jpg', 
+            jpgHigh:'../../assets/photos/jpg/high/file32.jpg',
+            webpLow:'../../assets/photos/webp/low/file32.webp',
+            webpHigh:'../../assets/photos/webp/high/file32.webp'
+        },
+        {
+            id:33,
+            jpgLow:'../../assets/photos/jpg/low/file33.jpg', 
+            jpgHigh:'../../assets/photos/jpg/high/file33.jpg',
+            webpLow:'../../assets/photos/webp/low/file33.webp',
+            webpHigh:'../../assets/photos/webp/high/file33.webp'
+        },
+        {
             id:26,
             jpgLow:'../../assets/photos/jpg/low/file2.jpg', 
             jpgHigh:'../../assets/photos/jpg/high/file2.jpg',
