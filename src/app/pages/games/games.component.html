@@ -1,12 +1,46 @@
-<!-- <app-banner *ngIf="getRouter().url === '/games'"
-            bTitle="Game Development" 
-            bSubTitle="Projects and experiments. "
-            bLinkCopy="visit steam publications."
-            bLinkUrl="https://store.steampowered.com/search/?developer=Nullnut">
-</app-banner> -->
 
-<!-- <div *ngIf="getRouter().url === '/games'">
-    <a class="btn btn-secondary ml-4 mt-4 mb-4" [routerLink]="['/games', game.id]" href="#" *ngFor="let game of getGames()">{{ game.name }}</a>
-</div> -->
+<div class="container">
+    <div class="spotlight">
+        <h2 class="title">Game spotlight</h2>
+        <div class="spot-inner">
+            <div class="thumbs">
+                <img src="/assets/games/haunted-showers/spotlight/s1.png" alt="thumbnail">
+                <img src="/assets/games/haunted-showers/spotlight/s2.png" alt="thumbnail">
+                
+                <img src="/assets/games/haunted-showers/spotlight/s3.png" alt="thumbnail">
+                <img src="/assets/games/haunted-showers/spotlight/s4.png" alt="thumbnail">
+            </div>
+            <img src="/assets/games/haunted-showers/spotlight.png" alt="Haunted Showers">
+            
+        </div>
 
-<router-outlet></router-outlet>
+    </div>
+    <div class="game-list">
+        <h2 class="title">Game directory</h2>
+        <hr>
+        <div class="game">
+            <img src="/assets/games/haunted-showers/banner.jpg" alt="Haunted Showers">
+            <div class="game-content">
+                <h3>Haunted Showers</h3>
+                <div class="os"><i class="os-icon fab fa-windows"></i></div>
+                <p class="genere">In Development</p>
+            </div>
+        </div>
+
+        <div class="game">
+            <img src="/assets/games/concord/banner.jpg" alt="Condord">
+            <div class="game-content">
+                <h3>Concord</h3>
+                <div class="os"><i class="os-icon fab fa-windows"></i></div>
+                <p class="genere">In Development</p>
+            </div>
+        </div>
+
+        <div class="game">
+            <img src="/assets/games/observe-os/banner.jpg" alt="Observe OS">
+            <h3>Observe OS</h3>
+            <div class="os"><i class="os-icon fab fa-windows"></i></div>
+                <p class="genere">Release Date: Jun 01, 2018</p>
+        </div>
+    </div>
+</div>
