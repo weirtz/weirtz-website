@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { GamesService } from './games.service';
 import { Title } from '@angular/platform-browser';
@@ -11,6 +11,7 @@ import { Title } from '@angular/platform-browser';
 })
 
 export class GamesComponent implements OnInit {
+
   private games: {id: string, name: string}[] = [];
 
   constructor(private gamesService: GamesService,
@@ -33,6 +34,7 @@ export class GamesComponent implements OnInit {
     window.scroll(0,0);
     //Set title
     this.title.setTitle("Game Development");
+
   }
 }
 

@@ -64,7 +64,7 @@ export class LogosService {
           bannerImage:'../../assets/logos/paramount/banner-paramount.jpg',
           title:'Paramount Elite',
           subtitle:'Emergency restoration services',
-          copy:'Placeholder',
+          copy:'Paramount specializes in insurance claims services, mediation, and full interior and exterior construction and restoration.',
           copy2:'',
           moreButton:''
         },
@@ -75,7 +75,7 @@ export class LogosService {
           bannerImage:'../../assets/logos/nullnut/banner-nullnut.jpg',
           title:'Nullnut',
           subtitle:'Software development team',
-          copy:'',
+          copy:'Nullnut is a small team of indie developers with a burning passion for making awesome things.',
           copy2:'',
           moreButton:''
         },
@@ -108,7 +108,7 @@ export class LogosService {
           bannerImage:'',
           title:'Apricity Media Group',
           subtitle:'',
-          copy:'',
+          copy:'Apricity Media Group designs and develops Ad campaigns for businesses with both brains & beauty.',
           copy2:'',
           moreButton:''
         },

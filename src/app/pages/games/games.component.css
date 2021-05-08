@@ -8,7 +8,16 @@
     background-color:white;
     min-height: 100vh;
     width: 100%;
-    
+    padding:40px 60px;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 20px rgba(0, 0, 0, 0.06),
+  0 22.3px 27.9px rgba(0, 0, 0, 0.072);
+    position: relative;
+    margin-bottom:50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .game{
     margin-bottom:20px;
@@ -17,7 +26,24 @@
     overflow: hidden;
     position: relative;
     max-width:700px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0),
+    0 6.7px 5.3px rgba(0, 0, 0, 0),
+    0 12.5px 10px rgba(0, 0, 0, 0),
+    0 22.3px 17.9px rgba(0, 0, 0, 0),
+    0 41.8px 33.4px rgba(0, 0, 0, 0);
+    transition: 0.1s all ease-out;
+}
 
+.game:hover{
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+  background-color: #007bff;
+  transform: scale(1.1);
 }
 
 .game-content{
@@ -25,54 +51,178 @@
     display: inline-block;
 }
 .game img{
-    width:220px;
+    width:230px;
     float:left;
     margin-right: 20px;
 }
 
 .game-list{
     margin-top:50px;
+    margin-bottom:100px;
 }
 .game h3{
 
     font-size: 16px;
     font-family: poppins;
     font-weight: 500;
-    margin-bottom:0px;
-
+    margin-bottom:-3px;
+    margin-top: 5px;
+    transition: 0.2s all;
 }
 
 
 .os-icon{
     color: rgb(57, 120, 179);
-    font-size: 17px;
+    font-size: 14px;
+    transition: 0.2s all;
+    display: inline-block;
 }
 
 .genere{
     margin-bottom:0px;
     color: rgb(123, 123, 138);
+    transition: 0.2s all;
+    display: inline-block;
 }
 
+.game:hover h3{
+
+    color:white;
+
+}
+
+.game:hover .os-icon{
+    color: rgb(255, 255, 255);
+}
+.spot-inner:hover .os-icon{
+    color: rgb(255, 255, 255);
+}
+
+.game:hover .genere{
+    color: rgb(197, 197, 211);
+}
+.spot-inner:hover .genere{
+    color: rgb(197, 197, 211);
+}
 .thumbs{
-    float:right;
-    width:200px;
+    display: block;
 }
 
 .spot-inner{
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgb(236, 239, 247);
     width:100%;
-    float:left;
     position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.1s all;
 }
 
 .spotlight{
     position: relative;
     display: block;
-    margin-bottom:20px;
+    margin-bottom:100px;
+    
 }
 
 .thumbs img{
-    max-width:200px;
+    max-width:25%;
     display: inline-block;
+    padding-right:6px;
+    padding-top:4px;
+    opacity: 0.85;
 }
 
+.thumbs img:nth-child(4){
+    padding-right: 0px;
+}
+
+.spot-content1{
+    width:60%;
+    float: left;
+    position: relative;
+}
+
+.spot-text{
+    width:40%;
+    float: right;
+    padding:20px;
+}
+
+.spot-text h3{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.spot-text p{
+    padding-right: 20px;
+    font-size: 15px;
+}
+.spot-inner:hover{
+    background-color: #007bff;
+    color:white;
+}
+.spot-inner:hover .demo{
+    border:1px solid white;
+    color:white;
+}
+
+.spot-text .genere{
+    margin-bottom:8px;
+}
+
+.demo{
+    border-radius: 5px;
+    border: 1px solid rgb(95, 95, 95);
+    margin:0 auto;
+    margin-top:30px;
+    max-width: 140px;
+    text-align: center;
+    padding:5px 10px;
+    transition: 0.1s all;
+}
+
+/* SCALING */
+
+@media only screen and (max-width: 1200px) {
+    .spot-content1{
+        width:65%;
+
+    }
+    .spot-text{
+        width:35%;
+
+    }
+    .demo{
+        display: none;
+    }
+    .container{
+    padding-right: 30px;
+    padding-left: 30px;
+
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .container{
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 90%;
+    }
+
+    .spot-inner{
+        position: relative;
+        float: unset;
+    }
+    .spot-content1{
+        position: relative;
+        display:inline-block;
+        width:90%;
+        margin: 0 auto;
+    }
+    .spot-text{
+        float:unset;
+        width:100%;
+    }
+}

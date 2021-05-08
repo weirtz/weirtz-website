@@ -111,8 +111,7 @@
 }
 
 .web2-text .sub-text{
-    font-size:25px;
-    line-height: 33px;
+    font-size:18px;
     font-family: Poppins;
 }
 
@@ -125,7 +124,7 @@
 }
 
 .break2{
-    max-width: 950px;
+    max-width: 800px;
 }
 
 .web3{
