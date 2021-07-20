@@ -7,16 +7,14 @@ import { ScrollingService } from '../../global-services/scrolling.service';
 import { InfoModule } from 'src/app/global-components/info/info.module';
 
 import { ImageLightboxModule } from '../../global-components/utilities/image-lightbox/image-lightbox.module';
-import { AngularTiltModule } from 'angular-tilt';
 
 @NgModule({
   imports: [
     CommonModule,
     PhotographyRoutingModule,
     InfoModule,
-    ImageLightboxModule,
-    AngularTiltModule
-  ],
+    ImageLightboxModule
+    ],
   declarations: [
     PhotographyComponent,
   ],

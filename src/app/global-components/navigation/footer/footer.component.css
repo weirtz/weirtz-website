@@ -6,7 +6,7 @@
     padding-bottom:18px;
 }
 
-.footer-text img{
+.f-logo{
     max-width:35px;
     border-radius: 10px;
     box-shadow:
@@ -36,6 +36,7 @@
     max-width:20px;
     vertical-align: middle;
     margin-right:5px;
+    margin-left:5px;
     margin-top:-5px;
     
 }

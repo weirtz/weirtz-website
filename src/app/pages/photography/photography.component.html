@@ -5,7 +5,7 @@
 <router-outlet></router-outlet>
 <section id="photos" [@galleryAnimation]="images.length">
     <a class="photo-id" *ngFor="let image of getImagesService()" routerLink="{{image.id}}">
-            <div aTilt>
+            <div>
                 <picture>
                     <source srcset="{{image.webpLow}}" type="image/webp">
                     <source srcset="{{image.jpgLow}}" type="image/jpeg">

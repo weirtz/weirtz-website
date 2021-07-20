@@ -104,7 +104,7 @@ export class LogosService {
         {
           link:'../../assets/logos/apricity.png', 
           name:'apricity-media-group', 
-          moreInfo:true,
+          moreInfo:false,
           bannerImage:'',
           title:'Apricity Media Group',
           subtitle:'',
