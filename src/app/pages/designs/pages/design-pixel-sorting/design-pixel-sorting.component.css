@@ -52,8 +52,8 @@
 }
 
 .photo-id:hover img{
-    transform: scale(0.9);
-    z-index:1000000!important;
+    opacity: 0.8;
+    z-index:100!important;
     position: relative;
     display: block;
 }
