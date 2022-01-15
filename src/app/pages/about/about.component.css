@@ -2,6 +2,7 @@
 .container{
   color:#626888;
   font:400 18px/1.44 Open Sans,sans-serif;
+  margin-top:-30px;
 }
 
 .hero-header{
@@ -19,19 +20,51 @@ h1{
   max-width:470px;
   font-family: Poppins;
   font-size:17px;
+  padding-bottom:30px;
+  display: block;
+  position: relative;
 }
-
-.social{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80px;
-  float: right;
-  background-image: linear-gradient(to bottom, #363636 0%, rgb(29, 29, 29) 100%)!important;
+.about-buttons a{
+  background-color: white;
+  margin-right: 10px;
+  padding:7px 15px;
+  border-radius: 4px;
+  color:#141E30;
+  font-weight: 600;
+  font-family: Poppins;
+}
+.side-button{
+  background-color: rgba(0,0,0,0)!important;
+  color: white !important;;
+  border:1px solid white;
+  font-weight: 500!important;
 }
 
 .social ul{
   list-style-type: none;
   padding: 0px;
+}
+
+.header-bar{
+  background-color:rgb(55, 55, 55);
+  width: 100%;
+  font-family: Consolas;
+  font-size: 13px;
+  color:rgb(106, 106, 106);
+  float: left;
+}
+.header-bar p{
+  padding-top: 3px;
+  padding-left: 30px;
+}
+
+.header-bar-icon{
+  width:20px;
+  margin-left: 5px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  color:rgb(84, 170, 237);
+  float: left;
 }
 
 .social li{
@@ -60,12 +93,34 @@ li svg{
   color:white;
   vertical-align: top;
   border-radius: 5px;
-  overflow: hidden;
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.20);
   font-family: Poppins;
+  overflow: hidden;
+}
+.title-name{
+  background: rgb(184, 184, 184);  /* Chrome 10-25, Safari 5.1-6 */
+  box-shadow: none;
+  width: 100%;
+}
+.title-name svg{
+  width: 107%;
+  font-family: Poppins;
+  font-weight: 800;
+  padding-bottom: 50px;
+  fill:url(#MyGradient);
+}
+
+
+.social{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  float: right;
+  background-image: linear-gradient(
+    180deg,#363636 0,#1d1d1d)!important;
 }
 
 .console{
@@ -135,55 +190,70 @@ h3{
 a{
     color:#007bff;
 }
-  
 
-  
-  @media only screen and (max-width: 1199px) {
-    .content-module{
-      width:100%;
-      max-width: 100%;
-      margin:0px;
-      margin-bottom:40px;
-      box-shadow: unset;
-    }
-    .social{
-      position: unset;
-    }
-    .container{
-      padding: 0px 15px;
-    }
+#three-main{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top:0;
+  left:0;
+  padding: 20px;
+  padding-top:40px;
+  display: inline-block;
+}
+#three-text{
+display: inline-block;
+vertical-align: top;
+padding: 20px;
+color:rgb(242, 242, 242);
+font-size: 13px;
+font-family: Consolas;
+}
+.th-1{
+  color:yellow;
+}
+.th-2{
+  animation: blinking 1s steps(2, start) infinite;
+}
+.th-list-div{
+  color: rgb(181, 181, 181);
+}
+
+.th-lists-item{
+  max-width: 160px;
+  display: inline-block;
+  vertical-align: top;
+  padding-right:30px;
+}
+
+#three-text p:nth-child(2){
+  color:white;
+  margin-top:10px;
+  margin-left:30px;
+  font-size:12px;
+}
+.cm-three{
+  position: relative;
+  background: rgb(36, 36, 36);
+  /* -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px); */
+}
+
+
+.about-buttons a:nth-child(1){
+  background-color: red!important;
+}
+
+
+@keyframes blinking {
+  to {
+    visibility: hidden;
   }
-  @media only screen and (max-width: 991px) {
-    .hero-text{
-        font-size: 80px;
-        line-height:90px;
-    }
+}
+@-webkit-keyframes blinking {
+  to {
+    visibility: hidden;
   }
-  @media only screen and (max-width: 767px) {
-    .hero-text{
-        font-size: 50px;
-        line-height:60px;
-    }
-    .hero-header{
-      padding:40px 0px;
-    }
-  }
-  @media only screen and (max-width: 650px) {
-    .hero-text{
-        /* font-size: 40px; */
-        font-size:2.3em;
-        line-height:45px;
-    }
-    .hero-header{
-      padding:40px 0px;
-    }
-  }
-  @media only screen and (max-width: 400px) {
-    .hero-text{
-        font-size: 32px;
-        line-height:42px;
-    }
-    .hero-header{
-      padding:40px 0px;
-    }
-  }
+}
+
+
