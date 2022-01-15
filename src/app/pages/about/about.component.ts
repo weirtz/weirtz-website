@@ -45,7 +45,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
 
 
-        camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 2000 );
+        camera = new THREE.PerspectiveCamera( 50, 300 / 150, 1, 2000 );
         camera.position.y = 0;
         camera.position.z = 4;
         camera.position.x = 0.6;

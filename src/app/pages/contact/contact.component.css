@@ -71,9 +71,9 @@ mat-spinner{
     height:30vw;
     min-height:420px;
     background: rgb(0,173,255);
-    background: -moz-radial-gradient(circle, rgba(0,173,255,1) 36%, rgba(37,103,223,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(0,173,255,1) 36%, rgba(37,103,223,1) 100%);
-    background: radial-gradient(circle, rgba(0,173,255,1) 36%, rgba(37,103,223,1) 100%);
+    background: -moz-radial-gradient(circle, circle, #243B55 36%, #141E30 100%);
+    background: -webkit-radial-gradient(circle, #243B55 36%, #141E30 100%);
+    background: radial-gradient(circle, #243B55 36%, #141E30 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00adff",endColorstr="#2567df",GradientType=1);}
 
 .form-container{

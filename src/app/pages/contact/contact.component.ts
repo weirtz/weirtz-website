@@ -97,7 +97,7 @@ export class ContactComponent implements OnInit {
     this.submitLoadingIcon = document.getElementById("spinner-icon");
     this.submitButton = document.getElementById("submit-button");
     //Remove footer
-    this.styleTag = this.buildStyleElement();
-    document.body.appendChild( this.styleTag );
+    // this.styleTag = this.buildStyleElement();
+    // document.body.appendChild( this.styleTag );
   }
 }

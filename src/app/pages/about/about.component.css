@@ -2,7 +2,9 @@
 .container{
   color:#626888;
   font:400 18px/1.44 Open Sans,sans-serif;
-  margin-top:-30px;
+  margin-top: 40px;
+  overflow-x: hidden;
+
 }
 
 .hero-header{
@@ -101,7 +103,7 @@ li svg{
   overflow: hidden;
 }
 .title-name{
-  background: rgb(184, 184, 184);  /* Chrome 10-25, Safari 5.1-6 */
+  background: rgb(77, 77, 77);  /* Chrome 10-25, Safari 5.1-6 */
   box-shadow: none;
   width: 100%;
 }
@@ -244,6 +246,19 @@ font-family: Consolas;
   background-color: red!important;
 }
 
+@media only screen and (max-width: 1199px) {
+  .social{
+    width:100%;
+    float:none; 
+  }
+}
+@media only screen and (max-width: 767px) {
+  #three-main{
+    margin:0 auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
 
 @keyframes blinking {
   to {
