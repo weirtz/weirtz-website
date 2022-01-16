@@ -7,38 +7,38 @@
 <!-- Logo Modal -->
 <router-outlet></router-outlet>
 
-<br><br>
-
-<div class="section-title">
-    <h1>Logo Design</h1>
-    <h3>Hand crafted logos, fresh off the artboard.</h3>
-</div>
-<!-- Logos -->
-<div *ngIf="showLogos" class="container logos" [@logoAnimation]="logos.length">
-
-    <div class="logo" *ngFor="let logo of getLogosService()">
-
-        <!-- If more Info -->
-        
-        <div> 
-            <a [routerLink]="['logos', logo.name]" (click)="toggleModal()" href="#">
-                <div class="blur">
-                    <img class="thumbnail no-drag" [src]="logo.link">
-                    <img class="thumbnail2 no-drag" [src]="logo.link">
-                </div>
-        
-                <!-- Folder Icons -->
-                <div *ngIf="logo.moreInfo" class="folder-container">
-                    <div class="folders">
-                        <span><img class="folder1 no-drag" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
-                        <span><img class="folder2 no-drag" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
-                    </div>
-                </div>  
-            </a>
-        </div>
-       
+<section class="sec-1" style="margin-top: -100px;">
+    <div class="section-title">
+        <h1>Logo Design</h1>
+        <h3>Hand crafted logos, fresh off the artboard.</h3>
     </div>
-</div>
+    <!-- Logos -->
+    <div *ngIf="showLogos" class="container logos" [@logoAnimation]="logos.length">
+    
+        <div class="logo" *ngFor="let logo of getLogosService()">
+    
+            <!-- If more Info -->
+            
+            <div> 
+                <a [routerLink]="['logos', logo.name]" (click)="toggleModal()" href="#">
+                    <div class="blur">
+                        <img class="thumbnail no-drag" [src]="logo.link">
+                        <img class="thumbnail2 no-drag" [src]="logo.link">
+                    </div>
+            
+                    <!-- Folder Icons -->
+                    <div *ngIf="logo.moreInfo" class="folder-container">
+                        <div class="folders">
+                            <span><img class="folder1 no-drag" src="/assets/icons/folder1.png" alt="Folder Icon"></span>
+                            <span><img class="folder2 no-drag" src="/assets/icons/folder2.png" alt="Folder Icon"></span>
+                        </div>
+                    </div>  
+                </a>
+            </div>
+           
+        </div>
+    </div>
+</section>
 
 <!-- <app-banner-image 
     (click)="showDesigns=!showDesigns" 
@@ -46,10 +46,10 @@
     bSubTitle="Digitally designed experiences.">
 </app-banner-image> -->
 
-<br><br><br><br><br><br><br><br><br><br>
+<section class="sec-2">
 
 <div class="section-title">
-    <h1>Graphics / Designs</h1>
+    <h1>Graphics and Designs</h1>
     <h3>Digitally designed experiences.</h3>
 </div>
 
@@ -78,6 +78,7 @@
     
 </div>
 <br><br><br><br><br><br><br><br><br><br>
+</section>
 <!-- <app-banner-image 
     (click)="showDigital=!showDigital" 
     bTitle="Digital" 

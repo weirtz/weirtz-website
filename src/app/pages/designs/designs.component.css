@@ -1,4 +1,17 @@
+section{
+    }
 
+.sec-1{
+    padding-bottom: 80px;
+    background-color: rgb(241, 241, 241);
+    padding-top: 130px;
+}
+.sec-2{
+    padding-top:30px;
+    background: rgb(236,236,236);
+    background: linear-gradient(0deg, rgba(236,236,236,1) 0%, rgba(255,255,255,1) 100%);
+
+}
 .design{
     position: relative;
     display: inline-block;
@@ -64,10 +77,9 @@
     display: inline-block;
     height: auto;
     width: auto;
-    background-color: White;
     border-radius: 5px;
-    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 2%), 0 31.8px 33.4px rgb(0 0 0 / 1%), 0 50px 50px rgb(0 0 0 / 12%);
     margin: 30px;
+    margin-bottom: 50px!important;
 }
 
 #designs{
@@ -86,6 +98,8 @@
 
 .thumbnail-designs{
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 2%), 0 31.8px 33.4px rgb(0 0 0 / 1%), 0 50px 50px rgb(0 0 0 / 12%);
+
 }
 
 .inner-design img{
@@ -97,6 +111,10 @@
     text-align: center;
     margin-bottom:0px;
     margin-top:15px;
+    border-radius: 20px;
+    width: 250px;
+    margin:0 auto;
+    padding:10px 25px;
 }
 
 .filter{
@@ -128,6 +146,16 @@ app-banner-image{
     margin-right:20px;
 }
 
+@media only screen and (max-width: 1657px) {
+    .section-title h1{
+        text-align: center;
+    }
+    
+    .section-title h3{
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 1645px) {
     .design-wrapper{
         max-width:350px;
@@ -142,7 +170,7 @@ app-banner-image{
 
 @media only screen and (max-width: 1200px) {
     .design-wrapper{
-        max-width:380px;
+        max-width:300px;
         margin:10px;
     }    
 }
@@ -150,30 +178,25 @@ app-banner-image{
 @media only screen and (max-width: 810px) {
     .design-wrapper{
         max-width:300px;
-    }    
+        
+    }  
+    .folder-container{
+        bottom:-30px;
+        right:-10px;
+    }  
 }
 
 @media only screen and (max-width: 645px) {
     .design-wrapper{
-        margin:0px;
-        padding:5%;
+        margin:5px;
+        padding:5px;
     }    
     #designs{
         margin-top:20px;
     }
 }
 
-@media only screen and (max-width: 605px) {
-    .design-wrapper{
-        margin:0px;
-        padding:20px;
-        max-width: 40vw;
-        padding-bottom: 0px;
-    }    
-    #designs{
-        margin-top:20px;
-    }
-}
+
 
 @media only screen and (max-width: 500px) {
     .design-wrapper{

@@ -21,7 +21,7 @@
     transform: scale(1.1);
 }
 .hero-button p{
-    color: purple;
+    color: #1A062B;
     font-family: Poppins;
     font-weight: 600;
     text-transform: uppercase;
@@ -37,6 +37,7 @@
 .web1{
     height:95vh;
     min-height: 500px;
+    max-height: 800px;
     position: relative;
 
     background: url("/assets/background/web/purple.jpg") no-repeat center center fixed; 

@@ -211,20 +211,20 @@
 @media only screen and (max-width: 992px) {
 
     .container{
-    padding-right: 30px;
-    padding-left: 30px;
-    max-width: 90%;
+
     }
 
     .spot-inner{
-        position: relative;
-        float: unset;
+
     }
     .spot-content1{
         position: relative;
-        display:inline-block;
-        width:90%;
+        display:block;
+        width:100%;
+        margin-top:20px;
         margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
     }
     .spot-text{
         float:unset;

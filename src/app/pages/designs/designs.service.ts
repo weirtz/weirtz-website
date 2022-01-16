@@ -22,7 +22,7 @@ export class DesignsService {
         {
           url:'design-decals', 
           filter:'vector',
-          title:'Design Decals - iOS Sticker Pack',
+          title:'Design Decals',
           thumbnail:'../../assets/designs/design-decals/thumbnail.png',
           moreInfo:true
         },

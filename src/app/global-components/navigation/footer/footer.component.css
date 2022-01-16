@@ -5,7 +5,7 @@
     color: rgb(99, 99, 99);
     padding-bottom:18px;
     background-color: white;
-    margin-top:30px;
+
     border-top:rgba(0, 0, 0, 0.07) 1px solid;
 }
 
@@ -33,6 +33,7 @@ footer {
     background-color: white;
     border-top: 1px solid rgba(0,0,0,0.08);
     bottom: 0; */
+    margin-top: 0px!important;
 }
 
 .angular-logo img{
