@@ -154,6 +154,7 @@ mat-spinner{
         border-top:1px solid rgba(0,0,0,0.1);
     }
     .side-content{
+        display: none;
         padding:0px 30px;
         padding-top:80px;
         margin-bottom:30px;
