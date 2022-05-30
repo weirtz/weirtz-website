@@ -1,0 +1,563 @@
+[33mcommit 0a32fc73d78d533c0f4ceeaffa798aedb87c3fa1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Brendan <brendanweirtz@gmail.com>
+Date:   Mon May 30 13:15:40 2022 -0400
+
+    game updates
+
+[33mcommit 7d54ac14f510ab6eb23ace4f57138d3374eb1820[m
+Author: Brendan <brendanweirtz@gmail.com>
+Date:   Sun May 29 16:24:24 2022 -0400
+
+    game update
+
+[33mcommit aac4c403f53bd0f0d4b37aa7e4745760308bd7bd[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Brendan <brendanweirtz@gmail.com>
+Date:   Sat Jan 15 16:34:25 2022 -0800
+
+    Refresh part 5
+
+[33mcommit c1ac5b2c4732eb453c7ce7b2d6e45d118192d46a[m
+Author: Brendan <brendanweirtz@gmail.com>
+Date:   Sat Jan 15 16:28:28 2022 -0800
+
+    Refresh part 4
+
+[33mcommit a662b822198f1178f91f2d7b84f9d5d7c6de122c[m
+Author: Brendan <brendanweirtz@gmail.com>
+Date:   Sat Jan 15 16:25:58 2022 -0800
+
+    Refresh part 3
+
+[33mcommit dc4a410d18a2a0aa0635b08c9bd3bbf4649faf77[m
+Author: Brendan <brendanweirtz@gmail.com>
+Date:   Sat Jan 15 15:16:48 2022 -0800
+
+    Refresh part 2
+
+[33mcommit 29f85688165ee52008d0e62de6f8aa13d2da1771[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Jan 15 17:16:28 2022 -0500
+
+    Home refresh
+
+[33mcommit ee39cbfe498cb91fba39dd504d808636b821ce17[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue Jul 20 21:46:45 2021 -0400
+
+    Image gallery bug patch
+
+[33mcommit 8796e92302e5ec2cb061b4b843dea141b51ce0d9[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Mon Jul 19 21:15:33 2021 -0400
+
+    Link updates
+
+[33mcommit c365b848070cf021ec6ec2326e3fb4431709c30a[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 8 00:04:10 2021 -0400
+
+    Games update
+
+[33mcommit 02136b0f46ec74838b00444347c99348587bb5d7[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 6 22:39:49 2021 -0400
+
+    Game update
+
+[33mcommit b821333b14222e3dc85036e5c8f0103e0b1c97d2[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 6 22:29:44 2021 -0400
+
+    Games Init
+
+[33mcommit 691632dfe8571c31bd3c6e3c8c1f579c80f627e4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 6 20:18:14 2021 -0400
+
+    Added photos
+
+[33mcommit 9590c4111252004d7174b9593e1b7ce3644d493b[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Mar 17 10:54:49 2021 -0400
+
+    Console Printer
+
+[33mcommit 1f17e1f0dbeb60370925b641c3228c091a6d9a8e[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 13 10:06:33 2021 -0500
+
+    Style updates for accounts
+
+[33mcommit e6445acbaa76a899f331dfcd26f66b887d491738[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu Mar 11 20:12:05 2021 -0500
+
+    Accounts Development
+
+[33mcommit d84b28930a67ff92497a341961e310bb62ccc0a2[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu Mar 11 00:11:30 2021 -0500
+
+    Added basic Auth service
+
+[33mcommit 109a0474526164b0b7cf339542c6aa90c44a5240[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue Mar 9 16:24:36 2021 -0500
+
+    Added atilt to pixel sorting page
+
+[33mcommit c74bedf30514a7246b3bea156c6c7635f0ce383a[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue Mar 9 16:19:39 2021 -0500
+
+    UI Changes - Publish
+
+[33mcommit 2f5735e762a56dbaf5f22a0a0e17f2d133dad710[m
+Merge: 7b638e4 90215eb
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 18:05:37 2021 -0500
+
+    Merge pull request #8 from dasreyh/angular-update
+    
+    Angular update
+
+[33mcommit 90215eb87eb83e39d3f243166e853b9bcf3885bd[m[33m ([m[1;31morigin/angular-update[m[33m)[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 18:03:26 2021 -0500
+
+    Angular 11 Update
+
+[33mcommit 3bb94f8a014da6d1db6ac6c60a4c24ff4a5abb3e[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 17:58:06 2021 -0500
+
+    why the hell do i need to keep commiting to update(5)
+
+[33mcommit 6e8f381fcb960719768685f5f901222d8f9e4e26[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 17:55:53 2021 -0500
+
+    why the hell do i need to keep commiting to update(4)
+
+[33mcommit ab6e05c496ba3336f4fa6135c474e2433837f164[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 17:54:15 2021 -0500
+
+    why the hell do i need to keep commiting to update(3)
+
+[33mcommit 3cbe702b8e52c5c4f09745c47da04236f512e1f4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 17:52:17 2021 -0500
+
+    why the hell do i need to keep commiting to update(2)
+
+[33mcommit 75398348cdda6b8d212ecbd553ee26d6e6701c42[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 17:50:10 2021 -0500
+
+    why the hell do i need to keep commiting to update
+
+[33mcommit 411ab2f23fb5d59e55009c50d39e5a3dbf6dc635[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 17:41:46 2021 -0500
+
+    update
+
+[33mcommit 7b638e4cd88b027fcdba9189fd7f33aa6bac2b32[m[33m ([m[1;31morigin/update[m[33m)[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Mar 6 15:01:16 2021 -0500
+
+    Web update
+
+[33mcommit b572b14e9e249202a777754621f0d74c9c3c5327[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Feb 24 00:32:11 2021 -0500
+
+    Added PWA
+
+[33mcommit 3542708c3f16808063b4aea341474eff4500b84d[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue Feb 23 14:14:13 2021 -0500
+
+    designs/logos routerlink fix
+
+[33mcommit 4234acb07803aafa5935d7a9bfcb65fe5774fd74[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Mon Feb 22 13:41:08 2021 -0500
+
+    updated social icons
+
+[33mcommit 6f118d99e8750ecaad642b327e6424c0fbaabfdb[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Feb 17 14:56:17 2021 -0500
+
+    Icon updates.
+
+[33mcommit f97f29ced2a430fd5f6f7717bd76c124ed7a5004[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Fri Feb 12 09:30:16 2021 -0500
+
+    Designs update.
+
+[33mcommit d705f28a260a26908f51ce03639c93ee77023d05[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Feb 6 15:17:03 2021 -0500
+
+    Bug fixes.
+
+[33mcommit ce038ea2da30c0077499453caef8adc283c99e71[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu Feb 4 21:09:48 2021 -0500
+
+    Update start - condense content
+
+[33mcommit 1594a1d9fae36e5371ca59648e84460ba55354d4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue Jan 5 13:16:12 2021 -0500
+
+    Photo page update
+
+[33mcommit dd3c30a76dd7f697220bb0ae6b4fff0acc1dc0b9[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat Jan 2 23:13:01 2021 -0500
+
+    Temp revert server side compiling.
+
+[33mcommit 0eeeb89ce2346b681a332036cba908d397da789f[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Jun 10 22:09:23 2020 -0400
+
+    Update mark to init
+
+[33mcommit 7d7377449a19f6bcc965de56afbcaf110573ac73[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Jun 10 22:07:14 2020 -0400
+
+    Update
+
+[33mcommit d736be21240461f0e6d6a4d948ebacdc42a2b6dc[m
+Merge: bf55235 3c5e50d
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Jun 10 21:55:28 2020 -0400
+
+    Merge pull request #7 from dasreyh/dev
+    
+    Dev
+
+[33mcommit 3c5e50d16fb83df5a408e88b5a8d7a5be51768e1[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Jun 10 21:54:43 2020 -0400
+
+    Fixed syntax
+
+[33mcommit b620c2e02f40cfed7f10df0206266a8b01698ba5[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed Jun 10 21:54:13 2020 -0400
+
+    Added mark :)
+
+[33mcommit c261649b95019b87691e7c2e78959457af2dd186[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Mon Jun 1 10:25:52 2020 -0400
+
+    SSR for SEO init
+
+[33mcommit bf55235fdb1e9d317c49c30d1cce904e4bcff934[m
+Merge: a19212e 95df75b
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sun May 31 22:28:51 2020 -0400
+
+    Merge pull request #6 from dasreyh/dev
+    
+    Added loading icon to contact form
+
+[33mcommit 95df75b41b54a827ce9948b4a074044977fd2da4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sun May 31 22:27:02 2020 -0400
+
+    Added loading icon to contact form
+
+[33mcommit a19212eb1054993f3943bfe08b7c3d1cd4ec934f[m
+Merge: af6e301 5434bda
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 30 23:41:18 2020 -0400
+
+    Merge pull request #5 from dasreyh/dev
+    
+    Update to API server
+
+[33mcommit 5434bdab9cedf6a6f5dca93d24a2882a4cc0b1ec[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 30 23:39:54 2020 -0400
+
+    Update to API server
+
+[33mcommit af6e301cb278d424bcfa842be909d8c8fe3cef47[m
+Merge: db5c61a 25ff82e
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 30 19:30:24 2020 -0400
+
+    Merge pull request #4 from dasreyh/dev
+    
+    Contact page added
+
+[33mcommit 25ff82eede6aec0eb24dd48b13ba782dd4a43e35[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 30 19:21:28 2020 -0400
+
+    Contact page servers up and runnign
+
+[33mcommit 092293d93092db1fe3aeb9f5e544fa7c833f1f86[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 30 00:44:09 2020 -0400
+
+    Front end works with back end
+
+[33mcommit d6097af93e489440100641ad5a5845517adec2dd[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Fri May 29 23:58:18 2020 -0400
+
+    Contact server init
+
+[33mcommit db5c61ac72644ceed62c065a65a56880c4989f44[m
+Merge: 45cc2f2 c1df6e9
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 28 22:17:15 2020 -0400
+
+    Merge pull request #3 from dasreyh/dev
+    
+    Websites content added
+
+[33mcommit c1df6e9b85354fabf24699a984c7ae29a9e4be3b[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 28 22:03:31 2020 -0400
+
+    Websites content added
+
+[33mcommit 45cc2f22035319ce8fc45482b44f75c6f1609ffc[m
+Merge: 5dafa7e 3a905af
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 22:45:40 2020 -0400
+
+    Merge pull request #2 from dasreyh/dev
+    
+    Prod Init
+
+[33mcommit 3a905afe979d9b5f22ccbe23556e61b9c19df251[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 22:39:53 2020 -0400
+
+    Prod Init
+
+[33mcommit 5dafa7e9f2cb4a8d1cbc1abace4dffd888efeefc[m
+Merge: fc04544 092f3bc
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 22:28:54 2020 -0400
+
+    Merge pull request #1 from dasreyh/dev
+    
+    Hid navs for prod
+
+[33mcommit 092f3bc2306cd2bde6f89ef18d88309db89af8a5[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 22:27:08 2020 -0400
+
+    Hid navs for prod
+
+[33mcommit fc04544725ec4d3c84061d0ca34ee0ea92ca7d32[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 22:15:51 2020 -0400
+
+    Show new navs
+
+[33mcommit a576eb4cb9f9b3cc0bd78721d9db8c8f9896b4b7[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 22:06:42 2020 -0400
+
+    Temp hide contact and games
+
+[33mcommit f46c8437262a044cfc9342f266411b6bdee19801[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 21:34:04 2020 -0400
+
+    Safari tweaks
+
+[33mcommit c5b395f201313c07d203f255a140b589867ff681[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 20:53:08 2020 -0400
+
+    Meta image
+
+[33mcommit 4aaae01a3515e74d28e063be14f0bf7dcf7418f7[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 20:40:53 2020 -0400
+
+    Favicons
+
+[33mcommit 11beef64c93440de371684f367a8b4725023987c[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 18:53:24 2020 -0400
+
+    Logo update
+
+[33mcommit e10066df08e8d240addea4175c214a1ce2821106[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 18:06:36 2020 -0400
+
+    Games page fix
+
+[33mcommit 481fc723c0835564ce96c4f5db63ac36bccdd625[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 27 18:02:26 2020 -0400
+
+    Website live - production mode added
+
+[33mcommit 7cd5970d17a7d813211d319913bddc2ab817d14e[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Mon May 25 22:58:07 2020 -0400
+
+    logos mobile page bg color
+
+[33mcommit 8d6eab1a72d06908ed836cf40d98479d5ae6d149[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Mon May 25 22:49:56 2020 -0400
+
+    banner two update
+
+[33mcommit d8b6f4c31c3e5a7b1a33ca324c32ad1fd367cbcf[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sun May 24 21:57:13 2020 -0400
+
+    404 page responsive update.
+
+[33mcommit d4234d562427caf87018864ee4d0ae5be05537e7[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 23 10:36:54 2020 -0400
+
+    Responsive logo mobile text
+
+[33mcommit 3e69ced0f0ac824b1ca9c0b333d0e460fc3b8a4d[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 23 10:03:41 2020 -0400
+
+    Designs main page responsive update.
+
+[33mcommit 27725184f64e9316c477d8e265b3eb4459373fae[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 23 00:13:37 2020 -0400
+
+    Fixed main nav z-index above sidebar
+
+[33mcommit 24bc2ba2dcdbac4127f772987f9b1f18e1557ed4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 23 00:10:39 2020 -0400
+
+    Added main nav to sidebar on mobile layout of /web
+
+[33mcommit 8f4aecea602c89399d721369bb5bc58dd681cfa4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sat May 23 00:03:40 2020 -0400
+
+    Designs apricity component responsive update.
+
+[33mcommit 0654ab4dada8e27ed1ebc54f34e964ef8f34978d[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Fri May 22 23:46:58 2020 -0400
+
+    Wed default component responsive update.
+
+[33mcommit 8931041f26461f63a1414ade55b6973d8f33697a[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Fri May 22 23:39:12 2020 -0400
+
+    Footer responsive update.
+
+[33mcommit 26ff978e35382d4cda6633f95ee7f9f9cb2e2644[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Fri May 22 23:33:29 2020 -0400
+
+    Design decals icon responsive update.
+
+[33mcommit 428cd51e7d88a82ffe805b29450df8185a396fd2[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Fri May 22 23:17:40 2020 -0400
+
+    Designs prevail user icon responsive update.
+
+[33mcommit 06f19f647711afc73a0051a39d3d93f79ceff852[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Fri May 22 11:01:00 2020 -0400
+
+    Logo updates.
+
+[33mcommit 71dcc76f4bfcfc323901192961c76f25d2aca795[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 21 23:06:23 2020 -0400
+
+    Titles added
+
+[33mcommit ced322010226a683c86f8864e5c113398bbd1a07[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 21 16:31:31 2020 -0400
+
+    Fixed ScrollService back button.
+
+[33mcommit aa78e0197b3bc8193082b08070e72f9a134d0de8[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 21 16:09:56 2020 -0400
+
+    Fixed bugs
+    
+    Fixed scrolling service from re-enabling when hitting browser back button.
+    Fixed nav on /web page.
+    Fixed /web page layout.
+
+[33mcommit d888eb68be8d224aa831e2e702525333081756d4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 20 16:07:49 2020 -0400
+
+    Added /web menu
+
+[33mcommit 7418351cd95c50e19f4517f1789076b590124a34[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue May 19 22:51:05 2020 -0400
+
+    Responsive edits
+
+[33mcommit f9067a161ad68b03220f8861f5d171e7ec89aef8[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Sun May 17 15:39:56 2020 -0400
+
+    Design pages finished
+
+[33mcommit f44d9918ee6748d529f9227c3449a0c0940d7de4[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 14 02:07:29 2020 -0400
+
+    Play animation after image loads, image viewer
+
+[33mcommit 646600df86608306557cb09d6ee8ccdc5fd9a2fc[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Thu May 14 01:16:30 2020 -0400
+
+    Added photography loading spinner
+
+[33mcommit 60d9ea44f7394eb362103bcb531ee0396bbd592f[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Wed May 13 23:35:26 2020 -0400
+
+    Continue laze loading conversion.
+
+[33mcommit a46dc580866605f1415314f878556a15189c5f7f[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue May 12 22:59:13 2020 -0400
+
+    Init lazy loading conversion.
+
+[33mcommit 620a904879d3d001599e0cee98577badd065bd97[m
+Author: Brendan Weirtz <brendanweirtz@gmail.com>
+Date:   Tue May 12 19:25:44 2020 -0400
+
+    Added image lightbox component animations
+
+[33mcommit ebe3bfe

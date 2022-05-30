@@ -130,7 +130,7 @@
     to desktop from mobile nav sizing. (Reverts the JS mobile nav) */
 
 /* Going up in size */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 869px) {
 
     #links{
         display: inline-block!important;
@@ -144,7 +144,7 @@
 }
 
 /* Going down in size */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 868px) {
     #mobile-nav, #menu-open{
         display: block;
     }

@@ -3,6 +3,14 @@
     font-size:35px;
     font-weight:600;
 }
+.os:hover p{
+    color:rgb(57, 120, 179)!important;
+}
+  
+.os:hover svg{
+    color:rgb(57, 120, 179)!important;
+}
+
 .container{
     padding-top:50px;
     background-color:white;
@@ -51,7 +59,7 @@
     display: inline-block;
 }
 .game img{
-    width:230px;
+    width:330px;
     float:left;
     margin-right: 20px;
 }
@@ -70,19 +78,34 @@
     transition: 0.2s all;
 }
 
-
-.os-icon{
+.os{
+    padding-top:0px;
+    margin-bottom:3px;
+    text-align: left;
+    width:300px;
+    border-radius: 5px;
+}
+.os p{
+    color:rgb(57, 120, 179);
+    display: inline-block;
+    margin-left:10px;
+    margin-bottom: 0px;
+}
+.os svg{
     color: rgb(57, 120, 179);
     font-size: 14px;
     transition: 0.2s all;
     display: inline-block;
 }
 
+
+
 .genere{
     margin-bottom:0px;
     color: rgb(123, 123, 138);
     transition: 0.2s all;
     display: inline-block;
+    margin-bottom: 7px;
 }
 
 .game:hover h3{
@@ -91,9 +114,14 @@
 
 }
 
-.game:hover .os-icon{
+.game:hover .os svg{
     color: rgb(255, 255, 255);
 }
+
+.game:hover .os p{
+    color:white;
+}
+
 .spot-inner:hover .os-icon{
     color: rgb(255, 255, 255);
 }
@@ -158,14 +186,6 @@
     padding-right: 20px;
     font-size: 15px;
 }
-.spot-inner:hover{
-    background-color: #007bff;
-    color:white;
-}
-.spot-inner:hover .demo{
-    border:1px solid white;
-    color:white;
-}
 
 .spot-text .genere{
     margin-bottom:8px;
@@ -187,6 +207,28 @@
     color:rgb(33, 37, 41);
 }
 
+.os:hover{
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+  background-color: white;
+  transform: scale(1.1);
+  padding:3px;
+  padding-left:6px;
+}
+
+.spotlight-links{
+    display: inline-block;
+    text-align: center;
+    margin:0 auto;
+}
+
+.spotlight-links a{
+    width:300px;
+}
 /* SCALING */
 
 @media only screen and (max-width: 1200px) {
