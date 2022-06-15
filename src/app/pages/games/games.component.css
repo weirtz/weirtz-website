@@ -51,7 +51,7 @@
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086);
-  background-color: #007bff;
+  background-color: #0e3055;
   transform: scale(1.1);
 }
 
@@ -70,9 +70,12 @@
 
 .game-content{
     float: left;
-    width:45%;
+    width:52%;
     color:rgb(68, 80, 92);
-    margin-bottom:10px;
+    background-color: rgb(212, 231, 236);
+    border-radius: 5px;
+    margin:5px 0px;
+    padding:20px;
 }
 
 .description{
