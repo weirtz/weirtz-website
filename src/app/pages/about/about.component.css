@@ -111,7 +111,7 @@ li svg{
   margin:0 auto;
   margin-right:20px;
   border-radius: 0px;
-  margin-bottom:20px;
+  margin-bottom:40px;
   color:white;
   vertical-align: top;
   border-radius: 5px;
@@ -124,11 +124,15 @@ li svg{
   transition: all 0.1s ease-in-out;
 }
 
+
+
 .cm-2{
   background: #f5f7fa;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #e9eaf0, #f5f7fa);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #e9eaf0, #f5f7fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color:#152934;
+  outline: 2px solid rgb(206, 212, 219);
+  outline-offset: -2px;
 }
 
 .title-name{
@@ -195,7 +199,6 @@ h3{
   padding:4px 20px;
   font-weight:600;
   text-transform: uppercase;
-  border: 1px solid white;
   position: relative;
   display: inline-block;
   border-top-left-radius: 3px;
@@ -209,7 +212,9 @@ h3{
 
 .cm-2 h3{
   color:white;
-  background-color: #3e6eb0;
+  background: #009bff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0a83e6, #19abff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0a83e6, #19abff);
 }
 
 .content-module p{

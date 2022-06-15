@@ -41,7 +41,8 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0),
     0 41.8px 33.4px rgba(0, 0, 0, 0);
     transition: 0.1s all ease-out;
-    border:1px solid rgba(0,0,0,0.03);
+    outline:2px solid rgba(0,0,0,0.03);
+    outline-offset: -2px;
 }
 
 .game:hover{
@@ -51,8 +52,11 @@
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086);
-  background-color: #0e3055;
   transform: scale(1.1);
+  outline:2px solid rgba(0,0,0,0);
+  background: #009bff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0a83e6, #19abff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0a83e6, #19abff);
 }
 
 .game:hover .game-content{
@@ -72,8 +76,6 @@
     float: left;
     width:52%;
     color:rgb(68, 80, 92);
-    background-color: rgb(212, 231, 236);
-    border-radius: 5px;
     margin:5px 0px;
     padding:20px;
 }
@@ -94,9 +96,9 @@
     border-radius: 10px;
     
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
     border-radius: 3px;
     overflow: hidden;
     display: block;

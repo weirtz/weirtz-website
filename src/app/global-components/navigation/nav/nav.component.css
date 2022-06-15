@@ -4,8 +4,10 @@
 
 .site-logo{
     height:60px;
-    padding:17px;
-    
+    padding-top: 18px;
+    padding-bottom:15px;
+    padding-left:17px;
+    padding-right:17px;
 }
 
 .logo-container{
@@ -161,11 +163,16 @@
         font-size: 32px;
         font-weight:600;
     }
+
     .site-logo{
         height:60px;
-        padding:17px;
-    display: inline-block;    
+        padding-top: 18px;
+        padding-bottom:15px;
+        padding-left:17px;
+        padding-right:17px;
+        display: inline-block;    
     }
+
     .l-black{
         display: inline-block;
     }
