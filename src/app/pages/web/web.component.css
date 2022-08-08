@@ -156,13 +156,13 @@
     padding-bottom: 130px;
 }
 
-.devider-top{
+.divider-top{
     position: absolute;
     top: -1px;
     width: 100%;
 }
 
-.devider-bottom{
+.divider-bottom{
     position: absolute;
     bottom:-1px;
     width: 100%;
@@ -178,19 +178,32 @@
 .website{
     display: inline-block;
     padding:5px;
-    border: 2px solid rgba(0,0,0,0.1);
     margin:20px;
-    background-color: rgb(235, 235, 235);
-    border-radius: 8px;
-    transition: 0.1s all ease-in;
+
+    border-radius: 4px;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.1s all ease-in-out;
+    outline: 1px solid rgb(216, 229, 233);
+    outline-offset: -1px;
+    transform: translate3d(0,0,0);
 }
 
 .website img{
     width:100%;
     max-width: 500px;
-    border-radius: 5px;
+    border-radius: 4px;
     
 }
+
+.web4{
+    background-color: #F5F7FA;
+}
+
+.web5{
+    background-color: #F5F7FA;
+}
+
 .web4 h2{
     color:rgb(39, 39, 39);
     font-family: Poppins;
@@ -211,9 +224,13 @@
 }
 
 .website .header{
-    background-color: rgb(214, 214, 214);
-    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.452);
+    border-radius: 4px;
     margin-bottom: 5px;
+
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: 1px solid rgb(226, 235, 238);
+    outline-offset: -1px;
 }
 
 .website .header p{
@@ -233,14 +250,18 @@
     border-radius: 5px;
     max-width: 400px;
     padding:10px 10px;
-    margin-top:140px;
+    margin-top:0px;
     background-color: purple;
     font-size: 20px;
     font-family: Poppins;
 }
 
 .website:hover{
-    transform: scale(1.05);
+    box-shadow: 0 2.8px 2.2px rgb(7 102 243 / 3%), 0 6.7px 5.3px rgb(8 54 206 / 5%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 12.5px 10px rgb(12 20 63 / 6%);
+    outline: 2px solid rgb(41, 113, 196);
+    background-color: #008cff2d;
+    transform: scale(1.03);
+    z-index: 10;
 }
 
 @media only screen and (max-width: 930px) {

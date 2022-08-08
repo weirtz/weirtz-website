@@ -18,10 +18,10 @@ h1{
 }
 
 .about-text{
-  max-width:470px;
+  max-width:520px;
   font-family: Poppins;
-  font-size:17px;
-  padding-bottom:30px;
+  font-size:19px;
+  padding-bottom:7px;
   display: block;
   position: relative;
 }
@@ -127,12 +127,13 @@ li svg{
 
 
 .cm-2{
-  background: #f5f7fa;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #e9eaf0, #f5f7fa);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #e9eaf0, #f5f7fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color:#152934;
-  outline: 2px solid rgb(206, 212, 219);
-  outline-offset: -2px;
+
+
+  color:#1d1d1d;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: 1px solid rgb(216, 229, 233);
+  outline-offset: -1px;
 }
 
 .title-name{
@@ -165,6 +166,12 @@ li svg{
 
 .cm-main{
   width:100%;
+}
+
+.cm-main h1{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .header-circle{
