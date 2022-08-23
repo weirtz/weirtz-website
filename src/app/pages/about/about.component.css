@@ -155,6 +155,8 @@ li svg{
   margin:0 auto;
   color:rgb(177, 181, 187);
   font-size: 25px;
+  animation: float 3s ease-in-out infinite;
+
 }
 
 .arrow i{
@@ -347,4 +349,14 @@ font-family: Consolas;
   }
 }
 
-
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
