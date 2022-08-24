@@ -101,11 +101,6 @@ h1{
   outline-offset: 3px;
 }
 
-.social ul{
-  list-style-type: none;
-  padding: 0px;
-}
-
 .header-bar{
   background-color:rgb(55, 55, 55);
   width: 100%;
@@ -129,16 +124,8 @@ h1{
   float: left;
 }
 
-.social li{
-  margin-bottom:1px;
-}
-
 li svg{
   margin-right:10px!important;
-}
-
-.social a{
-  color:white;
 }
 
 .content-module{
@@ -231,9 +218,9 @@ li svg{
 
 .name-contain{
   background: rgb(255,255,255);
-  background: -moz-linear-gradient(59deg, rgba(255,255,255,0) 32%, rgba(255,255,255,0.05) 100%);
-  background: -webkit-linear-gradient(59deg, rgba(255,255,255,0) 32%, rgba(255,255,255,0.05) 100%);
-  background: linear-gradient(59deg, rgba(255,255,255,0) 32%, rgba(255,255,255,0.05) 100%);
+  background: -moz-linear-gradient(59deg, rgba(255,255,255,0) 32%, rgba(255,255,255,0.07) 100%);
+  background: -webkit-linear-gradient(59deg, rgba(255,255,255,0) 32%, rgba(255,255,255,0.07) 100%);
+  background: linear-gradient(59deg, rgba(255,255,255,0) 32%, rgba(255,255,255,0.07) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);  padding-bottom:10px;
   padding-top:35px;
   padding-left:40px;
@@ -356,17 +343,26 @@ font-family: Consolas;
   background-color: red!important;
 }
 
-@media only screen and (max-width: 1199px) {
-  .social{
-    width:100%;
-    float:none; 
-  }
-}
 @media only screen and (max-width: 767px) {
   #three-main{
     margin:0 auto;
     display: block;
     margin-bottom: 30px;
+  }
+  .cm-main h1{
+    padding-left: 0px;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .profilepic{
+    margin:0 auto;
+    margin-top:-160px;
+    display: block;
+  }
+  .name-contain{
+    padding-left: 0px;
   }
 }
 

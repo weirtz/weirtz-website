@@ -228,5 +228,13 @@ mat-progress-bar{
 
     .account{
         position: absolute;
-        }
+    }
+    .social{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 710px) {
+    .social{
+        font-size: 26px;
+    }
 }
