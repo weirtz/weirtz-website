@@ -53,7 +53,6 @@ h1{
 }
 .about-buttons a:hover{
   transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   text-decoration: none;
 }
 .side-button{
@@ -85,7 +84,7 @@ h1{
 }
 
 .cm-2 .about-buttons a{
-  background-color: #3e6eb0;
+  background-color: #009DD1;
   color: white;
 }
 
@@ -96,13 +95,10 @@ h1{
 .cfs-image{
   width: 100%;
   border-radius: 5px;
-  outline:2px solid #202124;
   outline-offset: -2px;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.027),
-  0 12.5px 10px rgba(0, 0, 0, 0.103);
   margin-bottom: 65px;
+  outline: 1px solid rgba(0,0,0,0.08);
+  outline-offset: 3px;
 }
 
 .social ul{
@@ -117,6 +113,7 @@ h1{
   font-size: 13px;
   color:rgb(106, 106, 106);
   float: left;
+  border-radius: 5px 5px 0px 0px;
 }
 .header-bar p{
   padding-top: 3px;
@@ -292,9 +289,7 @@ h3{
 
 .cm-2 h3{
   color:white;
-  background: #009bff;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #0a83e6, #19abff);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #0a83e6, #19abff);
+  background: #243A54;  /* fallback for old browsers */
 }
 
 .content-module p{
@@ -307,9 +302,6 @@ h3{
 .skills ul{
     display: inline-block;
     vertical-align: top;
-}
-a{
-    color:#007bff;
 }
 
 #three-main{
@@ -359,7 +351,6 @@ font-family: Consolas;
   /* -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px); */
 }
-
 
 .about-buttons a:nth-child(1){
   background-color: red!important;

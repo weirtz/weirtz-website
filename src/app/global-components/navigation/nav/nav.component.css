@@ -42,21 +42,20 @@
     
 .links{
     padding:0px;
-    position: absolute;
     float: right;
-    right:80px;
-    bottom:0;
+    line-height: 60px;
 }
 .links a{ 
     display: inline-block;
-    padding:10px;
+    padding:0px 10px;
     font-weight:400;
     font-size:15px;
     font-family:Poppins;
     font-weight:400;
-    vertical-align: bottom;
     padding-bottom:8px;
     color:#333;
+    vertical-align: middle;
+    
     /* background: rgb(177,177,177);
     background: linear-gradient(0deg, rgb(248, 248, 248) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);   */
 }
@@ -124,11 +123,19 @@
     width: 26px;
 }
 
+mat-progress-bar{
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+}
+
 .social a{ 
     display: inline-block;
     padding-left:10px;
     padding-right:10px;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-bottom: 8px;
 }
 
@@ -164,6 +171,9 @@
     .links a{
         font-weight:400;
     }
+    #global-nav{
+        border-bottom: 1px solid rgba(0,0,0,0.08)!important;
+    }
 }
 
 /* Going down in size */
@@ -173,9 +183,11 @@
     }
     .links{
         display: none;
-        top:90px;
+        top:130px;
         left:5%;
         text-align:left;
+        float: left;
+        position: absolute;
 
     }
     .links a{
@@ -183,6 +195,7 @@
         margin-bottom:16px;
         font-size: 32px;
         font-weight:600;
+        line-height: 30px;
     }
 
     .site-logo{

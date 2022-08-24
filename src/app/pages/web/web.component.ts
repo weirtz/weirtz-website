@@ -76,7 +76,7 @@ export class WebComponent implements OnInit {
     //Set up mobile sidebar
     this.webService.setSideBar(document.getElementById("sidebar"));
     this.webService.setSidebarBackground(document.getElementById("sidebar-background"));
-    //Remove footer
+    //Remove elements
     this.styleTag = this.buildStyleElement();
     document.body.appendChild( this.styleTag );
     //Set title

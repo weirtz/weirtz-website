@@ -5,6 +5,10 @@ a {
     color:#009DD1;
  }
 
+ a:hover{
+    color: #0670a8;
+ }
+
 body {
     overflow-y: scroll;
     /* background-color: #F1F2F6; */
