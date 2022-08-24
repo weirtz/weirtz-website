@@ -2,11 +2,13 @@
 
 a {
     outline: 0;
+    color:#009DD1;
  }
 
 body {
     overflow-y: scroll;
-    background-color: #F1F2F6;
+    /* background-color: #F1F2F6; */
+    background-color: #EEF2F7;
     /* always keep footer at botom - even if not full page*/
     min-height: 100vh;
     display: block;

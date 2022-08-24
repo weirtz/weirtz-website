@@ -61,6 +61,9 @@ export class WebComponent implements OnInit {
       .l-black{
         display:none!important;
       }
+      .social{
+        display:none!important;
+      }
 
 		`;
 		return( style );

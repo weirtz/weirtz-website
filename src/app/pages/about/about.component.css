@@ -28,19 +28,60 @@ h1{
   position: relative;
 }
 .about-buttons a{
-  background-color: white;
-  margin-right: 10px;
-  padding:7px 15px;
-  border-radius: 4px;
-  color:#141E30;
-  font-weight: 600;
+
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 5px;
+  border-width: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: all 200ms;
   font-family: Poppins;
 }
+.about-buttons a:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  text-decoration: none;
+}
 .side-button{
-  background-color: rgba(0,0,0,0)!important;
-  color: white !important;;
-  border:1px solid white;
+  background-color: rgba(255, 255, 255, 0)!important;
+  /* -webkit-box-shadow:inset 0px 0px 0px 2px rgba(255, 255, 255, 0.164);
+  -moz-box-shadow:inset 0px 0px 0px 2px rgba(255, 255, 255, 0.164);
+  box-shadow:inset 0px 0px 0px 2px rgba(255, 255, 255, 0.164); */
+  border-radius: 5px!important;
+  border-width: 0!important;
+  color: #ffffff!important;
+  cursor: pointer!important;
+  display: inline-block!important;
+  font-size: 14px!important;
   font-weight: 500!important;
+  line-height: 20px!important;
+  list-style: none!important;
+  margin: 0!important;
+  margin-left: 10px!important;
+  padding: 10px 12px!important;
+  text-align: center!important;
+  transition: all 200ms!important;
+  vertical-align: baseline!important;
+  white-space: nowrap!important;
+  user-select: none!important;
+  -webkit-user-select: none!important;
+  touch-action: manipulation!important;
+
+  font-family: Poppins;
 }
 
 .cm-2 .about-buttons a{
@@ -113,22 +154,19 @@ li svg{
   margin:0 auto;
   display: block;
   border-radius: 0px;
-  margin-bottom:40px;
+  margin-bottom:80px;
   color:white;
   border-radius: 5px;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.20);
+  
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+
+
   font-family: Poppins;
   transition: all 0.1s ease-in-out;
 }
 
-
-
 .cm-2{
-
-
   color:#1d1d1d;
   background: #fff;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -156,7 +194,7 @@ li svg{
   color:rgb(177, 181, 187);
   font-size: 25px;
   animation: float 3s ease-in-out infinite;
-
+  margin-bottom: 105px;
 }
 
 .arrow i{
@@ -172,6 +210,7 @@ li svg{
   width:100%;
   margin-top:250px;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .cm-main h1{
@@ -180,7 +219,8 @@ li svg{
   font-size: 40px;
   position: relative;
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 40px;
+  color: rgb(223, 227, 233);
 }
 
 .profilepic{
@@ -189,6 +229,7 @@ li svg{
   display: inline-block;
   margin-top:-160px;
   position: relative;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .name-contain{
