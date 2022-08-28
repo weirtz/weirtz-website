@@ -11,8 +11,10 @@ npm install
 
 deploy to firebase (for client rendering, server side rendering for SEO is a different process.) 
 
+```bash
 ng build --prod
 firebase deploy
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
 
