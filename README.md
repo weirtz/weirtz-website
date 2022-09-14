@@ -1,4 +1,4 @@
-My personal website/portfolio.
+Personal portfolio website built in Angular.
 
 ## Installation and initialization
 Use the package manager npm to install required packages.
